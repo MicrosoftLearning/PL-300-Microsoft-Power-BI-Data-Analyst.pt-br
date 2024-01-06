@@ -155,7 +155,7 @@ Nesta tarefa, você criará a primeira página de relatório. Quando você tiver
 
      ![Figura 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
 *O design da primeira página agora está concluído.*
 
@@ -188,8 +188,8 @@ Nesta tarefa, você criará a segunda página de relatório. Quando você tiver 
 1. Adicione os cinco campos de tabela **Vendas** seguintes à caixa/área **Valores**:
 
      - Pedidos (da pasta **Contagens**)
-     - Sales
-     - Cost
+     - Vendas
+     - Custo
      - Lucro
      - Margem de Lucro
 
@@ -209,11 +209,11 @@ Nesta tarefa, você criará a segunda página de relatório. Quando você tiver 
 
      - Subcategoria
      - Product
-     - Color
+     - Cor
 
      ![Figura 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
  *O design da segunda página agora está concluído.*
 
@@ -316,10 +316,10 @@ Nesta tarefa, você vai explorar o relatório publicado no Power BI.
 
     ![Imagem 93](Linked_image_Files/06-my-workspace-new.png)
 
-1. Revise o conteúdo do workspace. Observe as opções de navegação de Todos, Conteúdo e Conjuntos de Dados + fluxos de dados.
-    1. *Há quatro tipos de itens que podem existir em um workspace, e falaremos sobre **relatórios** e **conjuntos de dados**.*
-    1. *Talvez seja necessário atualizar o navegador Microsoft Edge se o conjunto de dados não estiver visível.*
-    1. *Quando você publicou o arquivo do Power BI Desktop, o modelo de dados foi publicado como um conjunto de dados.*
+1. Revise o conteúdo do workspace. Observe as opções de navegação de Todos, Conteúdo e Modelos semânticos + fluxos de dados.
+    1. *Pode existir quatro tipos de itens em um workspace, e falaremos sobre **relatórios** e **modelos semânticos**.*
+    1. *Talvez seja necessário atualizar o navegador Microsoft Edge se o modelo semântico não estiver visível.*
+    1. *Quando você publicou o arquivo do Power BI Desktop, o modelo de dados foi publicado como um modelo semântico.*
 
 1. Para explorar o relatório, selecione o relatório **Análise de Vendas**.
 

@@ -54,15 +54,15 @@ demo:
 
 1. Pare de exibir o relatório usando as opções de Exibir como.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
-1. Publique o arquivo do Power BI Desktop no workspace, substituindo o conjunto de dados e o relatório no serviço.
+1. Publique o arquivo do Power BI Desktop no workspace, substituindo o modelo semântico e o relatório no serviço.
 
 1. Feche o Power BI Desktop.
 
-## Configurar a segurança do conjunto de dados
+## Configurar a segurança do modelo semântico
 
-1. No serviço do Power BI para o instrutor, no painel de Navegação, abra a página de segurança do conjunto de dados **Sales Analysis**.
+1. No serviço do Power BI para o instrutor, no painel de Navegação, abra a página de segurança do modelo semântico da **Análise de Vendas**.
 
 1. Na seção Members, insira a conta do destinatário (representando **Ty Johnston**).
 

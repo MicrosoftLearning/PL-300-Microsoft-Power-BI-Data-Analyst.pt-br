@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Criar um painel do Power BI
+  title: Criar um Painel do Power BI
   module: Create Dashboards
 ---
 
@@ -38,33 +38,9 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório entrando no Po
 
      ![Figura 22](Linked_image_Files/07-my-workspace-new.png)
 
-## **Introdução – Abrir relatório**
-
-Nesta tarefa, você vai configurar o ambiente para o laboratório abrindo o relatório inicial.
-
-*Importante: se estiver dando continuidade ao laboratório anterior (e concluiu esse laboratório com sucesso), não conclua essa tarefa; em vez disso, continue na próxima tarefa.*
-
-1. Abra o Power BI Desktop.
-    
-    *Por padrão, a caixa de diálogo Introdução é aberta na frente do Power BI Desktop. Entre e feche o pop-up.*
-
-    ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
-
-1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
-
-1. Na janela **Abrir**, navegue até a pasta **D:\PL300\Labs\09-create-power-bi-dashboard\Starter** e abra o arquivo **Análise de Vendas**.
-
-1. Feche todas as janelas informativas que possam ser abertas.
-
-1. Observe a mensagem de aviso em amarelo abaixo da faixa de opções. *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente no laboratório.*
-    
-    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso em amarelo, selecione **X**.*
-
-1. Caso precise aplicar as alterações, selecione **Aplicar Mais Tarde**.
-
 ## **Introdução – Publicar o relatório**
 
-Nesta tarefa, você vai configurar o ambiente para o laboratório criando um conjunto de dados. *Se você já publicou o conjunto de dados, vá para a próxima tarefa.*
+Nesta tarefa, você vai configurar o ambiente para o laboratório criando um modelo semântico. *Se você já publicou o modelo semântico, vá para a próxima tarefa.*
 
 1. Na janela do navegador Microsoft Edge, no serviço do Power BI, navegue para **Meu Workspace**.
 
@@ -74,7 +50,7 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório criando um con
 
 1. Selecione o arquivo **Sales Analysis.pbix** e escolha **Abrir**.
 
-*Caso precise substituir o conjunto de dados, selecione **Substituir**.*
+*Caso precise substituir o modelo semântico, selecione **Substituir**.*
 
 ## **Criar um painel**
 
@@ -108,7 +84,7 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
     
     *Você pode usar o recurso de Perguntas e Respostas para fazer uma pergunta e o Power BI responderá com um visual.*
 
-    ![Figura 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
+    ![Imagem 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
 1. Selecione uma das perguntas sugeridas abaixo da caixa de Perguntas e Respostas, nas caixas azuis, e analise a resposta.
 
@@ -174,9 +150,9 @@ Nesta tarefa, você editará os detalhes de dois blocos.
 
 1. Observe que o bloco descreve a hora da última atualização (que foi realizada ao carregar o modelo de dados no Power BI Desktop).
 
-*Você atualizará o conjunto de dados no próximo exercício. Dependendo dos seus dados e relatório, você pode fazer uma atualização de dados adhoc a qualquer momento ou definir uma agenda. No entanto, as atualizações agendadas exigem gateways que não podemos configurar para este laboratório. Portanto, no Power BI Desktop, você executará uma atualização de dados manual e carregará o arquivo em seu workspace.*
+*Você atualizará o modelo semântico no próximo exercício. Dependendo dos seus dados e relatório, você pode fazer uma atualização de dados adhoc a qualquer momento ou definir uma agenda. No entanto, as atualizações agendadas exigem gateways que não podemos configurar para este laboratório. Portanto, no Power BI Desktop, você executará uma atualização de dados manual e carregará o arquivo em seu workspace.*
 
-## **Atualizar o Conjunto de dados**
+## **Atualizar o modelo semântico**
 
 Neste exercício, primeiro, você carregará os dados de pedidos de vendas de junho de 2020 no banco de dados **AdventureWorksDW2020**. Depois, você abrirá o arquivo do Power BI Desktop, executará uma atualização de dados e carregará o arquivo no seu workspace.
 
@@ -208,11 +184,11 @@ Nesta tarefa, você abrirá o arquivo de **Análise de Vendas** do Power BI Desk
 
     ![Figura 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
-1. Quando precisar substituir o conjunto de dados, selecione **Substituir**.
+1. Quando precisar substituir o modelo semântico, selecione **Substituir**.
 
 1. Feche o Power BI Desktop.
 
-*Agora, a data de vendas do conjunto de dados no serviço do Power BI é junho de 2020.*
+*Agora, a data de vendas do modelo semântico no serviço do Power BI é junho de 2020.*
 
 ### **Examinar o painel**
 

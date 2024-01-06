@@ -1,11 +1,11 @@
 ---
 lab:
-  title: Criar um relatório no Power BI Desktop
+  title: Aprimorar um Relatório no Power BI Desktop
   module: Create Reports in Power BI desktop
 ---
 
 
-# Criar um relatório no Power BI Desktop
+# Aprimorar um Relatório no Power BI Desktop
 
 ## **História do laboratório**
 
@@ -13,18 +13,18 @@ Neste laboratório, você vai aprimorar a **Análise de Vendas** com recursos de
 
 Neste laboratório, você aprenderá a:
 
-- Segmentação de dados de sincronização
+- Sincronizar segmentações
 - Criar uma página de detalhamento
 - Aplicar formatação condicional
 - Criar e usar indicadores
 
-**Este exercício deve durar aproximadamente 45 minutos.**
+**Este laboratório levará aproximadamente 45 minutos.**
 
-## **Tarefa 1: Introdução – Conectar-se**
+## **Introdução – Conectar-se**
 
 Nesta tarefa, você vai configurar o ambiente para o laboratório entrando no Power BI.
 
-Se você já entrou no Power BI, continue na próxima tarefa.
+*Se você já entrou no Power BI, vá para a próxima tarefa.*
 
 1. Para abrir o Microsoft Edge, na barra de tarefas, selecione o atalho do programa Microsoft Edge.
 
@@ -32,7 +32,7 @@ Se você já entrou no Power BI, continue na próxima tarefa.
 
 1. Na janela do navegador Microsoft Edge, navegue até **https://app.powerbi.com**.
 
-    Use também o favorito do serviço do Power BI na barra de favoritos do Microsoft Edge.
+    *Dica: use também o favorito do Serviço do Power BI na barra de favoritos do Microsoft Edge.*
 
 1. Conclua o processo de entrada com suas credenciais organizacionais (ou aquelas fornecidas a você). Se você receber um aviso do Microsoft Edge para permanecer conectado, selecione **Sim**.
 
@@ -40,21 +40,21 @@ Se você já entrou no Power BI, continue na próxima tarefa.
 
      ![Figura 22](Linked_image_Files/07-my-workspace-new.png)
 
-## **Tarefa 2: Introdução – Abrir relatório**
+## **Introdução – Abrir relatório**
 
 Nesta tarefa, você vai configurar o ambiente para o laboratório abrindo o relatório inicial.
 
-Se estiver dando continuidade ao laboratório anterior (e concluiu esse laboratório com sucesso), não conclua essa tarefa; em vez disso, continue na próxima tarefa.
+*Importante: se estiver dando continuidade ao laboratório anterior (e concluiu esse laboratório com sucesso), não conclua essa tarefa; em vez disso, vá para a próxima tarefa.*
 
 1. Abra o Power BI Desktop.
 
-    ![* Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+    ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
     *Dica: por padrão, a caixa de diálogo Introdução é aberta na frente do Power BI Desktop. Você pode optar por entrar e, em seguida, fechar o pop-up.*
 
-1. Para abrir o arquivo inicial do Power BI Desktop, na guia de faixa de opções Arquivo, selecione Abrir relatório e Procurar relatórios.
+1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
 
-1. Na janela Abrir, procure a pasta D:\DA100\Labs\design-report-in-power-bi-desktop-enhanced\Starter.
+1. Na janela **Abrir**, navegue para a pasta **D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e abra o arquivo **Análise de Vendas**.
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
@@ -62,21 +62,21 @@ Se estiver dando continuidade ao laboratório anterior (e concluiu esse laborat�
 
     *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente neste laboratório.*
 
-    Para ignorar a mensagem de aviso, à direita da mensagem de aviso em amarelo, selecione X.
+    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso em amarelo, selecione **X**.*
 
-1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na **pasta D:\PL300\MySolution** .
+1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\PL300\MySolution**.
 
 1. Caso precise aplicar as alterações, selecione **Aplicar Mais Tarde**.
 
-## Segmentação de dados de sincronização
+## **Sincronizar segmentações**
 
-Nesta tarefa, você sincronizará as **segmentações de dados de Ano** e **Região** , continuando o desenvolvimento do relatório criado no laboratório Criar um Relatório no **Power BI Desktop** .
+Nesta tarefa, você sincronizará as segmentações **Ano** e **Região**, continuando o desenvolvimento do relatório criado no laboratório **Criar um Relatório no Power BI Desktop**.
 
 1. No Power BI Desktop, na página **Visão geral**, defina a segmentação **Year** como **FY2018**.
 
 1. Acesse a página **Meu Desempenho** e observe que a segmentação **Ano** tem um valor diferente.
 
-    Quando a segmentação de dados não é sincronizada, ela pode contribuir para representar incorretamente os dados e a frustração dos usuários de relatório.
+    *Quando a segmentação de dados não é sincronizada, ela pode contribuir para representar incorretamente os dados e a frustração dos usuários de relatório. Agora, você sincronizará as segmentações do relatório.*
 
 1. Volte à página **Visão geral** e selecione a segmentação **Year**.
 
@@ -86,27 +86,27 @@ Nesta tarefa, você sincronizará as **segmentações de dados de Ano** e **Regi
 
 1. No painel **Segmentação de Dados de Sincronização** (à esquerda do painel **Visualizações**), na segunda coluna (que representa a sincronização), marque as caixas de seleção para as páginas **Visão Geral** e **Meu Desempenho**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image14.png)
+     ![Imagem 93](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image14.png)
 
 1. Na página **Visão Geral**, selecione a segmentação **Região**.
 
 1. Sincronize a segmentação com as páginas **Visão Geral** e **Lucro**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image15.png)
+     ![Imagem 94](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image15.png)
 
 1. Teste a sincronização das segmentações selecionando opções de filtro diferentes e verificando se as segmentações sincronizadas são filtradas pela mesma seleção.
 
 1. Para fechar a página **Sincronizar Segmentação**, selecione o **X** localizado no canto superior direito do painel.
 
-## Configurar detalhamento
+## **Configurar detalhamento**
 
 Neste exercício, você vai criar uma página e vai configurá-la como uma página de detalhamento. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
 ![Imagem da nova página, composta por um visual de cartão e visual de tabela.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
-## Criar uma página de detalhamento
+## **Criar uma página de detalhamento**
 
-Nesta tarefa, você vai criar uma página e vai configurá-la como a página de detalhamento.
+Nesta tarefa, você vai criar uma página e vai configurá-la como uma página de detalhamento.
 
 1. Adicione uma nova página de relatório denominada **Detalhes do Produto**.
 
@@ -114,55 +114,55 @@ Nesta tarefa, você vai criar uma página e vai configurá-la como a página de 
 
     *Os usuários do relatório não poderão acessar a página de detalhamento diretamente. Eles precisarão acessá-lo a partir de imagens em outras páginas. Você aprenderá a detalhar a página no exercício final deste laboratório.*
 
-1. Embaixo do painel **Visualizações**, na seção **Detalhamento**, adicione o campo **Produto | Categoria\| à caixa **Adicionar Campos de Detalhamento Aqui.
+1. Embaixo do painel **Visualizações**, na seção **Detalhamento**, adicione o campo **Produto \| Categoria** à caixa **Adicionar Campos de Detalhamento Aqui**.
 
-    *Os laboratórios usam uma notação taquigráfica para fazer referência a um campo. Ficará assim: **Categoria de Produto\|**. Neste exemplo, **Product** é o nome da tabela e **Category** é o nome do campo.*
+    *Os laboratórios usam uma notação taquigráfica para fazer referência a um campo. Ficará assim: **Produto \| Categoria**. Neste exemplo, **Produto** é o nome da tabela e **Categoria** é o nome do campo.*
 
-     ![Ilustração 96](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image20.png)
+     ![Imagem 96](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image20.png)
 
 1. Para testar a página de detalhamento, no cartão de filtro de detalhamento, selecione **Bicicletas**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image21.png)
+     ![Imagem 99](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image21.png)
 
 1. Na parte superior esquerda da página de relatório, observe o botão de seta.
 
-    *Um botão de seta é adicionado automaticamente quando um campo é adicionado à perfuração através do poço/área. Ele permite que os usuários do relatório naveguem de volta para a página a partir da qual eles fizeram o drill through.*
+    *Um botão de seta é adicionado automaticamente quando um campo é adicionado ao detalhamento através da caixa/área. Ele permite que os usuários do relatório naveguem de volta para a página a partir da qual eles fizeram o detalhamento.*
 
-1. Adicione um visual **Cartão** à página e redimensione-o e reposicione-o para que ele fique à direita do botão e preencha a largura restante da página.
+1. Adicione um visual **Cartão** à página e redimensione-o e posicione-o para que ele fique à direita do botão e preencha a largura restante da página.
 
     ![Figura 13](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image23.png)
 
-    ![Foto 101](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image24.png)
+    ![Imagem 101](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image24.png)
 
-1. Arraste o campo Produto | Categoria para o visual do cartão.
+1. Arraste o campo **Produto \| Categoria** para o visual do cartão.
 
 1. Configure as opções de formato para o visual e transforme a propriedade **Rótulo da Categoria** em **Desativado**.
 
-     ![Figura 48](Linked_image_Files/07-design-report-in-power-bi-desktop_image36b.png)
+     ![Imagem 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image36b.png)
 
-1. Defina a propriedade Cor da Tela de Fundo como uma tonalidade clara de cinza.
+1. Defina a propriedade **Efeitos > Tela de fundo** como uma tonalidade clara de cinza como *Branco, 20% mais escuro*.
 
-     ![Figura 48](Linked_image_Files/07-design-report-in-power-bi-desktop_image36c.png)
+     ![Imagem 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image36c.png)
 
-1. Adicione um visual **Tabela** à página e redimensione-o e reposicione-o para que ele fique embaixo do visual de cartão e preencha o espaço restante na página.
+1. Adicione um visual **Tabela** à página e redimensione-o e posicione-o para que ele fique embaixo do visual de cartão e preencha o espaço restante na página.
 
      ![Figura 14](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image26.png)
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image27.png)
+     ![Imagem 105](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image27.png)
 
 1. Adicione os seguintes campos ao visual:
 
-     - Subcategoria de produto
-     - Product Color
-     - Quantidade de vendas
-     - Vendas | Vendas
-     - Vendas, Margem de Lucro
+     - Produto \| Subcategoria
+     - Produto \| Cor
+     - Vendas \| Quantidade
+     - Vendas \| Vendas
+     - Vendas \| Margem de Lucro
 
-1. Configure as opções de formato para o visual e, na seção **Grade**, defina a propriedade **Tamanho do Texto** como **20pt**.
+1. Configure as opções de formato para o visual e, na seção **Valores**, defina a propriedade **Tamanho do Texto** como **20pt**.
 
-*O design da página de drill through está quase completo. Você aprimorará a página com formatação condicional no próximo exercício.*
+*O design da página de detalhamento está quase completo. Você aprimorará a página com formatação condicional no próximo exercício.*
 
-## **Adicionar formatação condicional**
+## **Adicionar Formatação Condicional**
 
 Neste exercício, você vai aprimorar a página de detalhamento com formatação condicional. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
@@ -172,17 +172,17 @@ Neste exercício, você vai aprimorar a página de detalhamento com formatação
 
 Nesta tarefa, você vai aprimorar a página de detalhamento com formatação condicional.
 
-1. Selecione o visual de tabela. No painel Campos do visual, para o campo Margem de Lucro, escolha a seta para baixo e selecione Formatação Condicional | Ícones.
+1. Selecione o visual de tabela. No painel de visualização, selecione a seta para baixo no valor **Margem de Lucro** e, em seguida, selecione **Formatação Condicional \| Ícones**.
 
-    ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image29.png)
+    ![Imagem 107](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image29.png)
 
 1. Na janela **Ícones – Margem de Lucro**, na lista suspensa **Layout do Ícone**, selecione **À Direita dos Dados**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image30.png)
+     ![Imagem 108](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image30.png)
 
 1. Para excluir a regra intermediária, à esquerda do triângulo amarelo, selecione **X**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image31.png)
+     ![Imagem 109](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image31.png)
 
 1. Configure a primeira regra (losango vermelho) da seguinte maneira:
 
@@ -191,80 +191,80 @@ Nesta tarefa, você vai aprimorar a página de detalhamento com formatação con
     - No quinto controle, digite **0**
     - No sexto controle, selecione **Número**
 
-1. Configure a segunda regra (círculo verde) da seguinte maneira:
+1. Configure a segunda regra (círculo verde) da seguinte maneira e, em seguida, selecione **OK**:
 
-    As regras são as seguintes: exiba um losango vermelho se o valor da margem de lucro for menor que 0; caso contrário, se o valor for maior ou igual a zero, exiba o círculo verde.
+    *As regras podem ser interpretadas assim: exiba um losango vermelho se o valor da margem de lucro for menor que 0; caso contrário, se o valor for maior ou igual a zero, exiba um círculo verde.*
 
      - No segundo controle, digite **0**
      - No terceiro controle, selecione **Número**
      - No quinto controle, remova o valor
      - No sexto controle, selecione **Número**
 
-     ![Figura 11](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image32.png)
+     ![Imagem 110](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image32.png)
 
 1. No visual da tabela, verifique se os ícones corretos são exibidos.
 
-     ![Ilustração 112](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image34.png)
+     ![Imagem 112](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image34.png)
 
 1. Configure a formatação condicional de cor da tela de fundo para o campo **Cor**.
 
-1. Na janela **Cor da tela de fundo – Cor**, na lista suspensa **Formatar Por**, selecione **Valor do Campo**.
+1. Na janela **Cor da tela de fundo – Cor**, na lista suspensa **Estilo de Formatação**, selecione **Valor do Campo**.
 
-1. Na lista suspensa Com base no campo, selecione Produto | Formatação | Formato da Cor da Tela de Fundo.
+1. Na lista suspensa **Com base no campo**, selecione **Produto \| Formatação \| Formato da Cor do Plano de Fundo** e, em seguida, **OK**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
+     ![Imagem 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
-1. Repita as etapas anteriores para configurar a formatação condicional de cor da fonte para o campo Cor, usando o campo Produto | Formatação | Formato de Cor da Fonte.
+1. Repita as etapas anteriores para configurar a formatação condicional de cor da fonte para o campo **Cor**, usando o campo **Produto \| Formatação \| Formato da Cor da Fonte**
 
-Talvez você se lembre de que as cores da tela de fundo e da fonte foram obtidas do arquivo ColorFormats.csv** no laboratório **Preparar dados no Power BI Desktop** e integradas à consulta **Product** no laboratório **Carregar dados no Power BI Desktop.
+*Talvez você se lembre de que as cores da tela de fundo e da fonte foram obtidas do arquivo **ColorFormats.csv** no laboratório **Preparar Dados no Power BI Desktop** e integradas à consulta **Produto** no laboratório **Carregar Dados no Power BI Desktop**.*
 
-## Adicionar indicadores e botões
+## **Adicionar indicadores e Botões**
 
 Neste exercício, você vai aprimorar a página **Meu Desempenho** com botões, permitindo que o usuário do relatório selecione o tipo de visual a ser exibido. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
 ![Imagem de uma página 3 atualizada, mostrando dois botões e agora apenas dois visuais.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
-## Adicionar indicadores
+## **Adicionar indicadores**
 
 Nesta tarefa, você adicionará dois indicadores, um para exibir cada um dos visuais mensais de vendas/metas.
 
 1. Acesse a página **Meu Desempenho**. Na guia de faixa de opções **Exibir**, no grupo **Mostrar Painéis**, selecione **Indicadores**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image39.png)
+     ![Imagem 118](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image39.png)
 
 1. Na guia de faixa de opções **Exibir**, no grupo **Mostrar Painéis**, escolha **Seleção**.
 
 1. No painel **Seleção**, ao lado de um dos itens de **Vendas e Meta por Mês**, para ocultar o visual, selecione o ícone de olho.
 
-     ![Ilustração 120](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image41.png)
+     ![Imagem 120](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image41.png)
 
 1. No painel **Indicadores**, selecione **Adicionar**.
 
-    Para renomear o indicador, clique duas vezes no indicador.
+    *Para renomear o indicador, clique duas vezes no indicador.*
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image42.png)
+     ![Imagem 121](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image42.png)
 
 1. Se o gráfico visível for o gráfico de barras, renomeie o indicador como **Gráfico de Barras ATIVADO**; caso contrário, renomeie o indicador como **Gráfico de Colunas ATIVADO**.
 
 1. Para editar o indicador, no painel **Indicadores**, posicione o cursor sobre o indicador, clique nas reticências e selecione **Dados**.
      
-     *Desabilitar a **opção Dados** significa que o indicador não usará o estado de filtro atual. Isso é importante porque, caso contrário, o marcador bloquearia permanentemente o filtro atualmente aplicado pela segmentação de dados Ano****.*
+     *Desabilitar a opção **Dados** significa que o indicador não usará o estado de filtro atual. Isso é importante porque, caso contrário, o marcador bloquearia permanentemente o filtro atualmente aplicado pela segmentação de dados **Ano**.*
 
      ![Figura 16](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image43.png)
 
-1. Para atualizar o indicador, clique nas reticências novamente e selecione Atualizar.
+1. Para atualizar o indicador, clique nas reticências novamente e selecione **Atualizar**.
 
-     Nas etapas a seguir, você vai criar e configurar um segundo indicador para mostrar o segundo visual.
+     *Nas etapas a seguir, você vai criar e configurar um segundo indicador para mostrar o segundo visual.*
 
 1. No painel **Seleção**, alterne a visibilidade dos dois itens **Vendas e Meta por Mês**.
 
-     Em outras palavras, torne o visual visível oculto e torne o visual oculto visível.
+     *Em outras palavras, torne o visual visível oculto e torne o visual oculto visível.*
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image45.png)
+     ![Imagem 122](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image45.png)
 
 1. Crie um segundo indicador e nomeie-o adequadamente (**Gráfico de Colunas ATIVADO** ou **Gráfico de Barras ATIVADO).**
 
-     ![Foto 123](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image46.png)
+     ![Imagem 123](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image46.png)
 
 1. Configure o segundo indicador para ignorar filtros (opção **Dados** desativada) e atualize o indicador.
 
@@ -272,52 +272,52 @@ Nesta tarefa, você adicionará dois indicadores, um para exibir cada um dos vis
 
 1. Redimensione e reposicione os dois visuais para que eles preencham a página embaixo do visual de vários cartões e se sobreponham completamente.
 
-    Para selecionar o visual coberto, selecione-o no painel Seleção.
+    *Para selecionar o visual coberto, selecione-o no painel **Seleção**.*
 
-    ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image47.png)
+    ![imagem 124](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image47.png)
 
 1. No painel **Indicadores**, selecione cada um dos indicadores e observe que apenas um dos visuais está visível.
 
-A próxima fase do design é adicionar dois botões à página, o que permitirá que o usuário do relatório selecione os indicadores.
+*A próxima fase do design é adicionar dois botões à página, o que permitirá que o usuário do relatório selecione os indicadores.*
 
-## Adicionar botões
+## **Adicionar botões**
 
 Nesta tarefa, você vai adicionar dois botões e atribuir ações de indicador a cada um.
 
 1. Na faixa de opções **Inserir**, no grupo **Elementos**, selecione **Botão** e **Em Branco**.
 
-     ![Figura 19](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image48.png)
+     ![Imagem 125](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image48.png)
 
 1. Reposicione o botão diretamente abaixo da segmentação **Ano**.
 
-1. Selecione o botão e, no painel do botão Formatar, selecione **Botão**, expanda **a **seção Estilo** e ative a **propriedade **Texto****.**
+1. Selecione o botão e, no painel do **botão Formatar**, selecione **Botão**, expanda a seção **Estilo** e defina a propriedade **Texto** como **Ativa**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49b.png)
+     ![Imagem 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49b.png)
 
-1. Expanda a seção **Texto do Botão** e, na caixa **Texto do Botão**, insira **Gráfico de Barras**.
+1. Expanda a seção **Texto** e, na caixa **Texto**, insira **Gráfico de Barras**.
 
-1. Expanda a seção **Tela de Fundo** e defina uma cor da tela de fundo usando uma cor complementar.
+1. Expanda a seção **Preenchimento** e defina uma cor da tela de fundo usando uma cor complementar.
 
-1. Selecione **Botão** e ative a **propriedade **Ação****.
+1. Selecione **Botão** e defina a propriedade **Ação** como **Ativa**.
 
-    ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
+    ![Imagem 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
 1. Expanda a seção **Ação** e defina a lista suspensa **Tipo** como **Indicador**.
 
 1. Na lista suspensa **Indicador**, selecione **Gráfico de Barras ATIVADO**.
 
-    ![Ilustração 128](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image51.png)
+    ![Imagem 128](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image51.png)
 
 1. Crie uma cópia do botão usando copiar e colar e configure o novo botão da seguinte maneira:
 
-    Os comandos de atalho para copiar e colar o conteúdo são CTRL + C** seguido de **CTRL + V.
+    *Dica: os comandos de atalho para copiar e colar o conteúdo são **Ctrl+C** seguido de **Ctrl+V**.*
 
     - Defina a propriedade **Texto do Botão** como **Gráfico de Colunas**
     - Na seção **Ação**, defina a lista suspensa **Indicador** como **Gráfico de Colunas ATIVADO**
 
-Agora, o design do relatório Análise de Vendas está completo.
+*Agora, o design do relatório Análise de Vendas está completo.*
 
-## Publicar o relatório
+## **Publicar o relatório**
 
 Nesta tarefa, você publicará o relatório.
 
@@ -327,9 +327,9 @@ Nesta tarefa, você publicará o relatório.
 
 1. Na segmentação **Região**, selecione **Selecionar Tudo**.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
-    O arquivo sempre precisa ser salvo antes de ser publicado no serviço do Power BI.
+    *O arquivo sempre precisa ser salvo antes de ser publicado no serviço do Power BI.*
 
 1. Na guia de faixa de opções **Página Inicial**, no grupo **Compartilhar**, selecione **Publicar**.
 
@@ -338,35 +338,35 @@ Nesta tarefa, você publicará o relatório.
 1. Na janela **Publicar no Power BI**, observe que **Meu Workspace** está selecionado.
 
 1. Para publicar o relatório, escolha **Selecionar**.
-    1. Caso precise substituir o conjunto de dados, selecione **Substituir**.
+    1. Caso precise substituir o modelo semântico, selecione **Substituir**.
     1. Quando a publicação for bem-sucedida, selecione **Entendi**.
 
 1. Feche o Power BI Desktop.
 
-No próximo exercício, você vai explorar o relatório no serviço do Power BI.
+*No próximo exercício, você vai explorar o relatório no serviço do Power BI.*
 
-## Explorar o relatório
+## **Explorar o relatório**
 
 Nesta tarefa, você vai explorar o relatório no serviço do Power BI.
 
-1. Na janela do navegador Microsoft Edge, no serviço do Power BI, no painel **Navegação**, selecione o relatório **Análise de Vendas**.
+1. Na janela do navegador Microsoft Edge, navegue para o serviço do Power BI > **Meu Workspace** e, em seguida, selecione o relatório **Análise de Vendas**.
 
-1. Para testar o recurso de detalhamento, navegue até a **página Visão geral** > **visual Quantidade por categoria** . Em seguida, clique com o botão direito do mouse na barra Roupas** e selecione **Detalhar detalhes** do **\| produto.
+1. Para testar o recurso de detalhamento, navegue até a página **Visão geral** > visual **Quantidade por Categoria**. Em seguida, clique com o botão direito do mouse na barra **Roupas** e selecione **Detalhar \| Detalhes do Produto**.
 
-     ![Figura 48](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image55.png)
+     ![Imagem 130](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image55.png)
 
 1. Observe que a página **Detalhes do Produto** é para **Roupas**.
 
-1. Para voltar à página de origem, no canto superior esquerdo, selecione o botão de seta.
+1. Para voltar à página de origem, no canto superior esquerdo da página, selecione o botão de seta.
 
 1. Selecione a página **Meu Desempenho**.
 
-    Selecione cada um dos botões e observe que um visual diferente é exibido.
+    *Selecione cada um dos botões e observe que um visual diferente é exibido.*
 
-### Conclusão
+### **Conclusão**
 
 Nesta tarefa, você concluirá o laboratório.
 
-Para retornar ao seu espaço de trabalho, no banner na página da Web da janela, selecione **Meu Espaço de Trabalho**.
+Para retornar ao seu workspace, no banner na página da Web da janela, selecione **Meu workspace**.
 
 ![Figura 23](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image56.png)
