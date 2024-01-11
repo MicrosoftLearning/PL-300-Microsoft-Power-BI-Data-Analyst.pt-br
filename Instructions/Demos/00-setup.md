@@ -1,18 +1,17 @@
 ---
-demo:
-  title: Configure seu próprio ambiente
-  module: Set up your own environment
+lab:
+  "\_\_ title": Setup demo environment
+  "\_\_ module": Setup demo environment
 ---
-
 
 # Configuração da demonstração
 
-## Configuração de VM
+## Configuração de Ativos Fixos
 
 1. Entre no ambiente de máquina virtual usando a conta de estudante.
 
-1. Abra o Microsoft Edge e navegue até <https://powerbi.com> e entre usando a conta de instrutor.
-    > **Dica**: se for solicitado a alterar a senha, certifique-se de registrá-la no arquivo D:\PL300\Demo\Setup\MySettings.txt.
+1. Abra o Microsoft Edge e navegue até <https://powerbi.com> ele e entre usando a conta de instrutor.
+    > **Dica**: Se for solicitado a alterar a senha, certifique-se de registrá-la no arquivo D:\PL300\Demo\Setup\MySettings.txt
 
 1. No serviço do Power BI, aceite a avaliação do Power BI Pro.
 
@@ -24,14 +23,14 @@ demo:
 
 1. No Power BI Desktop, entre usando a conta de instrutor.
 
-1. Publique o relatório no workspace criado anteriormente.
+1. Publique o relatório no espaço de trabalho criado anteriormente.
 
-1. No serviço do Power BI, abra o relatório Sales Analysis e fixe o visual do gráfico de colunas/linhas para criar um novo dashboard chamado Sales Monitoring.
+1. No serviço do Power BI, abra o relatório Análise de Vendas e fixe o visual do gráfico de colunas/linhas para criar um novo painel chamado Monitoramento de Vendas.
 
-1. Fixe o gráfico de funil no dashboard também.
+1. Fixe o gráfico de funil no painel também.
 
-1. Abra o dashboard e deixe-o pronto para a primeira demonstração.
+1. Abra o painel e deixe-o pronto para a primeira demonstração.
 
 1. Feche o Power BI Desktop.
 
-> **Nota**: os ativos de demonstração podem ser encontrados no PL-300 [Repositório GitHub](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo) do Analista de Dados do Power BI.
+> **Observação**: os ativos de demonstração podem ser encontrados no Repositório GitHub do Analista [de Dados do Power BI PL-300](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo).

@@ -1,19 +1,19 @@
 ---
-demo:
-  title: Criar relatórios no Power BI
-  module: Create reports in Power BI
+lab:
+  "\_\_ title": Create reports in Power BI
+  "\_\_ module": Create reports in Power BI
 ---
 # Criar relatórios
 
-## Criar um relatório de página única
+## Criar um aplicativo de página única
 
 1. Remova o visual da matriz que foi usado para testar e validar os cálculos do modelo.
 
-1. Renomeie a página do relatório como Sales Summary.
+1. Renomeie a página do relatório como Resumo de Vendas.
 
 ## Adicionar uma segmentação
 
-1. Adicione uma segmentação de dados para a coluna Year da tabela Date e posicione-a no canto superior esquerdo da página do relatório.
+1. Adicione uma segmentação de dados para a coluna Ano da tabela Data e posicione-a no canto superior esquerdo da página do relatório.
 
 1. Use as opções de formatação para configurar a segmentação de dados para seleção única.
 
@@ -21,15 +21,15 @@ demo:
 
 1. Adicione um gráfico de linhas e colunas empilhadas à página e configure-o da seguinte maneira:
 
-    - Eixo compartilhado: Date | Month
+    - Eixo compartilhado: Data | Mês
 
-    - Valores das colunas: Sales | Sales
+    - Valores das colunas: Vendas | Venda
 
-    - Valores de linha: Sales | Profit Margin
+    - Valores de linha: Vendas | Margem de Lucro
 
 1. Use a segmentação de dados para filtrar a página por CY2019 e, em seguida, CY2020.
 
-1. No gráfico de linhas e colunas empilhadas, indique que não há coluna de vendas para dezembro de 2020.
+1. No gráfico de linhas e colunas empilhadas, aponte que não há coluna de vendas para dezembro de 2020.
 
 1. Configure o eixo compartilhado para "mostrar itens sem dados".
 
@@ -39,9 +39,9 @@ demo:
 
 1. Adicione um gráfico de funil e configure-o da seguinte maneira:
 
-    - Grupo: Product | Category
+    - Grupo: Produto | Categoria
 
-    - Valores: Sales | Profit Margin
+    - Valores: Vendas | Margem de Lucro
 
 1. Use as opções de formatação para selecionar uma cor de dados contrastante.
 

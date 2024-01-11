@@ -1,16 +1,15 @@
 ---
-demo:
-  title: Introdução à análise de dados da Microsoft
-  module: Get started with Microsoft data analytics
+lab:
+  "\_\_ title": Get started with Microsoft data analytics
+  "\_\_ module": Get started with Microsoft data analytics
 ---
-
 # Introdução à análise de dados da Microsoft
 
-## Explore o dashboard
+## Explore o painel.
 
-1. Mostre o dashboard Monitoramento de vendas e explique como ele pode ser usado para obter fatos rápidos.
+1. Mostre o painel Monitoramento de vendas e explique como ele pode ser usado para obter fatos rápidos.
 
-1. Clique em qualquer bloco para acessar o relatório Dales Analysis.
+1. Clique em qualquer bloco para acessar o relatório Análise de vendas.
 
 ## Explorar o relatório
 
@@ -26,6 +25,6 @@ demo:
 
 1. Explique que ele será compartilhado com um destinatário e que os destinatários só poderão ver um subconjunto de dados sendo apenas as categorias de produtos que gerenciam.
 
-1. Retorne à home page do serviço Power BI e recolha o workspace.
+1. Retorne à home page do serviço Power BI e recolha o espaço de trabalho.
 
-> **Nota**: você não usará esta solução pré-desenvolvida novamente.
+> **Nota**: Você não usará esta solução pré-desenvolvida novamente.

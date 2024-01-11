@@ -1,34 +1,33 @@
 ---
-demo:
-  title: 'Limpar, transformar e carregar dados no Power BI'
-  module: 'Clean, transform, and load data in Power BI'
+lab:
+  "\_\_ title": 'Clean, transform, and load data in Power BI'
+  "\_\_ module": 'Clean, transform, and load data in Power BI'
 ---
-
 # Limpar, transformar e carregar dados no Power BI
 
-## Aplicar transformações de consulta
+## Aplicar transformações
 
-1. Primeiro, aplique transformações à consulta Product.
+1. Primeiro, aplique transformações à consulta Produto.
 
 1. Remova as colunas RetailPrice, Photo e Sales.
 
-1. Altere o tipo de dados da coluna Channels para Número Inteiro.
+1. Altere o tipo de dados da coluna Canais para Número Inteiro.
 
 1. Renomear as seguintes colunas:
 
     - ProductSKU para SKU
 
-    - ProductName para Product
+    - NomeProduto Produto Um
 
-    - ProductCategory para Category
+    - ProductCategory[CategoryId]
 
-    - ItemGroup para Item Group
+    - ItemGroup para Grupo de Itens
 
-    - KitType para Kit Type
+    - KitType para Tipo de Kit
 
 1. Em segundo lugar, aplique transformações à consulta Sales.
 
-1. Remova todas as colunas, exceto:
+1. Remova todas as colunas, exceto ,  e .
 
     - OrderDate
 
@@ -38,35 +37,35 @@ demo:
 
     - UnitPrice
 
-1. Altere o tipo de dados da coluna UnitPrice para Número Decimal Fixo.
+1. Altere o tipo de dados da coluna PreçoUnitário para Número Decimal Fixo.
 
-1. Renomeie a coluna UnitPrice para Preço Unitário.
+1. Renomeie a coluna PreçoUnitário para Preço Unitário.
 
-1. Selecione as colunas Quantity e Unit Price e adicione uma nova coluna com base em sua multiplicação.
+1. Selecione várias das colunas Quantidade e Preço Unitário e adicione uma nova coluna com base em sua multiplicação.
 
-1. Renomeie a nova coluna como Sales.
+1. Renomeie a nova coluna como Escala.
 
 ## Integrar consultas
 
 1. Crie uma nova consulta usando o conector do Excel, conectando-se ao arquivo D:\PL300\Demo\Data\ProductCost.xlsx.
 
-1. Remova a coluna Product.
+1. Remova a coluna Status do Produto.
 
 1. Altere o tipo de dados da coluna ProductCost para Número decimal fixo.
 
-1. Selecione a consulta Product e mescle com a consulta ProductCost, relacionando as colunas SKU.
+1. Selecione a consulta Produto e mescle com a consulta ProductCost, relacionando as colunas SKU.
 
 1. Na janela Níveis de Privacidade, defina o nível de privacidade de D:\ como Organizacional.
 
 1. Expanda a coluna ProductCost para incluir a coluna ProductCost (da consulta ProductCost).
 
-1. Renomeie a nova coluna como Cost.
+1. Renomeie a nova coluna como Escala.
 
 ## Desabilitar e carregar consultas no modelo de dados
 
 1. No painel Consultas, desabilite a consulta ProductCost.
 
-1. Na guia da faixa de opções Página Inicial, clique no ícone Fechar e Aplicar.
+1. Na guia da faixa de opções Página Inicial, clique no ícone Fechar & Aplicar.
 
 1. No Power BI Desktop, aponte as duas tabelas no painel Dados.
 
