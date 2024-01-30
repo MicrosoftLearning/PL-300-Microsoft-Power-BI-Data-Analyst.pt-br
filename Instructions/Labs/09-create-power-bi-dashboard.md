@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Criar um Painel do Power BI
   module: Create Dashboards
 ---
@@ -46,7 +47,7 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório criando um mod
 
 1. Selecione **Carregar > Procurar**.
 
-1. Navegue para a pasta **D:\PL300\Labs\09-create-power-bi-dashboard\Starter**.
+1. Navegue até a pasta **D:\Allfiles\Labs\09-create-power-bi-dashboard\Starter**.
 
 1. Selecione o arquivo **Sales Analysis.pbix** e escolha **Abrir**.
 
@@ -116,7 +117,7 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
 
 1. No painel **Adicionar um Bloco** (localizado à direita), selecione o bloco **Imagem** e, em seguida, **Avançar**.
 
-1. No painel **Adicionar Bloco de Imagem**, na caixa **URL**, insira a URL completa encontrada no arquivo **D:\PL300\Resources\AdventureWorksLogo_DataURL.txt** e clique em **Aplicar**.
+1. No painel **Adicionar Bloco de Imagem**, na caixa **URL**, digite o URL completo encontrado no arquivo **D:\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** e, em seguida, **Aplicar**.
     
     *Você pode inserir uma imagem usando a URL dela ou uma URL de dados, que insere o conteúdo embutido.*
 
@@ -160,7 +161,7 @@ Neste exercício, primeiro, você carregará os dados de pedidos de vendas de ju
 
 Nesta tarefa, você executará um script do PowerShell para atualizar os dados do banco de dados **AdventureWorksDW2020**.
 
-1. No Explorador de Arquivos, na pasta **D:\PL300\Setup**, clique com o botão direito do mouse no arquivo **UpdateDatabase-2-AddSales.ps1** e selecione **Executar com o PowerShell**.
+1. No Explorador de Arquivos, dentro da pasta **D:\Allfiles\Setup**, clique com o botão direito do mouse no arquivo **UpdateDatabase-2-AddSales.ps1** e selecione **Executar com o PowerShell**.
 
     ![Imagem 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
 

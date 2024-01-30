@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Executar Análise Avançada com Visuais de IA
   module: Perform Data Analysis in Power BI
 ---
@@ -46,7 +47,7 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório criando um mod
 
 1. Selecione **Carregar > Procurar**.
 
-1. Navegue até a pasta **D:\PL300\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter**.
+1. Navegue até a pasta **D:\Allfiles\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter**.
 
 1. Selecione o arquivo **Sales Analysis.pbix** e escolha **Abrir**.
 
@@ -70,7 +71,7 @@ Nesta tarefa, você criará uma conexão dinâmica real com o modelo semântico 
 
 1. Na janela **Hub de dados**, selecione o modelo semântico da **Análise de Vendas** em **Meu Workspace** e **Conectar** ou clique duas vezes para carregar o modelo semântico.
 
-1. Navegue até **Arquivo > Salvar** e salve o nome do arquivo como **Exploração de Vendas** na pasta **D:\PL300\MySolution**.
+1. Navegue até **Arquivo > Salvar** e salve o nome do arquivo como **Exploração de Vendas** na pasta **D:\Allfiles\MySolution**.
 
 *Agora, você criará duas páginas de relatório e, em cada página, trabalhará com outro visual para analisar e explorar os dados.*
 

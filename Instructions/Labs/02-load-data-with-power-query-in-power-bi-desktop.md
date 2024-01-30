@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Carregar Dados Transformados no Power BI Desktop
   module: 'Clean, Transform, and Load Data in Power BI'
 ---
@@ -31,17 +32,17 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório.
 
 1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
 
-1. Na janela **Abrir**, navegue para a pasta **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** e abra o arquivo **Análise de Vendas**.
+1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** e abra o arquivo **Análise de Vendas**.
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
-1. Observe a mensagem de aviso em amarelo abaixo da faixa de opções.
+1. Observe a mensagem de aviso abaixo da faixa de opções.
 
     *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente neste laboratório.*
 
-    Para ignorar a mensagem de aviso, à direita da mensagem de aviso em amarelo, selecione **X**.
+    Para ignorar a mensagem de aviso, à direita da mensagem de aviso, selecione **X**.
 
-1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\PL300\MySolution**.
+1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\Allfiles\MySolution**.
 
 1. Caso precise aplicar as alterações, selecione **Aplicar Mais Tarde**.
 
@@ -89,7 +90,7 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
     - EmployeeKey
     - EmployeeNationalIDAlternateKey
-    - FirstName
+    - Nome
     - LastName
     - Título
     - EmailAddress
@@ -149,7 +150,7 @@ Nesta tarefa, você vai configurar a consulta **Product**.
     - ProductKey
     - EnglishProductName
     - StandardCost
-    - Color
+    - Cor
     - DimProductSubcategory
 
 1. Observe que a coluna **DimProductSubcategory** representa uma tabela relacionada (ela contém links **Valor**).
@@ -273,7 +274,7 @@ Nesta tarefa, você vai configurar a consulta **Vendas**.
 1. Na janela **Coluna Personalizada**, na caixa **Nome da Nova Coluna**, substitua o texto por **Cost**.
 
 1. Na caixa **Fórmula de Coluna Personalizada**, insira a seguinte expressão (após o símbolo de igualdade):
-    - *Para sua conveniência, copie a expressão do arquivo **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt**.*
+    - *Você pode copiar a expressão do arquivo **D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt**.*
     - *Essa expressõa testa se o valor **TotalProductCost** está ausente. Nesse caso, ele produz um valor multiplicando o valor de **OrderQuantity** pelo valor **StandardCost**;caso contrário, ele usa o valor de **TotalProductCost** existente.*
 
 
@@ -303,8 +304,8 @@ Nesta tarefa, você vai configurar a consulta **Vendas**.
     *O tipo de dados de número decimal fixo permite 19 dígitos e permite maior precisão para evitar erros de arredondamento. É importante usar o tipo de número decimal fixo para valores financeiros ou taxas (como taxas de câmbio).*
 
     - Preço Unitário
-    - Sales
-    - Cost
+    - Vendas
+    - Custo
 
 1. Na barra de status, confirme se a consulta tem 10 colunas e mais de 999 linhas.
 
@@ -455,7 +456,7 @@ Nesta tarefa, você concluirá o laboratório.
     - Product
     - Reseller
     - Region
-    - Sales
+    - Vendas
     - Destinos
     - ColorFormats (não será carregada no modelo de dados)
 
@@ -469,6 +470,6 @@ Nesta tarefa, você concluirá o laboratório.
 
      ![Figura 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
 *Você vai configurar as tabelas do modelo de dados e as relações no laboratório **Modelar Dados no Power BI Desktop**.*

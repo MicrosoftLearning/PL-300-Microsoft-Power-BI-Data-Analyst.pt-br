@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Criar Cálculos DAX no Power BI Desktop
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -33,17 +34,17 @@ Neste exercício, você criará duas tabelas calculadas. A primeira será a tabe
 
 1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
 
-1. Na janela **Abrir**, navegue para a pasta **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** e abra o arquivo **Análise de Vendas**.
+1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** e abra o arquivo **Análise de vendas**.
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
-1. Observe a mensagem de aviso em amarelo abaixo da faixa de opções.
+1. Observe a mensagem de aviso abaixo da faixa de opções.
 
     *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente neste laboratório.*
 
-    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso em amarelo, selecione **X**.*
+    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso, selecione **X**.*
 
-1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\PL300\MySolution**.
+1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\Allfiles\MySolution**.
 
 1. Caso precise aplicar as alterações, selecione **Aplicar Mais Tarde**.
 
@@ -61,7 +62,7 @@ A barra de fórmulas dá suporte à inserção de uma fórmula DAX válida. Ela 
 
 2. Na barra de fórmulas (que é aberta diretamente abaixo da faixa de opções ao criar ou editar cálculos), digite **Vendedor =**, pressione **Shift+Enter**, digite **"Vendedor (Desempenho)"** e pressione **Enter**.
 
-    *Para sua conveniência, todas as definições DAX deste laboratório podem ser copiadas do arquivo de snippets, localizado em **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+    *Para sua conveniência, todas as definições da DAX neste laboratório podem ser copiadas do arquivo de snippets, localizado em **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
 
      ![Imagem 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -105,7 +106,7 @@ Nesta tarefa, você criará a tabela **Data**.
 
 1. Alterne para a exibição Dados. Na guia de faixa de opções **Página Inicial**, no grupo **Cálculos**, selecione **Nova Tabela**.
 
-    ![Figura 5](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image15.png)
+    ![Imagem 5](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image15.png)
 
 1. Na barra de fórmulas, insira o seguinte código:
 
@@ -116,7 +117,7 @@ Nesta tarefa, você criará a tabela **Data**.
     CALENDARAUTO(6)
     ```
 
-    ![Figura 6](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image16.png)
+    ![Imagem 6](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image16.png)
 
 
     *A função CALENDARAUTO() retorna uma tabela de coluna única que consiste em valores de dados. O comportamento "automático" verifica todas as colunas de data do modelo de dados para determinar os valores de data mais antigos e mais recentes armazenados no modelo de dados. Em seguida, ele cria uma linha para cada data dentro desse intervalo, estendendo o intervalo em qualquer direção para garantir que anos completos de dados sejam armazenados.*
@@ -125,19 +126,19 @@ Nesta tarefa, você criará a tabela **Data**.
 
 1. Observe a coluna de valores de data.
 
-    ![Figura 7](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image17.png)
+    ![Imagem 7](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image17.png)
 
     *As datas mostradas são formatadas com as configurações regionais dos EUA (ou seja, mm/dd/aaaa).*
 
 5. No canto inferior esquerdo, na barra de status, observe as estatísticas de tabela, confirmando que foram geradas 1.826 linhas de dados, o que representa cinco anos completos de dados.
 
-    ![Figura 9](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image18.png)
+    ![Imagem 9](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image18.png)
 
 ## **Criar colunas calculadas**
 
 Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agrupamento por períodos diferentes. Você também criará uma coluna calculada para controlar a ordem de classificação de outras colunas.
 
-*Para sua conveniência, todas as definições DAX deste laboratório podem ser copiadas do arquivo de snippets, localizado em **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+*Para sua conveniência, todas as definições da DAX neste laboratório podem ser copiadas do arquivo de snippets, localizado em **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
 
 1. Na faixa de opções contextual **Ferramentas de Tabela**, no grupo **Cálculos**, selecione **Nova Coluna**.
 
@@ -263,17 +264,17 @@ Nesta tarefa, você concluirá o design da tabela **Data** ocultando uma coluna 
 
 Nesta tarefa, você marcará a tabela **Data** como uma tabela de data.
 
-1. Alterne para a exibição Relatório. No painel **Data**, selecione a tabela **Data** (não o campo **Data**).
+1. Alterne para a exibição de Relatório. No painel **Data**, selecione a tabela **Data** (não o campo **Data**).
 
 1. Na faixa de opções contextual **Ferramentas de Tabela**, no grupo **Calendários**, selecione **Marcar como Tabela de Data** e escolha **Marcar como Tabela de Data**.
 
-    ![Figura 8](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image32.png)
+    ![Imagem 8](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image32.png)
 
 1. Na janela **Marcar como Tabela de Data**, na lista suspensa **Coluna de Data**, selecione **Data**. Selecione **OK**.
 
     ![Figura 37](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image33.png)
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
     *O Power BI Desktop agora entende que essa tabela define data (hora). É importante quando se baseia em cálculos de inteligência de tempo. Você trabalhará com cálculos de inteligência de tempo no laboratório **Criar Cálculos DAX Avançados no Power BI Desktop**.*
 
@@ -428,7 +429,7 @@ Nesta tarefa, você criará mais medidas que usam fórmulas mais complexas.
 
 1. Use as definições de arquivo de snippets para criar as duas medidas a seguir para a tabela **s**:
 
-    - Variance
+    - Variação
     - Margem de variância
 
 1. Formate a medida de **Variância** para zero casas decimais.
@@ -455,6 +456,6 @@ Nesta tarefa, você criará mais medidas que usam fórmulas mais complexas.
 
 ### **Conclusão**
 
-Salve o arquivo do Power BI Desktop.
+Salve o arquivo do Power BI Desktop.
 
 *Você vai aprimorar o modelo de dados com cálculos mais avançados usando o DAX no laboratório **Criar cálculos DAX no Power BI Desktop**.*
