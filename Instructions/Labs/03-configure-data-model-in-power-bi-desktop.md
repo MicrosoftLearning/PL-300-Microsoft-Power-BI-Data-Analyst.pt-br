@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: "Criar um modelo de\_dados\_no Power BI"
   module: Design a Data Model in Power BI
 ---
@@ -31,11 +32,11 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório.
 
 1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
 
-1. Navegue até a pasta **D:\PL300\Labs\03-configure-data-model-in-power-bi-desktop\Starter** e selecione o arquivo **Análise de Vendas**.
+1. Navegue até a pasta **D:\Allfiles\Labs\03-create-dax-calculations-in-power-bi-desktop\Starter** e abra o arquivo **Análise de vendas**.
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
-1. Vá para **Arquivo > Salvar Como** e salve o arquivo na pasta **D:\PL300\MySolution**.
+1. Acesse **Arquivo > Salvar como** e salve o arquivo na pasta **D:\Allfiles\MySolution**.
 
 ## **Criar relações de modelo**
 
@@ -132,7 +133,7 @@ Nesta tarefa, você criará relações de modelo. O arquivo foi configurado para
 
      ![Categoria e números de vendas atualizados com novos relacionamentos.](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image20.png)
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
 ## **Configurar Tabelas**
 
@@ -189,7 +190,7 @@ Nesta tarefa, você vai configurar a tabela **Região**.
 1. Na tabela **Região**, crie uma hierarquia chamada **Regiões**, com estes três níveis:
 
      - Grupo
-     - País/Região
+     - País
      - Region
 
      ![Imagem 350](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image31.png)
@@ -286,7 +287,7 @@ Neste exercício, você alternará para a exibição de Relatório e examinará 
 
 Nesta tarefa, você alternará para visualização do Relatório e examinará a interface do modelo.
 
-1. Alterne para a exibição Relatório.
+1. Alterne para a exibição de Relatório.
 
 1. No painel **Data**, observe o seguinte:
 
@@ -336,7 +337,7 @@ Nesta tarefa, você criará duas medidas rápidas para calcular a margem de lucr
 
 1. Arraste o campo **Sales** para a caixa **Valor Base**.
 
-1. Arraste o campo **Cost** para a caixa **Valor para Subtrair**.
+1. Arraste o campo **Custo** para a caixa **Valor a subtrair**, depois selecione **Adicionar**.  
 
      ![Imagem 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
 
