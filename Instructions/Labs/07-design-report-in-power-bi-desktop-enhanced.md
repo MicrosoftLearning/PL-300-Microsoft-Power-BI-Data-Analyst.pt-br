@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Aprimorar um Relatório no Power BI Desktop
   module: Create Reports in Power BI desktop
 ---
@@ -54,17 +55,17 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório abrindo o rela
 
 1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
 
-1. Na janela **Abrir**, navegue para a pasta **D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e abra o arquivo **Análise de Vendas**.
+1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e abra o arquivo **Análise de Vendas**.
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
-1. Observe a mensagem de aviso em amarelo abaixo da faixa de opções.
+1. Observe a mensagem de aviso abaixo da faixa de opções.
 
     *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente neste laboratório.*
 
-    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso em amarelo, selecione **X**.*
+    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso, selecione **X**.*
 
-1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\PL300\MySolution**.
+1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\Allfiles\MySolution**.
 
 1. Caso precise aplicar as alterações, selecione **Aplicar Mais Tarde**.
 

@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Criar Cálculos DAX Avançados no Power BI Desktop
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -30,17 +31,17 @@ Neste laboratório, você aprenderá a:
 
 1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
 
-1. Na janela **Abrir**, navegue para a pasta **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** e abra o arquivo **Análise de Vendas**.
+1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** e abra o arquivo **Análise de Vendas**.
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
-1. Observe a mensagem de aviso em amarelo abaixo da faixa de opções. 
+1. Observe a mensagem de aviso abaixo da faixa de opções. 
 
     *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente neste laboratório.*
     
-    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso em amarelo, selecione **X**.*
+    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso, selecione **X**.*
 
-1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\PL300\MySolution**.
+1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\Allfiles\MySolution**.
 
 ## **Criar um visual de matriz**
 
@@ -90,7 +91,7 @@ Nesta tarefa, você criará várias medidas com expressões DAX que usam a funç
 
 1. Adicione uma medida à tabela **Vendas**, com base na seguinte expressão:
     
-     *Para sua conveniência, todas as definições DAX deste laboratório podem ser copiadas do arquivo **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt**.*
+     *Para sua conveniência, todas as definições DAX deste laboratório podem ser copiadas do arquivo **D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.tx**.*
 
 
     **DAX**
@@ -259,7 +260,7 @@ Nesta tarefa, você criará várias medidas com expressões DAX que usam a funç
 
     ![Figura 56](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image20.png)
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
 *As medidas adicionadas à tabela **Vendas** modificaram o contexto de filtros para alcançar a navegação hierárquica. Observe que o padrão para alcançar o cálculo de um subtotal requer a remoção de algumas colunas do contexto de filtro e, para chegar no total geral, todas as colunas devem ser removidas.*
 
@@ -388,7 +389,7 @@ Nesta tarefa, você concluirá o laboratório.
 
 1. Na página restante, para desmarcá-la, selecione o visual de tabela e clique na tecla **Delete**.
 
-1. Salve o arquivo do Power BI Desktop.
+1. Salve o arquivo do Power BI Desktop.
 
 1. Se você pretende iniciar o próximo laboratório, mantenha o Power BI Desktop aberto.
 
