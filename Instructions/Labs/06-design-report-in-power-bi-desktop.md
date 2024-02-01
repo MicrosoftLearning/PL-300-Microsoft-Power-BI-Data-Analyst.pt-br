@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Criar um Relatório no Power BI Desktop
   module: Create Reports in Power BI Desktop
 ---
@@ -24,9 +25,9 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório abrindo o rela
 
 1. No Power BI Desktop, navegue até **Arquivo** > **Abrir relatório** > **Navegar nos Relatórios**.
 
-1. Abra o arquivo **Análise de Vendas** na pasta **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter**.
+1. Abra o arquivo **Análise de vendas** na pasta **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter**.
 
-1. Crie uma cópia do arquivo indo para **Arquivo** > **Salvar Como** e salve a cópia na pasta **D:\PL300\MySolution**.
+1. Crie uma cópia do arquivo acessando **Arquivo** > **Salvar como**e salve a cópia na pasta **D:\Allfiles\MySolution**.
 
 ## **Página de design 1**
 
@@ -42,7 +43,7 @@ Nesta tarefa, você criará a primeira página de relatório. Quando você tiver
 
     ![Figura 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-1. Na janela **Abrir**, navegue até a pasta **D:\PL300\Recursos**.
+1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Resources**.
 
 1. Selecione o arquivo **AdventureWorksLogo.jpg** e escolha **Abrir**.
 
