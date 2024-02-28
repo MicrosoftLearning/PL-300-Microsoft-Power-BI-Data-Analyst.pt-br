@@ -38,7 +38,7 @@ Neste exercício, você criará duas tabelas calculadas. A primeira será a tabe
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
-1. Observe a mensagem de aviso abaixo da faixa de opções.
+1. Observe a mensagem de aviso abaixo da faixa de opções.
 
     *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente neste laboratório.*
 
