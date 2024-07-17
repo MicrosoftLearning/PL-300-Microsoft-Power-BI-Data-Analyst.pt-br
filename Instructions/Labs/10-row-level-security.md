@@ -29,11 +29,11 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório.
 
     ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Dica: por padrão, a caixa de diálogo Introdução é aberta na frente do Power BI Desktop. **Entre** e feche o pop-up.*
-
-1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
+1. Para abrir o arquivo inicial do Power BI Desktop, slecione **Abrir > Procurar neste dispositivo**.
 
 1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\10 linha-level-security\Starter** e abra o arquivo **Análise de Vendas**.
+
+   *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
@@ -49,7 +49,7 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório.
 
 Nesta tarefa, você vai impor a segurança em nível de linha para garantir que um vendedor só possa ver as vendas feitas nas regiões atribuídas a ele.
 
-1. Alterne para a exibição Dados.
+1. Alternar para a exibição de Tabela.
 
    ![Imagem 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
@@ -60,27 +60,35 @@ Nesta tarefa, você vai impor a segurança em nível de linha para garantir que 
     
     *Você deve se lembrar que Michael Blythe foi atribuído a três regiões de vendas: Nordeste dos EUA, EUA Central e Sudeste dos EUA.*
 
-1. Na guia da faixa de opções **Modelagem**, no grupo **Segurança**, selecione **Gerenciar Funções**.
+1. Na guia de faixa de opções **Página inicial**, no grupo **Segurança**, selecione **Gerenciar Funções**.
 
     ![Imagem 5700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-1. Na janela **Gerenciar Funções**, selecione **Criar**.
+1. Na janela **Gerenciar funções de segurança**, na seção **Funções**, clique em **Novo**.
 
 1. Na caixa, substitua o texto selecionado pelo nome da função: **Vendedores** e pressione **Enter**.
 
    ![Imagem 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-1. Para atribuir um filtro à tabela **Vendedor (Desempenho)**, selecione o caractere de reticências (…) e **Adicionar Filtro \| [UPN]**.
+1. Para atribuir um filtro, clique na tabela **Vendedor (Desempenho)** e, em seguida, selecione **Alternar para o editor DAX** na seção **Filtrar dados**.
 
-   ![Imagem 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
+   ![Captura de tela 18-04-2024 144345](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/1308d47f-2cca-4f88-9237-b02b66b4cf1e)
 
-1. Na caixa **Expressão DAX de Filtro de Tabela**, modifique a expressão substituindo **"Valor"** por **USERPRINCIPALNAME()** e **Salve**.
+1. No editor do DAX, digite a expressão a seguir:
+
+    **DAX**
+
+    ```
+    [UPN] = USERPRINCIPALNAME()
+    ```
     
     *USERPRINCIPALNAME() é uma função DAX (Data Analysis Expressions) que retorna o nome do usuário autenticado. Isso significa que a tabela **Vendedor (Desempenho)** será filtrada pelo UPN (Nome Principal do Usuário) do usuário que está consultando o modelo.*
 
    ![Figura 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
-1. Para testar a função de segurança, na guia de faixa de opções **Modelagem**, no grupo **Segurança**, selecione **Exibir como**.
+1. Selecione **Salvar** e **Fechar**.
+
+1. Para testar a função de segurança, na guia de faixa de opções **Página inicial**, no grupo **Segurança**, selecione **Exibir como**.
 
    ![Imagem 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
@@ -104,13 +112,13 @@ Nesta tarefa, você vai impor a segurança em nível de linha para garantir que 
 
    ![Imagem 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-1. Para excluir a função **Vendedores**, na guia da faixa de opções **Modelagem**, no grupo **Segurança**, selecione **Gerenciar Funções**.
+1. Para excluir a função **Vendedor**, na guia de faixa de opções **Página Inicial**, no grupo **Segurança**, selecione **Gerenciar Funções**.
 
    ![Figura 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-1. Na janela **Gerenciar Funções**, selecione **Excluir**. Quando precisar confirmar a exclusão, selecione **Sim, Excluir**.
+1. Na janela **Gerenciar funções de segurança**, clique nas reticências (...) na função **Vendedor** e clique em **Excluir**. Quando precisar confirmar a exclusão, selecione **Sim, Excluir**.
 
-   ![Figura 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+   ![Captura de tela 18-04-2024 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
 ### **Conclusão**
 

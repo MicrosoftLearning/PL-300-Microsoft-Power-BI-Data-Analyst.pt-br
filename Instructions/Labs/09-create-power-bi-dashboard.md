@@ -87,7 +87,7 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
 
     ![Imagem 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
-1. Selecione uma das perguntas sugeridas abaixo da caixa de Perguntas e Respostas, nas caixas azuis, e analise a resposta.
+1. Selecione uma das perguntas sugeridas abaixo da caixa de P e R e analise a resposta.
 
 1. Remova todo o texto da caixa de Perguntas e Respostas e digite o seguinte: **Vendas YTD**
 
@@ -121,7 +121,7 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
     
     *Você pode inserir uma imagem usando a URL dela ou uma URL de dados, que insere o conteúdo embutido.*
 
-1. Para redimensionar o bloco do logotipo, arraste o canto inferior direito e redimensione o bloco até que ele tenha uma unidade de largura e duas de altura.
+1. Para redimensionar o bloco do logotipo, arraste o canto inferior direito e redimensione o bloco até que ele tenha uma unidade de largura e uma de altura.
     
     *Os tamanhos dos blocos são limitados a uma forma retangular.*
 

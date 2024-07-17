@@ -23,9 +23,11 @@ Neste laboratório, você aprenderá a:
 
 Nesta tarefa, você vai configurar o ambiente para o laboratório abrindo o relatório inicial.
 
-1. No Power BI Desktop, navegue até **Arquivo** > **Abrir relatório** > **Navegar nos Relatórios**.
+1. No Power BI Desktop, navegue até **Abrir > Procurar neste dispositivo**.
 
 1. Abra o arquivo **Análise de vendas** na pasta **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter**.
+
+   *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
 
 1. Crie uma cópia do arquivo acessando **Arquivo** > **Salvar como**e salve a cópia na pasta **D:\Allfiles\MySolution**.
 
@@ -172,7 +174,7 @@ Nesta tarefa, você criará a segunda página de relatório. Quando você tiver 
 
 1. Adicione uma segmentação com base no campo **Região \| Região**.
 
-1. Use o painel **Formatar** para habilitar a opção "Selecionar Tudo" (no grupo **Seleção**).
+1. Use o painel **Formatar** para habilitar a opção "Selecionar Tudo" (no grupo **Configurações de segmentação > Seleção**).
 
 1. Redimensione e posicione a segmentação de modo que ela fique no lado esquerdo da página do relatório e, portanto, tenha cerca de metade da altura da página.
 
@@ -191,8 +193,8 @@ Nesta tarefa, você criará a segunda página de relatório. Quando você tiver 
      - Pedidos (da pasta **Contagens**)
      - Vendas
      - Custo
-     - Lucro
-     - Margem de Lucro
+     - Lucro (na pasta **Preços**)
+     - Margem de lucro (na pasta **Preços**)
 
      ![Imagem 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
@@ -315,9 +317,9 @@ Nesta tarefa, você vai explorar o relatório publicado no Power BI.
 
 1. Na janela do navegador do Microsoft Edge, no serviço do Power BI, no painel **Navegação** (localizado à esquerda, possivelmente recolhido), expanda **Meu Workspace**.
 
-    ![Imagem 93](Linked_image_Files/06-my-workspace-new.png)
+    ![Captura de tela 18-04-2024 101424](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/346415bc-e559-4559-84b5-ef3a1f808461)
 
-1. Revise o conteúdo do workspace. Observe as opções de navegação de Todos, Conteúdo e Modelos semânticos + fluxos de dados.
+1. Revise o conteúdo do workspace.
     1. *Pode existir quatro tipos de itens em um workspace, e falaremos sobre **relatórios** e **modelos semânticos**.*
     1. *Talvez seja necessário atualizar o navegador Microsoft Edge se o modelo semântico não estiver visível.*
     1. *Quando você publicou o arquivo do Power BI Desktop, o modelo de dados foi publicado como um modelo semântico.*

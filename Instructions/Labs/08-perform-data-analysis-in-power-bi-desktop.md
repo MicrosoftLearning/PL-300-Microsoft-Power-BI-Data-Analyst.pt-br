@@ -65,11 +65,11 @@ Nesta tarefa, você criará uma conexão dinâmica real com o modelo semântico 
 
     *Importante: se você já tem o Power BI Desktop aberto (de um laboratório anterior), feche essa instância.*
 
-    *Dica: por padrão, a caixa de diálogo Introdução é aberta na frente do Power BI Desktop. Você pode optar por entrar e, em seguida, fechar o pop-up.*
+1. Criar um novo relatório.
 
-1. Na faixa de opções da Página Inicial, selecione **Obter dados > Modelos semânticos do Power BI**.
+1. Na faixa de opções da Página Inicial, selecione **Hub de dados do OneLake > Modelos semânticos do Power BI**.
 
-1. Na janela **Hub de dados**, selecione o modelo semântico da **Análise de Vendas** em **Meu Workspace** e **Conectar** ou clique duas vezes para carregar o modelo semântico.
+1. Na janela **Hub de dados do OneLake**, selecione o modelo semântico da **Análise de Vendas** em **Meu Espaço de Trabalho** e, em seguida, **Conectar** ou clique duas vezes para carregar o modelo semântico.
 
 1. Navegue até **Arquivo > Salvar** e salve o nome do arquivo como **Exploração de Vendas** na pasta **D:\Allfiles\MySolution**.
 
