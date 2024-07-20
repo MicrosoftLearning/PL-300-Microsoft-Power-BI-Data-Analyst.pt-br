@@ -28,11 +28,11 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório.
 
     ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Dica: por padrão, a caixa de diálogo Introdução é aberta na frente do Power BI Desktop. Você pode optar por entrar e, em seguida, fechar o pop-up.*
-
-1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
+1. Para abrir o arquivo inicial do Power BI Desktop, slecione **Abrir > Procurar neste dispositivo**.
 
 1. Navegue até a pasta **D:\Allfiles\Labs\03-create-dax-calculations-in-power-bi-desktop\Starter** e abra o arquivo **Análise de vendas**.
+
+   *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
@@ -76,7 +76,7 @@ Nesta tarefa, você criará relações de modelo. O arquivo foi configurado para
 
 1. Para criar uma relação, escolha **Nova**.
 
-1. Na janela **Criar Relação**, na primeira lista suspensa, selecione a tabela **Product**.
+1. Na janela **Nova Relação**, na primeira lista suspensa, selecione a tabela **Produto**.
 
      ![Imagem 333](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image16.png)
 
@@ -247,7 +247,7 @@ Nesta tarefa, você vai configurar a tabela **Vendas**.
 
 Nessa tarefa, você atualizará várias colunas em uma única atualização em massa. Você usará essa abordagem para ocultar colunas e formatar valores de coluna.
 
-1. No painel **Data**, selecione a coluna **Produto \| ProductKey**.
+1. No painel **Dados** da **exibição Modelo** > , clique na coluna **ProductKey \| do Produto**.
 
 1. Ao pressionar a tecla **Ctrl**, selecione estas 13 colunas (abrangendo várias tabelas):
 
@@ -378,8 +378,6 @@ Nesta tarefa, você criará duas medidas rápidas para calcular a margem de lucr
 ## **Criar um relacionamento muitos-para-muitos**
 
 Nesta tarefa, você criará uma relação muitos para muitos entre as tabelas **Vendedores** e **Vendas**.
-
- *Os laboratórios usam uma notação taquigráfica para fazer referência a um campo. Vai ficar assim: **Vendedores \| Vendedores**. Neste exemplo, **Vendedores** é o nome da tabela e **Vendedor** é o nome do campo.*
 
 1. No Power BI Desktop, na exibição de Relatório e no painel **Dados**, marque estes dois campos para criar um visual de **tabela**.
 

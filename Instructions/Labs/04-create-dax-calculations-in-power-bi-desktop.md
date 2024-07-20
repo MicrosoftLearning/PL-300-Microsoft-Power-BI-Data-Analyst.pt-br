@@ -30,11 +30,11 @@ Neste exercício, você criará duas tabelas calculadas. A primeira será a tabe
 
     ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Dica: por padrão, a caixa de diálogo Introdução é aberta na frente do Power BI Desktop. Você pode optar por entrar e, em seguida, fechar o pop-up.*
-
-1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
+1. Para abrir o arquivo inicial do Power BI Desktop, slecione **Abrir > Procurar neste dispositivo**.
 
 1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** e abra o arquivo **Análise de vendas**.
+
+   *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
@@ -70,7 +70,7 @@ A barra de fórmulas dá suporte à inserção de uma fórmula DAX válida. Ela 
 
      *Dica: você é incentivado a inserir "espaço em branco" (ou seja, retornos de carro e guias) para escrever fórmulas em um formato intuitivo e fácil de ler, especialmente quando as fórmulas são longas e complexas. Para inserir um retorno de carro, pressione **Shift+Enter**. "Espaço em branco" é opcional.*
 
-1. No painel **Dados**, observe que o ícone de tabela tem um tom de azul (indicando uma tabela calculada).
+1. No painel **Dados**, observe que o ícone de tabela tem um ícone de calculadora adicional na frente dele (indicando uma tabela calculada).
 
     ![Figura 10](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image11.png)
 
@@ -104,7 +104,7 @@ A barra de fórmulas dá suporte à inserção de uma fórmula DAX válida. Ela 
 
 Nesta tarefa, você criará a tabela **Data**.
 
-1. Alterne para a exibição Dados. Na guia de faixa de opções **Página Inicial**, no grupo **Cálculos**, selecione **Nova Tabela**.
+1. Alternar para a exibição de Tabela. Na guia de faixa de opções **Página Inicial**, no grupo **Cálculos**, selecione **Nova Tabela**.
 
     ![Imagem 5](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image15.png)
 
@@ -201,7 +201,7 @@ Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agru
 
     *Por padrão, os valores de texto são classificados em ordem alfabética, os números são classificados do menor para o maior, e as datas são classificadas da mais antiga para a mais recente.*
 
-1. Para personalizar a ordem de classificação do campo **Mês**, alterne para a exibição Dados.
+1. Para personalizar a ordem de classificação do campo **Mês**, alterne para a exibição Tabela.
 
 1. Adicione a coluna **ChaveMês** à tabela **Data**.
 
@@ -217,7 +217,7 @@ Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agru
 
     *Essa fórmula calcula um valor numérico para cada combinação de ano/mês.*
 
-1. Na exibição Dados, verifique se a nova coluna contém valores numéricos (por exemplo, 201707 para julho de 2017 etc.).
+1. Na exibição Tabela, verifique se a nova coluna contém valores numéricos (por exemplo, 201707 para julho de 2017 etc.).
 
     ![Figura 21](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image28.png)
 
@@ -242,7 +242,6 @@ Nesta tarefa, você concluirá o design da tabela **Data** ocultando uma coluna 
 
 1. Renomeie a hierarquia recém-criada para **Fiscal** clicando com o botão direito do mouse e em **Renomear**.
 
-
 1. Adicione os dois campos restantes a seguir à hierarquia Fiscal selecionando-os no painel **Data**, clicando com o botão direito do mouse e selecionando **Adicionar à hierarquia** -> **Fiscal**.
 
     - Trimestre
@@ -255,6 +254,8 @@ Nesta tarefa, você concluirá o design da tabela **Data** ocultando uma coluna 
     - **Data \| Data** para **Vendas \| OrderDate**
     - **Data \| Data** para **Destinos \| TargetMonth**
 
+    *Os laboratórios usam uma notação abreviada para fazer referência a um campo. Ficará assim: **Vendas \| Preço Unitário**. Neste exemplo, **Vendas** é o nome da tabela e **Preço Unitário** é o nome do campo.*
+
 1. Oculte estas duas colunas:
 
     - Vendas \| OrderDate
@@ -266,13 +267,11 @@ Nesta tarefa, você marcará a tabela **Data** como uma tabela de data.
 
 1. Alterne para a exibição de Relatório. No painel **Data**, selecione a tabela **Data** (não o campo **Data**).
 
-1. Na faixa de opções contextual **Ferramentas de Tabela**, no grupo **Calendários**, selecione **Marcar como Tabela de Data** e escolha **Marcar como Tabela de Data**.
+1. Na faixa de opções contextual **Ferramentas de Tabela**, dentro do grupo **Calendários**, clique em **Marcar como Tabela de Data**.
 
-    ![Imagem 8](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image32.png)
+1. Na janela **Marcar como uma tabela de data**, arraste a propriedade **Marcar como uma tabela de data** para **Sim** e, na lista suspensa **Escolher uma coluna de data**, selecione **Data**. Selecione **Salvar**.
 
-1. Na janela **Marcar como Tabela de Data**, na lista suspensa **Coluna de Data**, selecione **Data**. Selecione **OK**.
-
-    ![Figura 37](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image33.png)
+    ![Captura de tela 17-04-2024 164626](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/f316c96a-404d-4618-9bee-f12b0868ad01)
 
 1. Salve o arquivo do Power BI Desktop.
 
@@ -285,8 +284,6 @@ Nesta tarefa, você marcará a tabela **Data** como uma tabela de data.
 Nesta tarefa, você criará medidas simples. Medidas simples agregam valores em uma única coluna ou contam linhas de uma tabela.
 
 1. Na exibição Relatório, na **Página 2**, no painel **Data**, arraste o campo **Vendas \| Preço Unitário** no visual da matriz.
-
-    *Os laboratórios usam uma notação abreviada para fazer referência a um campo. Ficará assim: **Vendas \| Preço Unitário**. Neste exemplo, **Vendas** é o nome da tabela e **Preço Unitário** é o nome do campo.*
 
     ![Figura 27](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image35.png)
 
@@ -443,10 +440,6 @@ Nesta tarefa, você criará mais medidas que usam fórmulas mais complexas.
     ![Figura 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
 
     *Embora pareça que todos os vendedores não estão cumprindo a meta, lembre-se de que o visual da tabela ainda não foi filtrado por um período de tempo específico. Você produzirá relatórios de desempenho de vendas que filtram por um período de tempo selecionado pelo usuário no laboratório **Criar um Relatório no Power BI Desktop**.*
-
-1. No canto superior direito do painel **Dados**, recolha e então expanda o painel.
-
-    *Recolher e reabrir o painel redefine o conteúdo.*
 
 1. Observe que a tabela **Destinos** agora aparece na parte superior da lista.
 

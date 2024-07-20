@@ -51,11 +51,11 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório abrindo o rela
 
     ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Dica: por padrão, a caixa de diálogo Introdução é aberta na frente do Power BI Desktop. Você pode optar por entrar e, em seguida, fechar o pop-up.*
-
-1. Para abrir o arquivo inicial do Power BI Desktop, selecione **Arquivo > Abrir Relatório > Procurar Relatórios**.
+1. Para abrir o arquivo inicial do Power BI Desktop, slecione **Abrir > Procurar neste dispositivo**.
 
 1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e abra o arquivo **Análise de Vendas**.
+
+   *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
 
 1. Feche todas as janelas informativas que possam ser abertas.
 
@@ -97,7 +97,7 @@ Nesta tarefa, você sincronizará as segmentações **Ano** e **Região**, conti
 
 1. Teste a sincronização das segmentações selecionando opções de filtro diferentes e verificando se as segmentações sincronizadas são filtradas pela mesma seleção.
 
-1. Para fechar a página **Sincronizar Segmentação**, selecione o **X** localizado no canto superior direito do painel.
+1. Para fechar a página **Segmentação de sincronização**, selecione a opção **Segmentação de sincronização** localizada na guia de faixa de opções **Exibir**.
 
 ## **Configurar detalhamento**
 
