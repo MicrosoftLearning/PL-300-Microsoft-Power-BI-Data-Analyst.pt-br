@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Introdução à análise de dados da Microsoft
   module: Get started with Microsoft data analytics
 ---

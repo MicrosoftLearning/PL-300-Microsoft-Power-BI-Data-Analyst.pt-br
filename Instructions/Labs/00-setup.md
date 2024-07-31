@@ -1,6 +1,5 @@
 ---
 lab:
-  course: 'PL-300, DP-605'
   title: Configurar seu próprio ambiente
   module: Set up your own environment
 ---
