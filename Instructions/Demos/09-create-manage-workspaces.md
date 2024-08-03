@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Criar e gerenciar workspaces no Power BI
   module: Deploy and manage Power BI service items
 ---

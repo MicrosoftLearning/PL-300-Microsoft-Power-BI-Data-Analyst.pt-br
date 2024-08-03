@@ -1,14 +1,12 @@
 ---
 lab:
-  course: 'PL-300, DP-605'
   title: Criar um Relatório no Power BI Desktop
   module: Create Reports in Power BI Desktop
 ---
 
-
 # Criar um Relatório no Power BI Desktop
 
-## **História do laboratório**
+## História do laboratório
 
 Neste laboratório, você criará um relatório de três páginas. Você então publicará o relatório no Power BI, onde será possível abri-lo e interagir com ele.
 
@@ -19,33 +17,34 @@ Neste laboratório, você aprenderá a:
 
 **Este laboratório levará aproximadamente 45 minutos.**
 
-## **Criar um Relatório**
+## Introdução
 
-Nesta tarefa, você vai configurar o ambiente para o laboratório abrindo o relatório inicial.
+Para concluir este exercício, primeiro abra um navegador da Web e insira a seguinte URL para baixar a pasta zip:
 
-1. No Power BI Desktop, navegue até **Abrir > Procurar neste dispositivo**.
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/06-design-report-in-power-bi-desktop/06-design-report.zip`
 
-1. Abra o arquivo **Análise de vendas** na pasta **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter**.
 
-   *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
+Extraia a pasta para a pasta **C:\Users\Student\Downloads\06-design-report**.
 
-1. Crie uma cópia do arquivo acessando **Arquivo** > **Salvar como**e salve a cópia na pasta **D:\Allfiles\MySolution**.
+Abra o arquivo **06-Starter-Sales Analysis.pbix**.
 
-## **Página de design 1**
+> ***Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**.*
 
-Nesta tarefa, você criará a primeira página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
+## Página de design 1
+
+Neste exercício, você criará a primeira página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
 ![Imagem da página 1, composta por um logotipo, duas segmentações de dados e três elementos visuais.](Linked_image_Files/06-finished-report-page.png)
 
 1. No Power BI Desktop, para renomear a página, no canto inferior esquerdo, clique com o botão direito do mouse na **Página 1** e, em seguida, **Renomeie** a página como **Visão Geral**.
 
-    *Dica: você também pode clicar duas vezes no nome da página.*
+    > *Dica: você também pode clicar duas vezes no nome da página.*
 
 1. Para adicionar uma imagem, na guia de faixa de opções **Inserir**, no grupo **Elementos**, selecione **Imagem**.
 
     ![Figura 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Resources**.
+1. Na janela **Abrir**, navegue até a pasta **C:\Usuários\Estudante\Downloads\06-design-report**.
 
 1. Selecione o arquivo **AdventureWorksLogo.jpg** e escolha **Abrir**.
 
@@ -58,8 +57,8 @@ Nesta tarefa, você criará a primeira página de relatório. Quando você tiver
      ![Figura 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
 
 1. No painel **Data**, arraste o campo **Data \| Ano** (não o nível da hierarquia **Ano**) na segmentação **Campo** no painel Visualizações.
-    
-    *Os laboratórios usam uma notação taquigráfica para fazer referência a um campo. Ficará assim: **Data \| Ano**. Neste exemplo, **Data** é o nome da tabela e **Ano** é o nome do campo.*
+
+    > *Os laboratórios usam uma notação taquigráfica para fazer referência a um campo. Ficará assim: **Data \| Ano**. Neste exemplo, **Data** é o nome da tabela e **Ano** é o nome do campo.*
 
 1. Para converter a segmentação de dados de uma lista suspensa, navegue até **Visualizações > Formatar visual > Visual > Configurações da segmentação > Estilo** e, em seguida, selecione **Lista Suspensa** no menu suspenso.
 
@@ -70,7 +69,7 @@ Nesta tarefa, você criará a primeira página de relatório. Quando você tiver
      ![Figura 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
 
 1. Na segmentação **Ano**, abra a lista suspensa, selecione **FY2020** e, em seguida, feche a lista suspensa.
-    1. *Agora a página de relatório é filtrada pelo ano **FY2020**.*
+    > *Agora a página de relatório é filtrada pelo ano **FY2020**.*
 
      ![Figura 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
 
@@ -94,12 +93,12 @@ Nesta tarefa, você criará a primeira página de relatório. Quando você tiver
 
 1. Arraste e solte os seguintes campos para o visual:
 
-     - Data \| Mês
-     - Vendas \| Vendas
+     - **Data \| Mês**
+     - **Vendas \| Vendas**
 
 1. No painel de campos visuais (localizado abaixo do painel **Visualizações**), observe que os campos são atribuídos às caixas/áreas do **eixo X** e do **eixo Y da coluna**.
-    
-    *Ao arrastar campos para um visual, eles serão adicionados a campos/áreas padrão. Para precisão, você pode arrastar campos diretamente para as caixas/áreas, como fará a seguir.*
+
+    > *Ao arrastar campos para um visual, eles serão adicionados a campos/áreas padrão. Para precisão, você pode arrastar campos diretamente para as caixas/áreas, como fará a seguir.*
 
      ![Figura 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
@@ -108,12 +107,12 @@ Nesta tarefa, você criará a primeira página de relatório. Quando você tiver
      ![Imagem 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
 1. Observe que o visual tem apenas 11 meses.
-    
-    *O último mês do ano, junho de 2020, não tem vendas (ainda). Por padrão, o visual eliminou meses com vendas em BRANCO. Agora você configurará o visual para mostrar todos os meses.*
+
+    > *O último mês do ano, junho de 2020, não tem vendas (ainda). Por padrão, o visual eliminou meses com vendas em BRANCO. Agora você configurará o visual para mostrar todos os meses.*
 
 1. No painel campos do visual, na caixa/área **Eixo X**, para o campo **Mês**, escolha a seta para baixo e selecione **Mostrar Itens Sem Dados**.
-    
-    *Observe que o mês de **junho de 2020** aparece agora.*
+
+    > *Observe que o mês de **junho de 2020** aparece agora.*
 
      ![Figura 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -162,13 +161,13 @@ Nesta tarefa, você criará a primeira página de relatório. Quando você tiver
 
 *O design da primeira página agora está concluído.*
 
-## **Página de design 2**
+## Página de design 2
 
-Nesta tarefa, você criará a segunda página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
+Neste exercício, você criará a segunda página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
  ![Imagem da página 2, composta por uma segmentação de dados e matriz.](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
-*Importante: Quando instruções detalhadas já foram fornecidas nos laboratórios, as etapas do laboratório fornecerão instruções mais concisas. Se você precisar das instruções detalhadas, você pode consultar outras tarefas neste laboratório.*
+> ***Importante**: quando as instruções detalhadas já tiverem sido fornecidas nos laboratórios, as etapas do laboratório fornecerão instruções mais concisas. Caso precise das instruções detalhadas, veja novamente as outras tarefas deste laboratório.*
 
 1. Para criar uma nova página, no canto inferior esquerdo, selecione o ícone de adição e renomeie a nova página como **Lucro**.
 
@@ -190,11 +189,12 @@ Nesta tarefa, você criará a segunda página de relatório. Quando você tiver 
 
 1. Adicione os cinco campos de tabela **Vendas** seguintes à caixa/área **Valores**:
 
-     - Pedidos (da pasta **Contagens**)
-     - Vendas
-     - Custo
-     - Lucro (na pasta **Preços**)
-     - Margem de lucro (na pasta **Preços**)
+     - **Pedidos** (da pasta **Contagens**)
+     - **Sales**
+     - **Custo**
+     - **Lucro** (na pasta **Preços**)
+     - **Margem de lucro** (na pasta **Preços**)
+
 
      ![Imagem 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
@@ -203,26 +203,26 @@ Nesta tarefa, você criará a segunda página de relatório. Quando você tiver 
      ![Figura 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
 1. No painel **Dados**, arraste o campo **Produto \| Categoria** para a caixa/área **Filtrar Nesta Página**.
-    
-    *Os campos adicionados ao painel **Filtros** podem obter o mesmo resultado que uma segmentação de dados. Uma diferença é que eles não ocupam espaço na página do relatório. Outra diferença é que eles podem ser configurados para atender a requisitos de filtragem mais sofisticados.*
+
+    > *Os campos adicionados ao painel **Filtros** podem obter o mesmo resultado que uma segmentação de dados. Uma diferença é que eles não ocupam espaço na página do relatório. Outra diferença é que eles podem ser configurados para atender a requisitos de filtragem mais sofisticados.*
 
 1. No cartão de filtro, no canto superior direito, selecione a seta para recolher o cartão.
 
 1. Adicione cada um dos seguintes campos da tabela **Produto** à caixa/área **Filtrar Nesta Página**, recolhendo cada um, diretamente abaixo do cartão **Categoria**:
 
-     - Subcategoria
-     - Product
-     - Cor
+     - **Subcategoria**
+     - **Product**
+     - **Cor**
 
      ![Figura 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
 
 1. Salve o arquivo do Power BI Desktop.
 
- *O design da segunda página agora está concluído.*
+*O design da segunda página agora está concluído.*
 
-## **Página de design 3**
+## Página de design 3
 
-Nesta tarefa, você criará a terceira e última página do relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
+Neste exercício, você criará a terceira, e última, página do relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
  ![Imagem da página 3, composta por uma segmentação de dados e três elementos visuais.](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -250,10 +250,10 @@ Nesta tarefa, você criará a terceira e última página do relatório. Quando v
 
 1. Adicione os quatro seguintes campos ao visual:
 
-     - Vendas \| Vendas
-     - Metas \| Meta
-     - Metas \| Variância
-     - Metas \| Margem de Variância
+     - **Vendas \| Vendas**
+     - **Metas \| Meta**
+     - **Metas \| Variância**
+     - **Metas \| Margem de Variância**
 
 1. Formatar o Visual:
 
@@ -284,45 +284,47 @@ Nesta tarefa, você criará a terceira e última página do relatório. Quando v
 
 1. Para modificar o tipo de visualização, no painel **Visualizações**, selecione **Gráfico de Colunas em Cluster**.
 
+     > *Agora é possível ver os mesmos dados expressos por dois tipos de visualização diferentes.*
+
      ![Figura 61](Linked_image_Files/07-design-report-in-power-bi-desktop_image58.png)
 
- *Agora é possível ver os mesmos dados expressos por dois tipos de visualização diferentes. Esse não é um bom uso do layout de página, no entanto, você o aprimorará no laboratório **Aprimorar um Relatório no Power BI Desktop** sobrepondo os elementos visuais. Ao adicionar botões à página, você permitirá que o usuário do relatório determine qual dos dois elementos visuais está visível.*
+ *O design da página final foi concluído.*
 
- *Agora, o design da terceira página (a final também) está completo.*
+## Publicar e explorar o relatório
 
-## **Publicar o relatório**
+Neste exercício, você publicará o relatório no serviço do Power BI e explorará o comportamento do relatório publicado.
 
-Nesta tarefa, você vai publicar o relatório no serviço do Power BI.
+> **Observação**: você pode examinar o restante do exercício, mesmo que não tenha acesso ao serviço online do Power BI para executar as tarefas diretamente.
 
 1. Selecione a página **Visão geral** e salve o arquivo do Power BI Desktop.
 
 1. Na guia de faixa de opções **Página Inicial**, no grupo **Compartilhar**, selecione **Publicar**.
-    
-    *Se você já entrou no Power BI Desktop, não precisa entrar novamente para publicar.*
+
+    > *Se você já entrou no Power BI Desktop, não precisa entrar novamente para publicar.*
 
      ![Imagem 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
 
 1. Na janela **Publicar no Power BI**, observe que **Meu Workspace** está selecionado.
-    
-    *Não entraremos em detalhes sobre os diferentes itens dentro do serviço do Power BI neste laboratório.*
 
-1. Para publicar o relatório, escolha **Selecionar**. Isso pode demorar alguns instantes. 
+    > *Não entraremos em detalhes sobre os diferentes itens dentro do serviço do Power BI neste laboratório.*
+
+1. Para publicar o relatório, escolha **Selecionar**. Isso pode demorar alguns instantes.
+
 1. Quando a publicação for bem-sucedida, selecione **Entendi**.
 
-## **Explorar o relatório**
-
-Nesta tarefa, você vai explorar o relatório publicado no Power BI.
-
-1. Abra um navegador Microsoft Edge e entre em **https://app.powerbi.com**.
+1. Abra um navegador Microsoft Edge e entre em `https://app.powerbi.com`.
 
 1. Na janela do navegador do Microsoft Edge, no serviço do Power BI, no painel **Navegação** (localizado à esquerda, possivelmente recolhido), expanda **Meu Workspace**.
 
     ![Captura de tela 18-04-2024 101424](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/346415bc-e559-4559-84b5-ef3a1f808461)
 
 1. Revise o conteúdo do workspace.
-    1. *Pode existir quatro tipos de itens em um workspace, e falaremos sobre **relatórios** e **modelos semânticos**.*
-    1. *Talvez seja necessário atualizar o navegador Microsoft Edge se o modelo semântico não estiver visível.*
-    1. *Quando você publicou o arquivo do Power BI Desktop, o modelo de dados foi publicado como um modelo semântico.*
+
+    - Pode existir quatro tipos de itens em um workspace, e falaremos sobre **relatórios** e **modelos semânticos**.
+
+    - Talvez seja necessário atualizar o navegador Microsoft Edge se o modelo semântico não estiver visível.
+
+    - Quando você publicou o arquivo do Power BI Desktop, o modelo de dados foi publicado como um modelo semântico.
 
 1. Para explorar o relatório, selecione o relatório **Análise de Vendas**.
 
@@ -334,21 +336,21 @@ Nesta tarefa, você vai explorar o relatório publicado no Power BI.
 
 1. Enquanto pressiona a tecla **Ctrl**, selecione outro mês.
 
-     *Observação: por padrão, a filtragem cruzada filtra os outros visuais da página.*
+     > *Observação: por padrão, a filtragem cruzada filtra os outros visuais da página.*
 
 1. Observe que o gráfico de barras é filtrado e realçado, com a parte em negrito das barras representando os meses filtrados.
 
-1. Posicione o cursor sobre o visual do gráfico de barras e, no canto superior direito, posicione-o novamente sobre o ícone de filtro. 
-    
-    *O ícone de filtro permite que você compreenda todos os filtros aplicados ao visual, incluindo segmentações e filtros cruzados de outro visual.*
+1. Posicione o cursor sobre o visual do gráfico de barras e, no canto superior direito, posicione-o novamente sobre o ícone de filtro.
+
+    > *O ícone de filtro permite que você compreenda todos os filtros aplicados ao visual, incluindo segmentações e filtros cruzados de outro visual.*
 
 1. Passe o cursor sobre uma barra e observe as informações da dica de ferramentas.
 
 1. Para desfazer o filtro cruzado, no gráfico de colunas/linhas, selecione uma área vazia do visual.
 
 1. Posicione o cursor sobre o visual do gráfico da coluna empilhada e, no canto superior direito, selecione o ícone **Modo de foco**.
-    
-    *O modo de foco amplia o visual para o tamanho total da página.*
+
+    > *O modo de foco amplia o visual para o tamanho total da página.*
 
      ![Imagem 96](Linked_image_Files/07-published-report-visual-filter.png)
 
@@ -367,12 +369,12 @@ Nesta tarefa, você vai explorar o relatório publicado no Power BI.
      ![Imagem 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
 
 1. Observe que a segmentação **Região** tem uma seleção diferente para a segmentação **Região** na página **Visão Geral**.
-    
-    *As segmentações não estão sincronizadas. Você modificará o design do relatório para garantir que elas sejam sincronizadas entre as páginas no laboratório **Criar um relatório no Power BI Desktop**.*
+
+    > *As segmentações não estão sincronizadas. Você modificará o design do relatório para garantir que elas sejam sincronizadas entre as páginas no laboratório **Criar um relatório no Power BI Desktop**.*
 
 1. No painel **Filtros** (localizado à direita), expanda um cartão de filtro e aplique alguns filtros.
-    
-    *O painel **Filtros** permite que você defina mais filtros do que podem caber em uma página como segmentações.*
+
+    > *O painel **Filtros** permite que você defina mais filtros do que podem caber em uma página como segmentações.*
 
 1. No visual de matriz, use o botão de adição (+) para analisar a hierarquia **Fiscal**.
 
@@ -392,10 +394,4 @@ Nesta tarefa, você vai explorar o relatório publicado no Power BI.
 
      ![Imagem 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
 
-### **Conclusão**
-
-Nesta tarefa, você concluirá o laboratório.
-
-Para retornar a "Meu Workspace", selecione **Meu Workspace** no banner na página da Web da janela.
-
- *Você vai aprimorar o design do relatório com recursos avançados no laboratório **Aprimorar um Relatório no Power BI Desktop**.*
+## Laboratório concluído

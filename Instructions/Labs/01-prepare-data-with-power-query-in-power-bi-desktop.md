@@ -1,6 +1,5 @@
 ---
 lab:
-  course: 'PL-300, DP-605'
   title: Obter Dados no Power BI Desktop
   module: Get Data in Power BI
 ---
@@ -18,30 +17,22 @@ Este laboratório foi projetado para apresentar você ao aplicativo Power BI Des
 
 **Este laboratório levará aproximadamente 30 minutos.**
 
-## **Introdução ao Power BI Desktop**
+## Introdução ao Power BI Desktop
 
- Nesta tarefa, você começará abrindo um arquivo inicial do Power BI (.pbix). O arquivo inicial não contém dados, mas foi especialmente configurado para ajudar você a concluir o laboratório. As seguintes configurações em nível de relatório foram desabilitadas no arquivo inicial:
+Para concluir este exercício, primeiro abra um navegador da Web e insira a seguinte URL para baixar a pasta zip:
 
-- Carregar Dados > Importar relacionamentos de fontes de dados no primeiro carregamento
-- Carregamento de Dados > Detectar automaticamente novos relacionamentos depois que os dados são carregados
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/01-prepare-data-with-power-query-in-power-bi-desktop/01-prepare-data.zip`
 
-*Observação: embora ter essas duas opções habilitadas possa ser útil ao desenvolver um modelo de dados, você as desabilitou anteriormente para oferecer suporte à experiência de laboratório. Ao criar relacionamentos no laboratório **Carregar Dados Transformados no Power BI Desktop**, você aprenderá por que está adicionando cada um deles.*
+Extraia a pasta para a pasta **C:\Users\Student\Downloads\01-prepare-data**.
 
-1. Abra o Power BI Desktop.
+Abra o arquivo **01-Starter-Sales Analysis.pbix**.
 
-    ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+- O arquivo inicial foi especialmente configurado para ajudar você a concluir o laboratório. As seguintes configurações em nível de relatório foram desabilitadas no arquivo inicial:
 
-1. Para abrir o arquivo inicial do Power BI Desktop, clique em **Abrir > Procurar neste dispositivo**.
+  - Carregar Dados > Importar relacionamentos de fontes de dados no primeiro carregamento
+  - Carregamento de Dados > Detectar automaticamente novos relacionamentos depois que os dados são carregados
 
-1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter**.
-
-1. Selecione o arquivo **Análise de Vendas**.
-
-    *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
-
-1. Salve uma cópia do arquivo com **Arquivo > Salvar como** na pasta **D:\Allfiles\MySolution**.
-
-## **Obter dados do SQL Server**
+## Obter dados do SQL Server
 
 Esta tarefa ensina como se conectar a um banco de dados do SQL Server e importar tabelas, que criam consultas no Power Query.
 
@@ -51,21 +42,23 @@ Esta tarefa ensina como se conectar a um banco de dados do SQL Server e importar
 
 1. Na janela **Banco de dados do SQL Server**, na caixa **Servidor**, insira **localhost**, deixe **Banco de Dados** em branco e selecione **OK**.
 
-    *Observação: neste laboratório, você se conectará ao banco de dados do SQL Server usando **localhost** porque as fontes de dados de gateway não podem resolver **localhost**. Essa não é uma prática recomendada ao criar suas próprias soluções.*
+    > ***Observação**: neste laboratório, você se conectará ao banco de dados do SQL Server usando ** localhost** porque as fontes de dados de gateway não podem resolver **localhost**. Essa não é uma prática recomendada ao criar suas próprias soluções.*
 
-1. Se forem solicitadas credenciais, na janela **Banco de Dados do SQL Server**, selecione **Usar minhas credenciais atuais** e **Conectar**.
+1. Se forem solicitadas credenciais, selecione **Windows > Usar minhas credenciais atuais** e **Conectar**.
+
+1. Clique em **OK** se você receber um aviso dizendo que uma conexão criptografada não pode ser estabelecida.
 
 1. No painel **Navegador**, expanda o banco de dados **AdventureWorksDW2020**.
 
-    *Observação: o banco de dados **AdventureWorksDW2020** é baseado no banco de dados de exemplo **AdventureWorksDW2017**. Ele foi modificado para apoiar os objetivos de aprendizagem dos laboratórios do curso.*
+    > ***Observação**: o banco de dados **AdventureWorksDW2020** é baseado no banco de dados de exemplo **AdventureWorksDW2017**. Ele foi modificado para ficar compatível com os objetivos de aprendizado dos laboratórios do curso.*
 
 1. Selecione a tabela **DimEmployee** e observe a pré-visualização dos dados da tabela.
 
      ![Banco de dados AdventureWorksDW2020 com DimEmployee indicado](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
 
-    *Observação: A pré-visualização de dados permite que você determine as colunas e uma amostra de linhas. *
+    > ***Observação**: a pré-visualização de dados exibe as colunas e uma amostra de linhas.*
 
-1. Para importar os dados da tabela, **marque a caixa de seleção** ao lado das seguintes seis tabelas:
+1. Para importar os dados da tabela, **marque a caixa de seleção** ao lado das seguintes tabelas:
 
     - DimEmployee
     - DimEmployeeSalesTerritory
@@ -74,9 +67,9 @@ Esta tarefa ensina como se conectar a um banco de dados do SQL Server e importar
     - DimSalesTerritory
     - FactResellerSales
 
-1. Conclua esta tarefa selecionando **Transformar Dados**, que abrirá o Editor do Power Query.
+1. Conclua esta tarefa selecionando **Transformar dados**, que abrirá o Editor do Power Query. Deixe o editor aberto para a próxima tarefa.
 
-Agora você se conectou aos dados e está com o Editor do Power Query aberto para a próxima tarefa.
+Agora você se conectou a seis tabelas a partir de um banco de dados do SQL Server.
 
 ## **Pré-Visualizar Dados no Editor do Power Query**
 
@@ -88,7 +81,7 @@ Esta tarefa apresenta o Editor do Power Query e permite a você analisar e criar
 
 1. Selecione a primeira consulta - **DimEmployee**.
 
-    *A tabela **DimEmployee** no banco de dados do SQL Server armazena uma linha para cada funcionário. Um subconjunto das linhas dessa tabela representa os vendedores, que serão relevantes para o modelo que você desenvolverá.*
+    > *A tabela **DimEmployee** no banco de dados do SQL Server armazena uma linha para cada funcionário. Um subconjunto das linhas dessa tabela representa os vendedores, que serão relevantes para o modelo que você desenvolverá.*
 
 1. No canto inferior esquerdo, na barra de status, algumas estatísticas da tabela são concedidas: a tabela tem 33 colunas e 296 linhas.
 
@@ -96,7 +89,7 @@ Esta tarefa apresenta o Editor do Power Query e permite a você analisar e criar
 
 1. No painel de visualização de dados, role horizontalmente para examinar todas as colunas. Observe que as últimas cinco colunas contêm links de **Tabela** ou **Valor**.
 
-    *Essas cinco colunas representam relações com outras tabelas no banco de dados. Eles podem ser usados para unir mesas. Você ingressará em tabelas no laboratório **Carregar Dados Transformados no Power BI Desktop**.*
+    > *Essas cinco colunas representam relações com outras tabelas no banco de dados. Eles podem ser usados para unir mesas. Você ingressará em tabelas no laboratório **Carregar Dados Transformados no Power BI Desktop**.*
 
 1. Para avaliar a qualidade da coluna, na guia **Exibição** da faixa de opções, dentro do grupo **Visualização de Dados**, marque **Qualidade da Coluna**. O recurso da qualidade da coluna permite que você determine facilmente o percentual de valores válidos, com erro ou vazios.
 
@@ -112,43 +105,39 @@ Esta tarefa apresenta o Editor do Power Query e permite a você analisar e criar
 
 1. Examine a distribuição de coluna para a coluna **EmployeeKey** - há 296 valores distintos e 296 valores exclusivos.
 
-    *Quando as contagens distintas e exclusivas são as mesmas, isso significa que a coluna contém valores exclusivos. Ao modelar, é importante que algumas tabelas de modelo tenham colunas exclusivas. Essas colunas exclusivas podem ser usadas para criar relacionamentos um-para-muitos, o que você fará no laboratório **Dados de Modelo no Power BI Desktop** .*
-
      ![Distribuição de colunas mostrando 296 valores distintos e 296 exclusivos](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
+
+    > ***Observação**: quando as contagens distintas e exclusivas são as mesmas, isso significa que a coluna contém valores exclusivos. Ao modelar, é importante que algumas tabelas do modelo contenham colunas exclusivas. Essas colunas exclusivas podem ser usadas para criar relações um-para-muitos, o que você fará no laboratório **Modelar dados no Power BI Desktop**.*
 
 1. No painel **Consultas**, selecione a consulta **DimProduct**.
 
-    *A tabela **DimProduct** contém uma linha por produto vendido pela empresa.*
+    > *A tabela **DimProduct** contém uma linha por produto vendido pela empresa.*
 
 1. No painel **Consultas**, selecione a consulta **DimReseller**.
 
-    *A tabela **DimReseller** contém uma linha por revendedor. Os revendedores vendem, distribuem ou agregam valor aos produtos da Adventure Works.*
+    > *A tabela **DimReseller** contém uma linha por revendedor. Os revendedores vendem, distribuem ou agregam valor aos produtos da Adventure Works.*
 
 1. Para exibir valores da coluna, na guia **Exibição** da faixa de opções, dentro do grupo **Visualização de Dados**, marque **Perfil da Coluna**.
 
-1. Selecione o cabeçalho da coluna **BusinessType** e observe o novo painel abaixo do painel de visualização de dados.
+1. Selecione o cabeçalho da coluna **BusinessType** e observe o novo painel abaixo do painel de visualização de dados. Examine as estatísticas da coluna e a distribuição de valor no painel de pré-visualização de dados.
 
-1. Examine as estatísticas da coluna e a distribuição de valor no painel de pré-visualização de dados.
-
-    *Observe o problema de qualidade dos dados: há dois rótulos para warehouse (**Warehouse** e **Ware House**, com a grafia incorreta).*
+    > *Observe o problema de qualidade dos dados: há dois rótulos para warehouse (**Warehouse** e **Ware House**, com a grafia incorreta).*
 
      ![Distribuição de valor para a coluna BusinessType](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
 
 1. Passe o mouse sobre a barra **Ware House** e observe que há cinco linhas com esse valor.
 
-    *Você aplicará uma transformação para rotular novamente essas cinco linhas no laboratório **Carregar Dados Transformados no Power BI Desktop**.*
-
 1. No painel **Consultas**, selecione a consulta **DimSalesTerritory**.  
 
-    *A tabela **DimSalesTerritory** contém uma linha por região de vendas, incluindo **Sede Corporativa** (matriz). As regiões são atribuídas a um país e os países são atribuídos a grupos. No laboratório **Dados de Modelo no Power BI Desktop**, você criará uma hierarquia para dar suporte à análise em nível de região, país ou grupo.*
+    > *A tabela **DimSalesTerritory** contém uma linha por região de vendas, incluindo **Sede Corporativa** (matriz). As regiões são atribuídas a um país e os países são atribuídos a grupos. No laboratório **Dados de Modelo no Power BI Desktop**, você criará uma hierarquia para dar suporte à análise em nível de região, país ou grupo.*
 
 1. No painel **Consultas**, selecione a consulta **FactResellerSales**.
 
-    *A tabela **FactResellerSales** contém uma linha de pedido de venda por linha. Um pedido de venda contém um ou mais itens de linha.*
+    > *A tabela **FactResellerSales** contém uma linha de pedido de venda por linha. Um pedido de venda contém um ou mais itens de linha.*
 
 1. Examine a qualidade da coluna **TotalProductCost** e observe que 8% das linhas estão vazias.
 
-    *Os valores ausentes da coluna **TotalProductCost** é um problema de qualidade de dados. Para resolver o problema no laboratório **Carregar Dados Transformados no Power BI Desktop**, você aplicará transformações para preencher os valores ausentes usando o custo padrão do produto, que está armazenado na tabela relacionada **DimProduct**.*
+    > *Os valores ausentes de **TotalProductCost** são um problema de qualidade de dados.*
 
 ## **Obter dados de um arquivo CSV**
 
@@ -156,40 +145,26 @@ Nesta tarefa, você criará uma nova consulta com base em arquivos CSV.
 
 1. Para adicionar uma nova consulta, na janela do **Editor do Power Query**, na guia de faixa de opções **Página Inicial**, no grupo **Nova Consulta**, escolha a seta para baixo **Nova Fonte** e selecione **Texto/CSV**.
 
-1. Na janela **Abrir**, navegue até a pasta **D:\DA100\Resources** e selecione o arquivo **ResellerSalesTargets.csv**. Selecione **Abrir**.
+1. Navegue até o arquivo **01-prepare-data > ResellerSalesTargets.csv**. Selecione **Abrir**.
 
 1. Na janela **ResellerSalesTargets.csv**, examine os dados da pré-visualização. Selecione **OK**.
 
 1. No painel **Consultas**, observe a adição da consulta **ResellerSalesTargets**.
 
-    *O arquivo CSV **ResellerSalesTargets** contém uma linha por vendedor, por ano. Cada linha registra 12 metas de vendas mensais (expressas em milhares). O ano comercial da empresa Adventure Works começa em 1º de julho.*
+    > *O arquivo CSV **ResellerSalesTargets** contém uma linha por vendedor, por ano. Cada linha registra 12 metas de vendas mensais (expressas em milhares). O ano comercial da empresa Adventure Works começa em 1º de julho.*
 
 1. Observe que nenhuma coluna contém valores vazios.  Quando não há uma meta de vendas mensal, um caractere de hífen é armazenado em seu lugar.
 
 1. Examine os ícones de cada cabeçalho de coluna à esquerda do nome da coluna. Os ícones representam o tipo de dados da coluna. **123** é número inteiro e **ABC** é texto.
 
-     ![Imagem 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
+     ![Tipo de dados da coluna](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-1. Repita as etapas para criar uma consulta com base no arquivo **D:\Allfiles\Resources\ColorFormats.csv**.
+1. Repita as etapas para criar uma consulta baseada no arquivo **ColorFormats.csv**.
 
-    *O arquivo CSV **ColorFormats** contém uma linha por cor do produto. Cada linha registra os códigos HEX para formatar as cores do plano de fundo e da fonte.*
+    > *O arquivo CSV **ColorFormats** contém uma linha por cor do produto. Cada linha registra os códigos HEX para formatar as cores do plano de fundo e da fonte.*
 
-*Agora você deve ter duas novas consultas, **ResellerSalesTargets** e **ColorFormats**.*
+Agora você terá duas novas consultas, **ResellerSalesTargets** e **ColorFormats**.
 
  ![Lista de consultas](Linked_image_Files/01-all-queries-loaded.png)
 
-### **Conclusão**
-
-Nesta tarefa, você concluirá o laboratório.
-
-1. Na guia **Exibir** da faixa de opções, dentro do grupo **Pré-Visualizar Dados**, desmarque as três opções de pré-visualização de dados que foram ativadas anteriormente neste laboratório:
-
-    - Qualidade da coluna
-    - Distribuição de colunas
-    - Perfil da coluna
-
-     ![Imagem 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image40.png)
-
-1. **Salve** o arquivo do Power BI Desktop. Quando for solicitado a aplicar as alterações pendentes, selecione **Aplicar Mais Tarde**.
-
-    *Dica: a aplicação das consultas carregará seus dados no modelo de dados. Você não está pronto para fazer isso, pois há muitas transformações que devem ser aplicadas primeiro.*
+## Laboratório concluído

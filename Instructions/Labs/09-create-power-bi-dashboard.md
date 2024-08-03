@@ -1,14 +1,12 @@
 ---
 lab:
-  course: PL-300
   title: Criar um Painel do Power BI
   module: Create Dashboards
 ---
 
+# Criar um Painel do Power BI
 
-# **Criar um Painel do Power BI**
-
-## **História do laboratório**
+## História do laboratório
 
 Neste laboratório, você criará o painel **Monitoramento de Vendas** no serviço do Power BI usando um relatório existente.
 
@@ -19,45 +17,33 @@ Neste laboratório, você aprenderá a:
 
 **Este laboratório levará aproximadamente 30 minutos.**
 
-## **Introdução – Conectar-se**
+## Introdução
 
-Nesta tarefa, você vai configurar o ambiente para o laboratório entrando no Power BI.
+Para concluir este exercício, primeiro abra um navegador da Web e insira a seguinte URL para baixar a pasta zip:
 
-*Se você já entrou no Power BI, vá para a próxima tarefa.*
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/09-create-power-bi-dashboard/09-create-dashboard.zip`
 
-1. Para abrir o Microsoft Edge, na barra de tarefas, selecione o atalho do programa Microsoft Edge.
+Extraia a pasta para a pasta **C:\Users\Student\Downloads\09-create-dashboard**.
 
-     ![Figura 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
+## **Publicar o relatório**
 
-1. Na janela do navegador Microsoft Edge, navegue até **https://app.powerbi.com**.
-
-    *Dica: use também o favorito do Serviço do Power BI na barra de favoritos do Microsoft Edge.*
-
-1. Conclua o processo de entrada com suas credenciais organizacionais (ou aquelas fornecidas a você). Se você receber um aviso do Microsoft Edge para permanecer conectado, selecione **Sim**.
-
-1. Na janela do navegador Microsoft Edge, no serviço do Power BI, no painel **Navegação**, expanda **Meu Workspace**. Mantenha a janela do navegador Microsoft Edge aberta.
-
-     ![Figura 22](Linked_image_Files/07-my-workspace-new.png)
-
-## **Introdução – Publicar o relatório**
-
-Nesta tarefa, você vai configurar o ambiente para o laboratório criando um modelo semântico. *Se você já publicou o modelo semântico, vá para a próxima tarefa.*
+Nesta tarefa, você vai configurar o ambiente para o laboratório criando um modelo semântico.
 
 1. Na janela do navegador Microsoft Edge, no serviço do Power BI, navegue para **Meu Workspace**.
 
 1. Selecione **Carregar > Procurar**.
 
-1. Navegue até a pasta **D:\Allfiles\Labs\09-create-power-bi-dashboard\Starter**.
+1. Navegue até a pasta **C:\Users\Student\Downloads\09-create-dashboard**.
 
-1. Selecione o arquivo **Sales Analysis.pbix** e escolha **Abrir**.
+1. Clique no arquivo **09-Starter-Sales Analysis.pbix** e depois em **Abrir**.
 
-*Caso precise substituir o modelo semântico, selecione **Substituir**.*
+    > *Caso precise substituir o modelo semântico, selecione **Substituir**.*
 
 ## **Criar um painel**
 
 Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará um visual por meio do relatório, adicionará um bloco com base em um URI de dados de imagem e usará a P e R para criar um bloco.
 
-1. No serviço do Power BI, abra o relatório **Análise de Vendas**.
+1. No serviço do Power BI, abra o relatório **09-Starter-Sales Analysis**.
 
 1. Na página **Visão geral**, defina a segmentação **Year** como **FY2020**.
 
@@ -65,7 +51,7 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
 
 1. Defina a segmentação **Região** como **Selecionar Tudo**.
 
-    *Os elementos visuais fixados são definidos com o contexto do filtro no momento da fixação. Se o visual subjacente for alterado, você também precisará atualizar o bloco do painel. Para filtros baseados em tempo, é melhor usar uma segmentação de dados relativa (ou, Perguntas e respostas usando uma pergunta baseada em tempo relativo).*
+    > *Os elementos visuais fixados são definidos com o contexto do filtro no momento da fixação. Se o visual subjacente for alterado, você também precisará atualizar o bloco do painel. Para filtros baseados em tempo, é melhor usar uma segmentação de dados relativa (ou, Perguntas e respostas usando uma pergunta baseada em tempo relativo).*
 
 1. Para criar um dashboard e fixar um visual, posicione o cursor sobre o visual **Vendas e Margem de Lucro por Mês** (coluna/linha).
 
@@ -81,9 +67,9 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
 
     ![Figura 45](Linked_image_Files/09-create-power-bi-dashboard_image22.png)
 
-1. Para adicionar um bloco com base em uma pergunta, no canto superior esquerdo do dashboard, selecione **Fazer uma Pergunta sobre os Dados**.
-    
-    *Você pode usar o recurso de Perguntas e Respostas para fazer uma pergunta e o Power BI responderá com um visual.*
+1. Para adicionar um bloco com base em uma pergunta, no canto superior esquerdo do dashboard, selecione **Fazer uma Pergunta sobre os Dados**. 
+
+    *Você pode usar o recurso de perguntas e respostas para fazer uma pergunta, e o Power BI responderá com um visual.*
 
     ![Imagem 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
@@ -92,8 +78,8 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
 1. Remova todo o texto da caixa de Perguntas e Respostas e digite o seguinte: **Vendas YTD**
 
 1. Observe a resposta **(Em Branco)**.
-    
-    *Você deve se lembrar de ter adicionado a medida **Vendas YTD** no laboratório **Criar Cálculos DAX Avançados no Power BI Desktop**. Essa medida é uma expressão de Inteligência de Dados Temporais e também requer um filtro na tabela **Data** para gerar um resultado.*
+
+    > *Você deve se lembrar de ter adicionado a medida **Vendas YTD** no laboratório **Criar Cálculos DAX Avançados no Power BI Desktop**. Essa medida é uma expressão de Inteligência de Dados Temporais e também requer um filtro na tabela **Data** para gerar um resultado.*
 
     ![Figura 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
@@ -107,23 +93,23 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
 
     ![Figura 15](Linked_image_Files/09-create-power-bi-dashboard_image28.png)
 
-1. Quando precisar fixar o bloco no dashboard, selecione **Fixar**.
+1. Quando precisar fixar o bloco no painel **Monitoramento de Vendas** clique em **Fixar**.
 
 1. Para voltar ao painel, no canto superior esquerdo, selecione **Sair das Perguntas&amp;Respostas**.
 
 1. Para adicionar o logotipo da empresa, na barra de menus, selecione **Editar** e **Adicionar um Bloco**.
     
-    *O uso dessa técnica para adicionar um bloco do painel permite aprimorar o painel com uma mídia, incluindo conteúdo da Web, imagens, caixas de texto com formatação e vídeos (usando links do YouTube ou do Vimeo).*
+    > *O uso dessa técnica para adicionar um bloco do painel permite aprimorar o painel com uma mídia, incluindo conteúdo da Web, imagens, caixas de texto com formatação e vídeos (usando links do YouTube ou do Vimeo).*
 
 1. No painel **Adicionar um Bloco** (localizado à direita), selecione o bloco **Imagem** e, em seguida, **Avançar**.
 
-1. No painel **Adicionar Bloco de Imagem**, na caixa **URL**, digite o URL completo encontrado no arquivo **D:\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** e, em seguida, **Aplicar**.
+1. No painel **Adicionar bloco de imagem**, na caixa **URL**, digite o URL completo encontrado no arquivo **C:\Users\Student\Downloads\09-create-dashboard\AdventureWorksLogo_DataURL.txt** e clique em **Aplicar**.
     
-    *Você pode inserir uma imagem usando a URL dela ou uma URL de dados, que insere o conteúdo embutido.*
+    > *Você pode inserir uma imagem usando a URL dela ou uma URL de dados, que insere o conteúdo embutido.*
 
 1. Para redimensionar o bloco do logotipo, arraste o canto inferior direito e redimensione o bloco até que ele tenha uma unidade de largura e uma de altura.
     
-    *Os tamanhos dos blocos são limitados a uma forma retangular.*
+    > *Os tamanhos dos blocos são limitados a uma forma retangular.*
 
 1. Organize os blocos para que o logotipo seja mostrado no canto superior esquerdo, com o bloco **Vendas acumuladas no ano** abaixo dele e o bloco **Vendas, Margem de Lucro** à direita.
 
@@ -157,11 +143,13 @@ Nesta tarefa, você editará os detalhes de dois blocos.
 
 Neste exercício, primeiro, você carregará os dados de pedidos de vendas de junho de 2020 no banco de dados **AdventureWorksDW2020**. Depois, você abrirá o arquivo do Power BI Desktop, executará uma atualização de dados e carregará o arquivo no seu workspace.
 
+> ***Observação**: se você não conseguir se conectar ao banco de dados, poderá usar o arquivo **09-Solution-Sales-Analysis.pbix**. Em vez de atualizar o banco de dados e atualizar o modelo semântico, carregue o arquivo de solução em **Meu workspace** e veja as alterações referenciadas nas tarefas a seguir.*
+
 ## **Atualizar o banco de dados do laboratório**
 
 Nesta tarefa, você executará um script do PowerShell para atualizar os dados do banco de dados **AdventureWorksDW2020**.
 
-1. No Explorador de Arquivos, dentro da pasta **D:\Allfiles\Setup**, clique com o botão direito do mouse no arquivo **UpdateDatabase-2-AddSales.ps1** e selecione **Executar com o PowerShell**.
+1. No Explorador de Arquivos, na pasta **C:\Users\Student\Downloads\09-create-dashboard**, clique com o botão direito do mouse no arquivo **UpdateDatabase-2-AddSales.ps1** e clique em **Executar com o PowerShell**.
 
     ![Imagem 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
 
@@ -173,7 +161,7 @@ Nesta tarefa, você executará um script do PowerShell para atualizar os dados d
 
 ## **Atualizar o arquivo do Power BI Desktop**
 
-Nesta tarefa, você abrirá o arquivo de **Análise de Vendas** do Power BI Desktop, executará uma atualização de dados e carregará o arquivo no workspace **Análise de Vendas**.
+Nesta tarefa, você abrirá o arquivo **09-Starter-Sales Analysis** do Power BI Desktop, executará uma atualização de dados e fará o upload do arquivo para o seu espaço de trabalho **Análise de Vendas**.
 
 1. No arquivo do Power BI Desktop, no painel **Data**, clique com o botão direito do mouse na tabela **Vendas** e selecione **Atualizar Dados**.
 
@@ -200,13 +188,9 @@ Nesta tarefa, você examinará o painel para observar as vendas atualizadas.
 2. No bloco **Vendas, Margem de Lucro**, no subtítulo, observe que os dados são **Atualizados: AGORA**.
 
 3. Observe também que agora há uma coluna para **junho de 2020**.
-    
-    *Se os dados de junho de 2020 não forem exibidos, clique em **F5** para recarregar o navegador da Web.*
+
+    > *Se os dados de junho de 2020 não forem exibidos, clique em **F5** para recarregar o navegador da Web.*
 
     ![Imagem 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-### **Conclusão**
-
-Nesta tarefa, você concluirá o laboratório.
-
-1. Salve o relatório e feche o navegador.
+## Laboratório concluído

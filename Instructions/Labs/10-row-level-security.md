@@ -1,14 +1,12 @@
 ---
 lab:
-  course: PL-300
   title: Impor a Segurança em Nível de Linha
   module: Enforce Row-Level Security
 ---
 
+# Impor a Segurança em Nível de Linha
 
-# **Impor a Segurança em Nível de Linha**
-
-## **História do laboratório**
+## História do laboratório
 
 Neste laboratório, você vai impor a segurança em nível de linha para garantir que cada vendedor só possa analisar dados de vendas para as regiões atribuídas a ele.
 
@@ -19,33 +17,19 @@ Neste laboratório, você aprenderá a:
 
 **Este laboratório levará aproximadamente 20 minutos.**
 
-## **Introdução**
+## Introdução
 
-Nesta tarefa, você vai configurar o ambiente para o laboratório.
+Para concluir este exercício, primeiro abra um navegador da Web e insira a seguinte URL para baixar a pasta zip:
 
-*Importante: se estiver dando continuidade ao laboratório anterior (e concluiu esse laboratório com sucesso), não conclua essa tarefa; em vez disso, continue na próxima tarefa.*
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/10-row-level-security/10-row-level-security.zip`
 
-1. Abra o Power BI Desktop.
+Extraia a pasta para a pasta **C:\Users\Student\Downloads\10-row-level-security**.
 
-    ![Ícone do Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+Abra o arquivo **10-Starter-Sales Analysis.pbix**.
 
-1. Para abrir o arquivo inicial do Power BI Desktop, slecione **Abrir > Procurar neste dispositivo**.
+> ***Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**.*
 
-1. Na janela **Abrir**, navegue até a pasta **D:\Allfiles\Labs\10 linha-level-security\Starter** e abra o arquivo **Análise de Vendas**.
-
-   *Observação: neste momento, o Power BI solicitará que você entre se ainda não tiver entrado. Você pode entrar ou clicar em **Cancelar** e continuar o laboratório.*
-
-1. Feche todas as janelas informativas que possam ser abertas.
-
-1. Observe a mensagem de aviso abaixo da faixa de opções. *Essa mensagem alerta para o fato de que as consultas não foram aplicadas para carregar como tabelas de modelo. Você aplicará as consultas posteriormente neste laboratório.*
-    
-    *Para ignorar a mensagem de aviso, à direita da mensagem de aviso, selecione **X**.*
-
-1. Para criar uma cópia do arquivo, vá para **Arquivo > Salvar como** e salve na pasta **D:\Allfiles\MySolution**.
-
-1. Caso precise aplicar as alterações, selecione **Aplicar Mais Tarde**.
-
-## **Impor a segurança em nível de linha**
+## Impor a segurança em nível de linha
 
 Nesta tarefa, você vai impor a segurança em nível de linha para garantir que um vendedor só possa ver as vendas feitas nas regiões atribuídas a ele.
 
@@ -55,10 +39,9 @@ Nesta tarefa, você vai impor a segurança em nível de linha para garantir que 
 
 1. No painel **Data**, selecione a tabela **Vendedor (Desempenho)**.
 
-
-1. Examine os dados, observando que Michael Blythe (EmployeeKey 281) tem um valor UPN igual a: **michael-blythe@adventureworks.com**
+1. Examine os dados, observando que Michael Blythe (EmployeeKey 281) tem um valor UPN igual a: **`michael-blythe@adventureworks.com`**
     
-    *Você deve se lembrar que Michael Blythe foi atribuído a três regiões de vendas: Nordeste dos EUA, EUA Central e Sudeste dos EUA.*
+    > *Você deve se lembrar que Michael Blythe foi atribuído a três regiões de vendas: Nordeste dos EUA, EUA Central e Sudeste dos EUA.*
 
 1. Na guia de faixa de opções **Página inicial**, no grupo **Segurança**, selecione **Gerenciar Funções**.
 
@@ -76,15 +59,13 @@ Nesta tarefa, você vai impor a segurança em nível de linha para garantir que 
 
 1. No editor do DAX, digite a expressão a seguir:
 
-    **DAX**
-
-    ```
+    ```DAX
     [UPN] = USERPRINCIPALNAME()
     ```
-    
-    *USERPRINCIPALNAME() é uma função DAX (Data Analysis Expressions) que retorna o nome do usuário autenticado. Isso significa que a tabela **Vendedor (Desempenho)** será filtrada pelo UPN (Nome Principal do Usuário) do usuário que está consultando o modelo.*
 
    ![Figura 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
+
+    > *USERPRINCIPALNAME() é uma função DAX (Data Analysis Expressions) que retorna o nome do usuário autenticado. Isso significa que a tabela **Vendedor (Desempenho)** será filtrada pelo UPN (Nome Principal do Usuário) do usuário que está consultando o modelo.*
 
 1. Selecione **Salvar** e **Fechar**.
 
@@ -92,11 +73,11 @@ Nesta tarefa, você vai impor a segurança em nível de linha para garantir que 
 
    ![Imagem 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-1. Na janela **Exibir como Funções**, marque o item **Outro Usuário** e, na caixa correspondente, insira: **michael-blythe@adventureworks.com**
+1. Na janela **Exibir como Funções**, marque o item **Outro Usuário** e, na caixa correspondente, insira: **`michael-blythe@adventureworks.com`**
 
 1. Verifique a função **Vendedores** e, em seguida, **OK**.
     
-    *Essa configuração resulta no uso da função **Vendedores** e na representação do usuário com o nome de Michael Blythe.*
+    > *Essa configuração resulta no uso da função **Vendedores** e na representação do usuário com o nome de Michael Blythe.*
 
    ![imagem 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
@@ -120,10 +101,6 @@ Nesta tarefa, você vai impor a segurança em nível de linha para garantir que 
 
    ![Captura de tela 18-04-2024 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
-### **Conclusão**
-
-Nesta tarefa, você concluirá o laboratório.
-
-1. Selecione **Salvar** e salve o arquivo do Power BI Desktop para encerrar o laboratório.
-
 *Observação: quando o arquivo do Power BI Desktop for publicado no serviço do Power BI, você precisará concluir uma tarefa de pós-publicação para mapear entidades de segurança para a função **Vendedores**. Isso não será feito neste laboratório.*
+
+## Laboratório concluído
