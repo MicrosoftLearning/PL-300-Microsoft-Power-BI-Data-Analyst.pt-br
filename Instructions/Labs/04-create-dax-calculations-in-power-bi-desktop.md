@@ -45,7 +45,7 @@ A barra de fórmulas dá suporte à inserção de uma fórmula DAX válida. Ela 
 
 2. Na barra de fórmulas (que é aberta diretamente abaixo da faixa de opções ao criar ou editar cálculos), digite **Vendedor =**, pressione **Shift+Enter**, digite **"Vendedor (Desempenho)"** e pressione **Enter**.
 
-    > **Observação**: *para sua conveniência, todas as definições de DAX neste laboratório podem ser copiadas do arquivo de snippets, localizado em **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+    > **Observação**: *para sua conveniência, todas as definições DAX neste laboratório podem ser copiadas do arquivo snippets, localizado em **04-intro-dax\Snippets.txt**.*
 
      ![Imagem 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -123,13 +123,14 @@ Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agru
     ![Figura 11](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image19.png)
 
 1. Na barra de fórmulas, digite o seguinte (ou copie do arquivo de snippets) e pressione **Enter**:
+    > *A fórmula usa o valor de ano da data, mas adiciona um ao valor de ano quando o mês é posterior a junho. É assim que os anos fiscais são calculados no Adventure Works.*
 
    ```DAX
    Year =
    "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
    ```
 
-    > *A fórmula usa o valor de ano da data, mas adiciona um ao valor de ano quando o mês é posterior a junho. É assim que os anos fiscais são calculados no Adventure Works.*
+
 
 1. Use as definições de arquivo de snippets para criar estas duas colunas calculadas para a tabela **Data**:
 
