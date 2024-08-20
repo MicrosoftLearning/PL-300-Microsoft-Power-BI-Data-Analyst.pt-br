@@ -43,6 +43,8 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
      ![Figura 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
+> **Observação:** se você receber uma mensagem de aviso solicitando a especificação de como se conectar, selecione **Editar credenciais**, conecte-se usando as credenciais atuais e selecione **OK** para usar uma conexão não criptografada.
+ 
 1. Para renomear a consulta, no painel **Configurações de Consulta** (localizado à direita), na caixa **Nome**, substitua o texto por **Vendedor** e clique em **ENTER**. Em seguida, verifique se o nome foi atualizado no painel **Consultas**.
 
     > *O nome da consulta determina o nome da tabela do modelo. Recomenda-se definir nomes concisos e fáceis de usar.*
@@ -297,6 +299,8 @@ Nesta tarefa, você vai configurar a consulta **Vendas**.
 Nesta tarefa, você vai configurar a consulta **Targets**.
 
 1. Selecione a consulta **ResellerSalesTargets** e renomeie como **Metas**.
+
+> **Observação:** se você receber uma mensagem de aviso solicitando que você especifique como se conectar, selecione **Editar credenciais** e use o acesso anônimo.
 
 1. Para transformar as colunas de 12 meses (**M01**-**M12**) em linhas, primeiro, faça uma seleção múltipla dos cabeçalhos das colunas **Ano** e **EmployeeID**.
 
