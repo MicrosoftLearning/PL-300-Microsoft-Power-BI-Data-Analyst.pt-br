@@ -15,7 +15,7 @@ Neste laboratório, você aprenderá a:
 - Sincronizar segmentações
 - Criar uma página de detalhamento
 - Aplicar formatação condicional
-- Criar e usar indicadores
+- Criar e usar indicadores e botões
 
 **Este laboratório levará aproximadamente 45 minutos.**
 
