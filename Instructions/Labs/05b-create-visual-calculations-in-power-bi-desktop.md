@@ -17,7 +17,7 @@ Neste laboratório, você aprenderá a:
 - Use o parâmetro opcional Eixo ao criar métricas de comparação.
 - Use o parâmetro opcional Redefinir para personalizar cálculos cumulativos em um eixo de vários níveis.
 
-**Este laboratório levará aproximadamente 45 minutos.**
+**Este laboratório levará aproximadamente 30 minutos.**
 
 ## Introdução
 
