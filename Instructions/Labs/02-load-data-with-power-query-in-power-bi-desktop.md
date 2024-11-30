@@ -449,6 +449,6 @@ Selecione **Fechar &amp; Aplicar** para carregar os dados no modelo e feche a ja
 
 Agora você poderá ver a tela no Power BI Desktop, com os painéis Filtros, Visualizações e Dados à direita. No painel Dados , observe as **sete tabelas** carregadas no modelo de dados.
 
-![Figura 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
+![Imagem 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
 ## Laboratório concluído
