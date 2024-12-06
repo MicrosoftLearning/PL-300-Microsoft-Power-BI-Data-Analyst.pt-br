@@ -31,8 +31,6 @@ Abra o arquivo **05b-Starter-Sales Analysis.pbix**.
 
 > ***Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**.*
 
-No Power BI Desktop, acesse **Arquivo > Opções e Configurações > Opções > Visualizar recursos**. Selecione **Cálculos visuais** e clique em **OK**. Os cálculos visuais são habilitados depois que o Power BI Desktop é reiniciado.
-
 ## Criar um visual de gráfico de barras
 
 Nesta tarefa, você criará um gráfico de barras que mostrará o valor das vendas, o custo total do produto e o lucro por ano fiscal, com métricas de comparação como dicas de ferramentas.
@@ -128,7 +126,7 @@ Nesta tarefa, você criará um visual de matriz que compara o valor das vendas p
 1. Na janela de edição de cálculos visuais, digite e salve o seguinte cálculo:
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales])
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales])
    ```
 
 > Observe como a matriz mostra a diferença no valor das vendas de cada categoria em relação à primeira categoria.
@@ -136,7 +134,7 @@ Nesta tarefa, você criará um visual de matriz que compara o valor das vendas p
 1. Selecione o campo **Versus primeiro** na caixa/área **Valores** e atualize seu cálculo adicionando o valor LINHAS do parâmetro Eixo a PRIMEIRO:
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales], ROWS)
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
    ```
 
 > Observe como nada muda, pois LINHAS é o valor padrão para o parâmetro Eixo.
