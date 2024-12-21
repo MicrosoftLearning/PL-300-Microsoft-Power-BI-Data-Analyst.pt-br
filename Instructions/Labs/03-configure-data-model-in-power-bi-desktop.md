@@ -178,7 +178,7 @@ Nesta tarefa, você configurará a tabela **Revendedor** para adicionar uma hier
 
     - País-Região como **País/Região**
     - Estado-Província como **Estado ou Província**
-    - Cidade** como **Cidade**
+    - Cidade como **Cidade**
 
 ## Configurar a tabela Vendas
 
@@ -257,7 +257,7 @@ Nesta tarefa, você alternará para visualização de Relatório, examinará a i
 
       ![Imagem 359](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image40.png)
 
-> *Importante**: *essas hierarquias não foram criadas por você. Elas foram criadas automaticamente como configuração padrão. No entanto, há um problema. O ano financeiro da Adventure Works começa em 1º de julho de cada ano. Mas, nessas hierarquias de data criadas automaticamente, o ano de hierarquia de data começa em 1º de janeiro de cada ano.*
+> **Importante**: * essas hierarquias não foram criadas por você. Elas foram criadas automaticamente como configuração padrão. No entanto, há um problema. O ano financeiro da Adventure Works começa em 1º de julho de cada ano. Mas, nessas hierarquias de data criadas automaticamente, o ano de hierarquia de data começa em 1º de janeiro de cada ano.*
 
 1. Para desativar a configuração de **Data/hora automática**, navegue até **Arquivo > Opções e Configurações > Opções**.
 
