@@ -37,13 +37,13 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
 1. Para abrir a janela do **Editor do Power Query**, na guia de faixa de opções **Página Inicial**, no grupo **Consultas**, selecione o ícone **Transformar Dados**.
 
-     ![Transformar Dados na faixa de opções Página Inicial](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
+    ![Transformar Dados na faixa de opções Página Inicial](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
 
 1. Na janela do **Editor do Power Query**, no painel **Consultas**, selecione a consulta **DimEmployee**.
 
-     ![Figura 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
+    ![Figura 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
-> **Observação:** se você receber uma mensagem de aviso solicitando a especificação de como se conectar, selecione **Editar credenciais**, conecte-se usando as credenciais atuais e selecione **OK** para usar uma conexão não criptografada.
+    > **Observação:** se você receber uma mensagem de aviso solicitando a especificação de como se conectar, selecione **Editar credenciais**, conecte-se usando as credenciais atuais e selecione **OK** para usar uma conexão não criptografada.
  
 1. Para renomear a consulta, no painel **Configurações de Consulta** (localizado à direita), na caixa **Nome**, substitua o texto por **Vendedor** e clique em **ENTER**. Em seguida, verifique se o nome foi atualizado no painel **Consultas**.
 
@@ -53,11 +53,11 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
     > *Ir para Coluna é um recurso útil com muitas colunas. Caso contrário, você pode rolar horizontalmente encontrar colunas.*
 
-     ![Gerenciar colunas > Escolher colunas > Ir para coluna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
+    ![Gerenciar colunas > Escolher colunas > Ir para coluna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
 1. Na janela **Ir para Coluna**, para ordenar a lista pelo nome da coluna, selecione o botão de classificação **AZ**, depois selecione **Nome** e **SalesPersonFlag**. Clique em **OK.**
 
-     ![Ir para opções de classificação de coluna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
+    ![Ir para opções de classificação de coluna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
 1. Localize a coluna **SalesPersonFlag** e, em seguida, filtre a coluna para selecionar apenas Vendedores (ou seja, **TRUE**) e clique em **OK**.
 
@@ -65,7 +65,7 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
     > *Cada transformação criada resulta em outra lógica de etapa. É possível editar ou excluir etapas. Também é possível selecionar uma etapa para visualizar os resultados da consulta nesse estágio da transformação da consulta.*
 
-     ![Etapas aplicadas](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
+    ![Etapas aplicadas](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
 
 1. Para remover colunas, na guia de faixa de opções **Página Inicial**, no grupo **Gerenciar Colunas**, selecione o ícone **Escolher Colunas**.
 
@@ -82,11 +82,11 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
 1. Na lista **Etapas Aplicadas**, observe a adição de outra etapa de consulta.
 
-     ![Etapa de outras colunas removidas](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
+    ![Etapa de outras colunas removidas](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
 
 1. Para criar uma coluna de nome único, primeiro selecione o cabeçalho da coluna **FirstName**. Ao selecionar a tecla **CTRL**, selecione a coluna **LastName**.
 
-     ![Seleção múltipla de duas colunas para criar uma única coluna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
+    ![Seleção múltipla de duas colunas para criar uma única coluna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
 1. Clique com o botão direito do mouse em um dos cabeçalhos da coluna selecionados e, no menu de contexto, escolha **Mesclar Colunas**.
 
@@ -149,7 +149,7 @@ Nesta tarefa, você vai configurar a consulta **Product**.
 1. Selecione **EnglishProductSubcategoryName** e **DimProductCategory** e desmarque a caixa de seleção **Usar Nome da Coluna Original como Prefixo** antes de selecionar **OK**.
 
     > *Ao selecionar essas duas colunas, uma transformação será aplicada para a junção à tabela **DimProductSubcategory** e a inclusão dessas colunas. A coluna **DimProductCategory** é, na verdade, outra tabela relacionada na fonte de dados.*
-    >
+
     > *Os nomes das colunas de consulta devem ser sempre exclusivos. Se deixada marcada, essa caixa de seleção prefixaria cada coluna com o nome da coluna expandida (neste caso, **DimProductSubcategory**). Como é sabido que os nomes de coluna selecionados não colidem com nomes de coluna na consulta **Produto**, a opção é desmarcada.*
 
 1. Observe que a transformação resultou na adição de duas colunas e que a coluna **DimProductSubcategory** foi removida.
@@ -193,7 +193,7 @@ Nesta tarefa, você vai configurar a consulta **Revendedor**.
     - Na caixa **Valor a ser Localizado**, insira **Ware House**
     - Na caixa **Substituir por**, insira **Warehouse**
 
-     ![Caixa de diálogo Substituir valores](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
+    ![Caixa de diálogo Substituir valores](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
 
 1. Renomeie as quatro seguintes colunas:
 
@@ -255,7 +255,7 @@ Nesta tarefa, você vai configurar a consulta **Vendas**.
 
 1. Para criar uma coluna personalizada, na guia de faixa de opções **Adicionar Coluna**, no grupo **Geral**, selecione **Coluna Personalizada**.
 
-     ![Imagem 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
+    ![Imagem 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
 
 1. Na janela **Coluna Personalizada**, na caixa **Nome da Nova Coluna**, substitua o texto por **Cost**.
 
@@ -282,7 +282,7 @@ Nesta tarefa, você vai configurar a consulta **Vendas**.
 
     > *A configuração correta do tipo de dados é importante. Quando a coluna contiver um valor numérico, também será importante escolher o tipo correto se você esperar fazer cálculos matemáticos.*
 
-     ![Imagem 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
+    ![Imagem 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
 1. Modifique os tipos de dados das três colunas a seguir para **Número Decimal Fixo**.
 
@@ -300,7 +300,7 @@ Nesta tarefa, você vai configurar a consulta **Targets**.
 
 1. Selecione a consulta **ResellerSalesTargets** e renomeie como **Metas**.
 
-> **Observação:** se você receber uma mensagem de aviso solicitando que você especifique como se conectar, selecione **Editar credenciais** e use o acesso anônimo.
+    > **Observação:** se você receber uma mensagem de aviso solicitando que você especifique como se conectar, selecione **Editar credenciais** e use o acesso anônimo.
 
 1. Para transformar as colunas de 12 meses (**M01**-**M12**) em linhas, primeiro, faça uma seleção múltipla dos cabeçalhos das colunas **Ano** e **EmployeeID**.
 
@@ -341,7 +341,7 @@ Nesta tarefa, você vai configurar a consulta **Targets**.
 
 1. Observe também a fórmula apresentada acima da grade da consulta.
 
-     ![Imagem 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
+    ![Imagem 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
 
 1. Para renomear a nova coluna, clique duas vezes no cabeçalho da coluna **Mesclado** e renomeie a coluna como **TargetMonth**.
 
@@ -359,7 +359,7 @@ Nesta tarefa, você vai configurar a consulta **Targets**.
 
     > *Talvez você se lembre que os valores de destino foram armazenados como milhares.*
 
-     ![Imagem 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
+    ![Imagem 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
 
 1. Na janela **Multiplicar**, na caixa **Valor**, insira **1000** e selecione **OK**.
 
@@ -373,7 +373,7 @@ Nesta tarefa, você vai configurar a consulta **ColorFormats**.
 
 1. Na guia de faixa de opções **Página Inicial**, no grupo **Transformar**, selecione **Usar a Primeira Linha como Cabeçalho**.
 
-     ![Imagem 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
+    ![Imagem 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
 
 **Na barra de status, confirme se a consulta tem três colunas e dez linhas.**
 
@@ -387,15 +387,15 @@ Nesta tarefa, você atualizará a consulta **Product** mesclando a consulta **Co
 
     > *A mesclagem de consultas permite a integração de dados, neste caso, de fontes de dados diferentes (do SQL Server e de um arquivo CSV).*
 
-     ![Imagem 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
+    ![Imagem 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
 1. Na janela **Mesclar**, na grade da consulta **Product**, selecione o cabeçalho da coluna **Color**.
 
-     ![Imagem 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
+    ![Imagem 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
 
 1. Abaixo da grade da consulta **Product**, na lista suspensa, selecione a consulta **ColorFormats**.
 
-     ![Figura 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
+    ![Figura 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
 
 1. Na grade da consulta **ColorFormats**, selecione o cabeçalho da coluna **Color**.
 
@@ -403,7 +403,7 @@ Nesta tarefa, você atualizará a consulta **Product** mesclando a consulta **Co
 
     > *Os níveis de privacidade podem ser configurados para a fonte de dados para determinar se os dados podem ser compartilhados entre fontes. Definir cada fonte de dados como **Organizacional** permite que eles compartilhem dados, se necessário. As fontes de dados privadas nunca podem ser compartilhadas com outras fontes de dados. Isso não significa que os dados privados não possam ser compartilhados; mas sim que o mecanismo do Power Query não pode compartilhar dados entre as fontes.*
 
-     ![Imagem 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
+    ![Imagem 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
 1. Na janela **Mesclar**, use o **Tipo de Ingresso** padrão mantendo a seleção de Externa Esquerda e selecione **OK**.
 
@@ -422,33 +422,33 @@ Nesta tarefa, você atualizará a consulta **ColorFormats** para desabilitar a c
 
 1. No painel **Configurações de Consulta**, selecione o link **Todas as Propriedades**.
 
-     ![Imagem 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
+    ![Imagem 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
 1. Na janela **Propriedades da Consulta**, desmarque a caixa de seleção **Habilitar Carregamento para o Relatório**.
 
     > *Desabilitar a carga significa que ela não será carregada como uma tabela para o modelo de dados. Isso é feito porque a consulta foi mesclada com a consulta de **Produto**, que está habilitada para carregar no modelo de dados.*
 
-     ![Imagem 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
+    ![Imagem 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
 ### Revisão do produto final
 
-No Editor do Power Query, confirme se você tem **oito consultas**, nomeadas corretamente da seguinte maneira:
+1. No Editor do Power Query, confirme se você tem **oito consultas**, nomeadas corretamente da seguinte maneira:
 
-- Salesperson
-- SalespersonRegion
-- Product
-- Reseller
-- Region
-- Vendas
-- Destinos
-- ColorFormats (não será carregada no modelo de dados)
+    - Salesperson
+    - SalespersonRegion
+    - Product
+    - Reseller
+    - Region
+    - Vendas
+    - Destinos
+    - ColorFormats (não será carregada no modelo de dados)
 
-Selecione **Fechar &amp; Aplicar** para carregar os dados no modelo e feche a janela do Editor do Power Query.
+1. Selecione **Fechar &amp; Aplicar** para carregar os dados no modelo e feche a janela do Editor do Power Query.
 
-![Imagem 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
+    ![Imagem 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-Agora você poderá ver a tela no Power BI Desktop, com os painéis Filtros, Visualizações e Dados à direita. No painel Dados , observe as **sete tabelas** carregadas no modelo de dados.
+1. Agora você poderá ver a tela no Power BI Desktop, com os painéis Filtros, Visualizações e Dados à direita. No painel Dados , observe as **sete tabelas** carregadas no modelo de dados.
 
-![Imagem 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
+    ![Imagem 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
 ## Laboratório concluído
