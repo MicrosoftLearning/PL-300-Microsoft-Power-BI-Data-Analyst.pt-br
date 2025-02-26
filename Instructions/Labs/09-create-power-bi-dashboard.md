@@ -31,7 +31,7 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório criando um mod
 
 1. Na janela do navegador Microsoft Edge, no serviço do Power BI, navegue para **Meu Workspace**.
 
-1. Selecione **Carregar > Procurar**.
+1. Selecione **Importar > Relatório ou Relatório Paginado > Deste computador**.
 
 1. Navegue até a pasta **C:\Users\Student\Downloads\09-create-dashboard**.
 
