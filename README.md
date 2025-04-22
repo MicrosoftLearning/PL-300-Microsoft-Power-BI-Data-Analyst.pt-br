@@ -1,11 +1,3 @@
-#README
-
-We've turned off the ability to report issues directly on this repo and do not monitor PRs.
-
-Provide feedback here: https://aka.ms/provide-feedback
-
-Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
-
 # PL-300: Analista de dados do Microsoft Power BI
 
 Este repositório contém os exercícios práticos de laboratório para o curso da Microsoft [PL-300: Analista de dados do Microsoft Power BI](https://docs.microsoft.com/en-us/learn/certifications/courses/PL-300T00). Os laboratórios são projetados para acompanhar os materiais de aprendizagem e permitir que os alunos pratiquem usando as tecnologias descritas por eles.

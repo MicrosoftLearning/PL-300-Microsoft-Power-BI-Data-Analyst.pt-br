@@ -211,7 +211,7 @@ Neste exercício, você criará a segunda página de relatório. Quando você ti
 1. Adicione cada um dos seguintes campos da tabela **Produto** à caixa/área **Filtrar Nesta Página**, recolhendo cada um, diretamente abaixo do cartão **Categoria**:
 
      - **Subcategoria**
-     - **Product**
+     - **Identificador do**
      - **Cor**
 
      ![Figura 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
