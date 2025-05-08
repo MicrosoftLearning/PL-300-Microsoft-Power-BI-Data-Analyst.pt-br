@@ -43,13 +43,13 @@ Nesta tarefa, você criará um gráfico de barras que mostrará o valor das vend
 
 1. Arraste os campos **Vendas** e **Custo** da tabela **Vendas** para a caixa/área **Eixo X**.
 
-> Observe que, quando você adicionou Vendas e Custo ao visual, a soma de cada campo foi calculada automaticamente.
+    > Observe que, quando você adicionou Vendas e Custo ao visual, a soma de cada campo foi calculada automaticamente.
 
 1. Classifique o gráfico de barras resultante por **Ano** crescente usando o menu de três pontos e selecionando **Ano** seguido de **Classificar por ordem crescente**:
 
    ![Imagem 02](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image02.png)
 
-> Agora você tem um gráfico de barras que mostra a Soma das Vendas e a Soma do Custo por Ano classificado cronologicamente.
+    > Agora você tem um gráfico de barras que mostra a Soma das Vendas e a Soma do Custo por Ano classificado cronologicamente.
 
 ### Adicionar cálculos
 
@@ -59,9 +59,9 @@ Nesta tarefa, você criará um gráfico de barras que mostrará o valor das vend
 
 1. A janela de edição dos cálculos visuais será aberta. Na barra de fórmulas acima da matriz visual, insira a seguinte expressão e, em seguida, pressione Enter para confirmar o cálculo:
 
-   ```DAX
+    ```DAX
    Profit = [Sum of Sales] – [Sum of Cost]
-   ```
+    ```
 
 1. Confirme se agora você vê uma coluna Lucro na matriz visual na parte inferior da tela:
 
@@ -69,7 +69,7 @@ Nesta tarefa, você criará um gráfico de barras que mostrará o valor das vend
 
 1. Expanda o menu em **Novo cálculo visual** e selecione **Versus o anterior** nas opções de modelo:
 
-> **Versus o anterior** compara um valor com um valor anterior, portanto, vemos o Lucro em comparação com o valor anterior de Ano.
+    > **Versus o anterior** compara um valor com um valor anterior, portanto, vemos o Lucro em comparação com o valor anterior de Ano.
 
    ![Imagem 05](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image05.png)
 
@@ -77,23 +77,23 @@ Nesta tarefa, você criará um gráfico de barras que mostrará o valor das vend
 
 1. Selecione **Soma acumulada** no menu de modelos, substitua o espaço reservado `[Field]` por `[Profit]` e confirme o cálculo.
 
-> A **Soma acumulada** calcula a soma dos valores, adicionando o valor atual aos valores anteriores, para que vejamos o total do ano atual e anterior.
+    > A **Soma acumulada** calcula a soma dos valores, adicionando o valor atual aos valores anteriores, para que vejamos o total do ano atual e anterior.
 
 1. Selecione **Média móvel** no menu de modelos e substitua o espaço reservado `[Field]` por `[Profit]` e o espaço reservado `WindowSize` por 2. Você terá o seguinte conjunto:
 
-> **Média móvel** calcula uma média de um conjunto de valores em uma determinada janela dividindo a soma dos valores pelo tamanho da janela. Ao definir o tamanho da janela como 2, estamos calculando a média de dois valores consecutivos. Neste exemplo, os valores são lucros anuais, portanto, vemos que a média móvel do ano fiscal de 2019 é a média dos lucros do ano fiscal de 2018 e do ano fiscal de 2019.
+    > **Média móvel** calcula uma média de um conjunto de valores em uma determinada janela dividindo a soma dos valores pelo tamanho da janela. Ao definir o tamanho da janela como 2, estamos calculando a média de dois valores consecutivos. Neste exemplo, os valores são lucros anuais, portanto, vemos que a média móvel do ano fiscal de 2019 é a média dos lucros do ano fiscal de 2018 e do ano fiscal de 2019.
 
    ![Imagem 06](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image06.png)
 
 1. Na caixa/área **Eixo X**, clique no ícone de visibilidade dos seguintes campos para ocultá-los do visual:
 
-   - Soma de Vendas
-   - Soma de Custos
-   - Lucro
+    - Soma de Vendas
+    - Soma de Custos
+    - Lucro
 
    ![Imagem 07](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image07.png)
 
-> Observe como os campos e cálculos que você ocultou agora não são mais mostrados no visual.
+    > Observe como os campos e cálculos que você ocultou agora não são mais mostrados no visual.
 
 1. No painel **Visualizações**, arraste **Soma acumulada** e **Média móvel** para a caixa/área **Dicas de ferramentas**.  
 
@@ -101,7 +101,7 @@ Nesta tarefa, você criará um gráfico de barras que mostrará o valor das vend
 
    ![Imagem 08](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image08.png)
 
-> Agora você tem um gráfico de barras com os seguintes valores: Soma de Vendas, Soma de Custo, Lucro e Lucro *versus anterior* com dicas de ferramentas para *Soma acumulada* de lucro e *Média móvel* de lucro.
+    > Agora você tem um gráfico de barras com os seguintes valores: Soma de Vendas, Soma de Custo, Lucro e Lucro *versus anterior* com dicas de ferramentas para *Soma acumulada* de lucro e *Média móvel* de lucro.
 
 ## Criar um visual de matriz
 
@@ -113,11 +113,11 @@ Nesta tarefa, você criará um visual de matriz que compara o valor das vendas p
 
 1. Adicione os seguintes campos às caixas/áreas de visual:
 
-     - Linhas: **Produto \| Categoria**
-     - Colunas: **Data \| Ano**
-     - Valores: **Vendas \| Vendas**
+    - Linhas: **Produto \| Categoria**
+    - Colunas: **Data \| Ano**
+    - Valores: **Vendas \| Vendas**
 
- > *Os laboratórios usam uma notação taquigráfica para fazer referência a um campo. Ficará assim: **Data \| Ano**. Neste exemplo, **Data** é o nome da tabela e **Ano** é o nome do campo.*
+    > *Os laboratórios usam uma notação taquigráfica para fazer referência a um campo. Ficará assim: **Data \| Ano**. Neste exemplo, **Data** é o nome da tabela e **Ano** é o nome do campo.*
 
 ### Adicionar cálculos
 
@@ -125,25 +125,25 @@ Nesta tarefa, você criará um visual de matriz que compara o valor das vendas p
 
 1. Na janela de edição de cálculos visuais, digite e salve o seguinte cálculo:
 
-   ```DAX
-    Versus first = [Sum of Sales] - FIRST([Sum of Sales])
-   ```
+    ```DAX
+   Versus first = [Sum of Sales] - FIRST([Sum of Sales])
+    ```
 
-> Observe como a matriz mostra a diferença no valor das vendas de cada categoria em relação à primeira categoria.
+    > Observe como a matriz mostra a diferença no valor das vendas de cada categoria em relação à primeira categoria.
 
 1. Selecione o campo **Versus primeiro** na caixa/área **Valores** e atualize seu cálculo adicionando o valor LINHAS do parâmetro Eixo a PRIMEIRO:
 
-   ```DAX
-    Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
-   ```
+    ```DAX
+   Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
+    ```
 
-> Observe como nada muda, pois LINHAS é o valor padrão para o parâmetro Eixo.
+    > Observe como nada muda, pois LINHAS é o valor padrão para o parâmetro Eixo.
 
 1. Substitua LINHAS por COLUNAS e observe que o cálculo agora compara o valor das vendas por categoria com o primeiro ano fiscal:
 
    ![Figura 11](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image11.png)
 
-> Observe como a coluna **Versos o primeiro** do **Total de Vendas** retorna zero em vez da diferença em relação ao primeiro ano fiscal. O **Total de Vendas** está em um nível hierárquico diferente das somas anuais e, portanto, é considerada a primeira coluna desse nível.
+    > Observe como a coluna **Versos o primeiro** do **Total de Vendas** retorna zero em vez da diferença em relação ao primeiro ano fiscal. O **Total de Vendas** está em um nível hierárquico diferente das somas anuais e, portanto, é considerada a primeira coluna desse nível.
 
 1. Saia da tela de edição de cálculos visuais do relatório.
 
@@ -157,8 +157,8 @@ Nesta tarefa, você criará um gráfico de linhas que mostra a soma acumulada da
 
 1. Adicione os seguintes campos às caixas/áreas de visual:
 
-     - Eixo X: **Data \| Ano** e **Data \| Trimestre**
-     - Eixo Y: **Vendas \| Vendas**
+    - Eixo X: **Data \| Ano** e **Data \| Trimestre**
+    - Eixo Y: **Vendas \| Vendas**
 
 ### Adicionar soma acumulada
 
@@ -172,9 +172,9 @@ Nesta tarefa, você criará um gráfico de linhas que mostra a soma acumulada da
 
 1. Ainda na janela de edição de cálculos visuais, selecione o campo **Soma acumulada** no **eixo Y** e atualize a expressão para esse cálculo adicionando o parâmetro de redefinição HIGHESTPARENT e confirme as alterações:
 
-   ```DAX
-    Running sum = RUNNINGSUM([Sum of Sales], HIGHESTPARENT)
-   ```
+    ```DAX
+   Running sum = RUNNINGSUM([Sum of Sales], HIGHESTPARENT)
+    ```
 
 Verifique se a soma acumulada é realmente reiniciada para cada novo ano fiscal:
 

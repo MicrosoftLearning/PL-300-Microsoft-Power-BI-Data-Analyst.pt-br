@@ -360,7 +360,7 @@ Neste exercício, você publicará o relatório no serviço do Power BI e explor
 
      ![Imagem 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
-1. Posicione o cursor sobre os visuais novamente e, em seguida, no canto superior direito, selecione as reticências (…) e observe as opções de menu. Experimente cada uma das opções, exceto **Conversar no Teams**.
+1. Posicione o cursor sobre os visuais novamente e, em seguida, no canto superior direito, selecione as reticências (…) e observe as opções de menu. Experimente cada uma das opções, exceto as de **Compartilhar**.
 
      ![Imagem 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
 
