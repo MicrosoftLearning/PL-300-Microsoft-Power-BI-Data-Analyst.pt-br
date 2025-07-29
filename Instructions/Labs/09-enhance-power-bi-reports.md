@@ -44,7 +44,7 @@ Neste exercício, você vai criar uma página e vai configurá-la como uma pági
 
 1. Embaixo do painel **Visualizações**, na seção **Detalhamento**, adicione o campo `Product | Category` à caixa **Adicionar campos de detalhamento aqui**.
 
-    > _Os laboratórios usam uma notação abreviada para referenciar um campo. Ele terá a seguinte aparência:`Product | Category` Neste exemplo, `Product` é o nome da tabela e `Category` é o nome do campo._
+    > _Os laboratórios usam uma notação abreviada para referenciar um campo. Ele terá a seguinte aparência: `Product | Category`. Neste exemplo, `Product` é o nome da tabela e `Category` é o nome do campo._
 
     ![Figura 1](Linked_image_Files/09-enhance-power-bi-reports_image20.png)
 
@@ -100,10 +100,6 @@ Neste exercício, você vai aprimorar a página de detalhamento com formatação
 
     ![Imagem 9](Linked_image_Files/09-enhance-power-bi-reports_image29.png)
 
-1. Na janela **Ícones – Margem de Lucro**, na lista suspensa **Aplicar**, selecione **Valores e totais**.
-
-    ![Figura 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
-
 1. Na janela **Ícones – Margem de Lucro**, na lista suspensa **Layout do Ícone**, selecione **À Direita dos Dados**.
 
     ![Figura 11](Linked_image_Files/09-enhance-power-bi-reports_image30.png)
@@ -129,6 +125,10 @@ Neste exercício, você vai aprimorar a página de detalhamento com formatação
     ![Figura 13](Linked_image_Files/09-enhance-power-bi-reports_image32.png)
 
     > _As regras podem ser interpretadas assim: exiba um losango vermelho se o valor da margem de lucro for menor que 0; caso contrário, se o valor for maior ou igual a zero, exiba um círculo verde._
+
+1. Na janela **Ícones – Margem de Lucro**, na lista suspensa **Aplicar**, selecione **Valores e totais**.
+
+    ![Figura 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
 
 1. Selecione **OK**.
 
@@ -249,6 +249,8 @@ Neste exercício, você vai aprimorar a página _Meu Desempenho_ com botões, pe
 
 Neste exercício, você publicará o relatório no serviço do Power BI e explorará o comportamento do relatório publicado.
 
+> _**Observação**: você precisará de pelo menos uma licença do **Power BI gratuita** para publicar o relatório. Abra o navegador Microsoft Edge e entre em `https://app.powerbi.com`. Quando solicitado a resolver um quebra-cabeça ou iniciar uma avaliação gratuita do Fabric, você poderá ignorar isso e fechar o navegador.
+
 > _**Observação**: você pode examinar o restante do exercício, mesmo que não tenha acesso ao serviço do Power BI para executar as tarefas diretamente._
 
 1. Selecione a página _Visão Geral_.
@@ -277,7 +279,7 @@ Neste exercício, você publicará o relatório no serviço do Power BI e explor
 
 1. Na janela do navegador, no serviço do Power BI, no painel **Navegação** (localizado à esquerda, possivelmente recolhido), selecione **Meu Workspace**.
 
-1. Para explorar o relatório, selecione o relatório _07-Starter-Sales Analysis_.
+1. Para explorar o relatório, selecione o relatório _09-Starter-Sales Analysis_.
 
 1. Para testar o recurso de detalhamento, na página _Visão geral_, no visual _Soma da Quantidade por Categoria_, clique com o botão direito do mouse na barra _Roupas_ e selecione **Detalhamento > Detalhes do Produto**.
 
