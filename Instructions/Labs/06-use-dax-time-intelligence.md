@@ -26,13 +26,13 @@ Extraia o arquivo para a pasta **C:\Users\Student\Downloads\06-time-intelligence
 
 Abra o arquivo **06-Starter-Sales Analysis.pbix**.
 
-> _**Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Criar uma medida YTD
 
 Nesta tarefa, você criará uma medida de vendas YTD (acumuladas no ano) usando funções de inteligência de dados temporais.
 
-1. No Power BI Desktop, na exibição Relatório, na **Página 2**, observe o visual da matriz que apresenta várias medidas com anos e meses agrupados nas linhas.
+1. No Power BI Desktop, no **modo de exibição Relatório**, na **Página 2**, observe o visual da matriz que apresenta várias medidas com anos e meses agrupados nas linhas.
 
 2. Adicione uma medida à tabela `Sales`, com base na expressão seguinte, e formate-a para zero casas decimais:
 
@@ -122,10 +122,19 @@ Nesta tarefa, você criará uma medida de crescimento de vendas ano a ano usando
 
     > _A medida de crescimento YoY identifica um aumento de quase 400% (ou 4x) das vendas durante o mesmo período do ano anterior._
 
-1. Em uma exibição Modelo, coloque as duas novas medidas em uma pasta de exibição chamada _Inteligência de dados temporais_.
+1. No **modo de exibição Modelo**, coloque as duas novas medidas em uma pasta de exibição chamada _Inteligência de dados temporais_.
 
     ![Imagem 4](Linked_image_Files/06-use-dax-time-intelligence-functions_image24.png)
 
 1. Salve o arquivo do Power BI Desktop.
 
 ## Laboratório concluído
+
+Você pode optar por salvar seu relatório do Power BI, embora isso não seja necessário para este laboratório. No próximo exercício, você trabalhará com um arquivo inicial pré-criado.
+
+1. Navegue até o menu **"Arquivo"** no canto superior esquerdo e selecione **"Salvar como"**. 
+1. Selecione **Procurar neste dispositivo**.
+1. Selecione a pasta na qual você deseja salvar o arquivo e dê a ele um nome descritivo. 
+1. Selecione o botão **Salvar** para salvar o relatório como um arquivo .pbix. 
+1. Se for exibida uma caixa de diálogo solicitando a aplicação das alterações de consulta pendentes, selecione **Aplicar**.
+1. Feche o Power BI Desktop.

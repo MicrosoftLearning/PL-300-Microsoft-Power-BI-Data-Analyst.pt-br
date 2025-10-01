@@ -8,12 +8,7 @@ lab:
 
 ## História do laboratório
 
-Neste laboratório, você vai impor a segurança em nível de linha para garantir que cada vendedor só possa analisar dados de vendas para as regiões atribuídas a ele.
-
-Neste laboratório, você aprenderá a:
-
-- Imponha a segurança em nível de linha.
-- Escolha entre métodos dinâmicos e estáticos.
+Neste laboratório, você vai impor a segurança em nível de linha para garantir que cada vendedor só possa analisar dados de vendas para as regiões atribuídas a ele. Você irá impor a segurança em nível de linha usando o método dinâmico.
 
 **Este laboratório levará aproximadamente 20 minutos.**
 
@@ -27,13 +22,13 @@ Extraia a pasta para a pasta **C:\Users\Student\Downloads\11-secure-data**.
 
 Abra o arquivo **11-Starter-Sales Analysis.pbix**.
 
-> ***Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**.*
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Impor a segurança em nível de linha
 
 Nesta tarefa, você vai impor a segurança em nível de linha para garantir que um vendedor só possa ver as vendas feitas nas regiões atribuídas a ele.
 
-1. Alternar para a exibição de Tabela.
+1. Alternar para a **modo de exibição Tabela**.
 
    ![Imagem 5701](Linked_image_Files/11-secure-data-access_image20.png)
 
@@ -104,3 +99,13 @@ Nesta tarefa, você vai impor a segurança em nível de linha para garantir que 
 *Observação: quando o arquivo do Power BI Desktop for publicado no serviço do Power BI, você precisará concluir uma tarefa de pós-publicação para mapear entidades de segurança para a função **Vendedores**. Isso não será feito neste laboratório.*
 
 ## Laboratório concluído
+
+Você pode optar por salvar seu relatório do Power BI, embora isso não seja necessário para este laboratório. 
+
+1. Feche a janela do navegador Microsoft Edge.
+1. No Power BI Desktop, navegue até o menu **"Arquivo"** no canto superior esquerdo e selecione **"Salvar como"**. 
+1. Selecione **Procurar neste dispositivo**.
+1. Selecione a pasta na qual você deseja salvar o arquivo e dê a ele um nome descritivo. 
+1. Selecione o botão **Salvar** para salvar o relatório como um arquivo .pbix. 
+1. Se for exibida uma caixa de diálogo solicitando a aplicação das alterações de consulta pendentes, selecione **Aplicar**.
+1. Feche o Power BI Desktop.
