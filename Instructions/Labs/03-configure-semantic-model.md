@@ -30,7 +30,7 @@ Extraia o arquivo para a pasta **C:\Users\Student\Downloads\03-model-data**.
 
 Abra o arquivo **03-Starter-Sales Analysis.pbix**.
 
-> _**Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Criar relações de modelo
 
@@ -50,7 +50,7 @@ Nesta tarefa, você criará relações de modelo. O arquivo foi configurado para
 
     > _O problema é que a tabela se baseia em campos de tabelas diferentes. A expectativa é que cada categoria de produto exiba as vendas dessa mesma categoria. No entanto, como não há uma relação de modelo entre essas tabelas, a tabela `Sales` não é filtrada. Agora, você adicionará uma relação para propagar filtros entre as tabelas._
 
-1. Para alternar para o designer de modelo, à esquerda, selecione o ícone de exibição Modelo.
+1. Para alternar para o designer de modelo, à esquerda, selecione o ícone de **modo de exibição Modelo**.
 
     ![Imagem 2](Linked_image_Files/03-configure-semantic-model-model-view.png)
 
@@ -89,17 +89,17 @@ Nesta tarefa, você criará relações de modelo. O arquivo foi configurado para
     >
     > Dica: focalize o cursor sobre a relação para destacar as colunas relacionadas.
 
-1. Mude para a visualização do relatório e observe que o visual de tabela foi atualizado para exibir valores diferentes para cada categoria de produto.
+1. Mude para o **modo de exibição Relatório** e observe que o visual de tabela foi atualizado para exibir valores diferentes para cada categoria de produto.
 
     > _Os filtros aplicados à tabela `Product` agora se propagam para a tabela `Sales`._
 
     ![Imagem 7](Linked_image_Files/03-configure-semantic-model-table-with-relationship.png)
 
-### Criar relações adicionais
+## Criar relações adicionais
 
 Há uma forma mais fácil de criar uma relação. No diagrama de modelo, é possível arrastar e soltar colunas para criar uma relação.
 
-1. Para criar uma relação usando uma técnica diferente, alterne para o modo de exibição Modelo.
+1. Para criar uma relação usando uma técnica diferente, alterne para o **modo de exibição Modelo**.
 
 1. Na tabela `Reseller`, arraste a coluna `ResellerKey` para a coluna `ResellerKey` da tabela `Sales`.
 
@@ -124,7 +124,7 @@ Há uma forma mais fácil de criar uma relação. No diagrama de modelo, é poss
 
 Nesta tarefa, você configurará a tabela `Product` com uma hierarquia e uma pasta de exibição.
 
-1. Alterne para a exibição de Modelo.
+1. Alterne para a exibição de **Modelo**.
 
 1. No painel **Dados**, se necessário, expanda a tabela `Product` para revelar todos os campos.
 
@@ -258,9 +258,9 @@ Nessa tarefa, você atualizará várias colunas em uma única atualização em m
 
 ## Explorar a interface do modelo
 
-Nesta tarefa, você alternará para visualização de Relatório, examinará a interface do modelo de dados e configurará a data/hora automáticas.
+Nesta tarefa, você alternará para **modelo de exibição Relatório**, examinará a interface do modelo de dados e configurará a data/hora automáticas.
 
-1. Alterne para a exibição de Relatório.
+1. Alterne para a exibição de **Relatório**.
 
 1. No painel **Data**, observe o seguinte:
 
@@ -348,7 +348,7 @@ Nesta tarefa, você criará duas medidas rápidas para calcular a margem de lucr
 
 Nesta tarefa, você criará uma relação muitos para muitos entre as tabelas `Salesperson` e `Sales`.
 
-1. No modo de exibição Relatório, selecione uma área em branco da página do relatório.
+1. No **modo de exibição Relatório**, selecione uma área em branco da página do relatório.
 
 1. Para criar um visual de tabela, no painel **Dados**, marque os dois campos a seguir:
 
@@ -363,7 +363,7 @@ Nesta tarefa, você criará uma relação muitos para muitos entre as tabelas `S
 
 1. Observe que _Michael Blythe_ gerou quase 9 milhões de dólares em vendas.
 
-1. Alterne para o modo de exibição de Modelo e arraste a tabela `SalespersonRegion` para posicioná-la entre as tabelas `Region` e `Salesperson`.
+1. Alterne para o **modo de exibição Modelo** e arraste a tabela `SalespersonRegion` para posicioná-la entre as tabelas `Region` e `Salesperson`.
 
 1. Use a técnica de arrastar e soltar para criar estas duas relações de modelo:
 
@@ -372,9 +372,9 @@ Nesta tarefa, você criará uma relação muitos para muitos entre as tabelas `S
 
     > _A tabela `SalespersonRegion` pode ser considerada uma tabela de ponte._
 
-1. Alterne para a exibição de Relatório e observe que o visual não foi atualizado: o resultado de vendas para Michael Blythe não foi alterado.
+1. Alterne para o **modo de exibição Relatório** e observe que o visual não foi atualizado: o resultado de vendas para Michael Blythe não foi alterado.
 
-1. Volte para a exibição de Modelo e, partindo da tabela `Salesperson`, siga as direções de filtro de relação (ponta de seta).
+1. Volte para o **modo de exibição Modelo** e, partindo da tabela `Salesperson`, siga as direções de filtro de relação (ponta de seta).
 
     > _Considere que a tabela `Salesperson` filtra a tabela `Sales`. Ele também filtra a tabela `SalespersonRegion`, mas não continua propagando filtros para a tabela `Region` (a ponta de direção está apontando para a direção errada)._
 
@@ -394,11 +394,11 @@ Nesta tarefa, você criará uma relação muitos para muitos entre as tabelas `S
 
     ![Imagem 30](Linked_image_Files/03-configure-semantic-model_u_image14.png)
 
-1. Alterne para a exibição de Relatório e observe que os valores de vendas ainda não foram alterados.
+1. Alterne para o **modo de exibição Relatório** e observe que os valores de vendas ainda não foram alterados.
 
     > _O problema agora está relacionado ao fato de que há dois caminhos possíveis de propagação de filtros entre as tabelas `Salesperson` e `Sales`. Essa ambiguidade é resolvida internamente, com base em uma avaliação do "número mínimo de tabelas". para que fique claro, você não deve criar modelos com esse tipo de ambiguidade – problema será resolvido em uma parte posterior deste laboratório, após a conclusão do laboratório **Criar cálculos DAX no Power BI Desktop**._
 
-1. Alterne para a exibição de Modelo.
+1. Alterne para a exibição de **Modelo**.
 
 1. Para forçar a propagação do filtro por meio da tabela de ponte, edite (clique duas vezes) na relação entre as tabelas `Salesperson` e `Sales`.
 
@@ -414,7 +414,7 @@ Nesta tarefa, você criará uma relação muitos para muitos entre as tabelas `S
 
     ![Figura 32](Linked_image_Files/03-configure-semantic-model_u_image17.png)
 
-1. Alterne para visualização de Relatório e observe que as vendas de Michael Blythe agora são de quase US$ 22 milhões.
+1. Alterne para o **modo de exibição Relatório** e observe que as vendas de Michael Blythe agora são de quase US$ 22 milhões.
 
 1. Observe também que as vendas de cada vendedor, se adicionadas, excederão o total da tabela.
 
@@ -422,7 +422,7 @@ Nesta tarefa, você criará uma relação muitos para muitos entre as tabelas `S
      >
      > _Embora a relação muitos para muitos esteja funcionando agora, ainda não é possível analisar as vendas feitas por um vendedor (porque a relação está inativa). Você poderá reativar a relação quando introduzir uma tabela calculada que permitirá analisar as vendas feitas nas regiões de vendas atribuídas ao vendedor (para análise de desempenho) no laboratório **Criar cálculos DAX no Power BI Desktop**._
 
-1. Alterne para a exibição Modelo e, no diagrama do modelo, selecione a tabela `Salesperson`.
+1. Alterne para o **modo de exibição Modelo** e, no diagrama do modelo, selecione a tabela `Salesperson`.
 
 1. No painel **Propriedades**, na caixa **Nome**, substitua o texto por _Vendedor (Desempenho)_.
 
@@ -434,7 +434,7 @@ Nesta tarefa, você criará uma relação com a tabela `Targets`.
 
 1. Crie uma relação a partir da coluna `Salesperson (Performance) | EmployeeID` e da coluna `Targets | EmployeeID`.
 
-1. Na exibição de Relatório, adicione o campo `Targets | Target` para o visual de tabela.
+1. No **modo de exibição Relatório**, adicione o campo `Targets | Target` para o visual de tabela.
 
 1. Redimensione o visual da tabela para que todas as colunas fiquem visíveis.
 
@@ -445,3 +445,12 @@ Nesta tarefa, você criará uma relação com a tabela `Targets`.
 1. Salve o arquivo do Power BI Desktop.
 
 ## Laboratório concluído
+
+Você pode optar por salvar seu relatório do Power BI, embora isso não seja necessário para este laboratório. No próximo exercício, você trabalhará com um arquivo inicial pré-criado.
+
+1. Navegue até o menu **"Arquivo"** no canto superior esquerdo e selecione **"Salvar como"**. 
+1. Selecione **Procurar neste dispositivo**.
+1. Selecione a pasta na qual você deseja salvar o arquivo e dê a ele um nome descritivo. 
+1. Selecione o botão **Salvar** para salvar o relatório como um arquivo .pbix. 
+1. Se for exibida uma caixa de diálogo solicitando a aplicação das alterações de consulta pendentes, selecione **Aplicar**.
+1. Feche o Power BI Desktop.

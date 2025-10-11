@@ -26,7 +26,7 @@ Extraia o arquivo para a pasta **C:\Users\Student\Downloads\05-modify-dax-filter
 
 Abra o arquivo **05-Starter-Sales Analysis.pbix**.
 
-> _**Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Criar um visual de matriz
 
@@ -212,7 +212,7 @@ Nesta tarefa, você criará várias medidas com expressões DAX que usam a funç
 
 1. Observe que a medida `Sales % Group` agora retorna um valor apenas quando a região ou o país estão no escopo.
 
-1. Em uma exibição Modelo, coloque as três novas medidas em uma pasta de exibição nomeada _Índices_.
+1. No **modo de exibição Modelo**, coloque as três novas medidas em uma pasta de exibição nomeada _Proporções_.
 
     ![Figura 10](Linked_image_Files/05-modify-dax-filter-context_image20.png)
 
@@ -221,3 +221,12 @@ Nesta tarefa, você criará várias medidas com expressões DAX que usam a funç
 > _As medidas adicionadas à tabela `Sales` modificaram o contexto de filtro para gerar uma navegação hierárquica. Observe que o padrão para alcançar o cálculo de um subtotal requer a remoção de algumas colunas do contexto de filtro e, para chegar no total geral, todas as colunas devem ser removidas._
 
 ## Laboratório concluído
+
+Você pode optar por salvar seu relatório do Power BI, embora isso não seja necessário para este laboratório. No próximo exercício, você trabalhará com um arquivo inicial pré-criado.
+
+1. Navegue até o menu **"Arquivo"** no canto superior esquerdo e selecione **"Salvar como"**. 
+1. Selecione **Procurar neste dispositivo**.
+1. Selecione a pasta na qual você deseja salvar o arquivo e dê a ele um nome descritivo. 
+1. Selecione o botão **Salvar** para salvar o relatório como um arquivo .pbix. 
+1. Se for exibida uma caixa de diálogo solicitando a aplicação das alterações de consulta pendentes, selecione **Aplicar**.
+1. Feche o Power BI Desktop.

@@ -27,7 +27,7 @@ Extraia a pasta para a pasta **C:\Users\Student\Downloads\12-create-dashboard**.
 
 > _**Observação**: você precisará de pelo menos uma licença do **Power BI gratuita** para publicar o relatório. Abra o navegador Microsoft Edge e entre em `https://app.powerbi.com`. Quando solicitado a resolver um quebra-cabeça ou iniciar uma avaliação gratuita do Fabric, você poderá ignorar isso e fechar o navegador.
 
-## **Publicar o relatório**
+## Publicar o relatório
 
 Nesta tarefa, você vai configurar o ambiente para o laboratório criando um modelo semântico.
 
@@ -41,7 +41,7 @@ Nesta tarefa, você vai configurar o ambiente para o laboratório criando um mod
 
     > *Caso precise substituir o modelo semântico, selecione **Substituir**.*
 
-## **Criar um painel**
+## Criar um painel
 
 Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará um visual por meio do relatório, adicionará um bloco com base em um URI de dados de imagem e usará a P e R para criar um bloco.
 
@@ -119,7 +119,7 @@ Nesta tarefa, você criará o painel **Monitoramento de Vendas**. Você fixará 
 
     ![Figura 52](Linked_image_Files/12-create-power-bi-dashboard_image35.png)
 
-## **Editar detalhes do bloco**
+## Editar detalhes do bloco
 
 Nesta tarefa, você editará os detalhes de dois blocos.
 
@@ -143,13 +143,13 @@ Nesta tarefa, você editará os detalhes de dois blocos.
 
 *Você atualizará o modelo semântico no próximo exercício. Dependendo dos seus dados e relatório, você pode fazer uma atualização de dados adhoc a qualquer momento ou definir uma agenda. No entanto, as atualizações agendadas exigem gateways que não podemos configurar para este laboratório. Portanto, no Power BI Desktop, você executará uma atualização de dados manual e carregará o arquivo em seu workspace.*
 
-## **Atualizar o modelo semântico**
+## Atualizar o modelo semântico
 
 Neste exercício, primeiro, você carregará os dados de pedidos de vendas de junho de 2020 no banco de dados **AdventureWorksDW2020**. Depois, você abrirá o arquivo do Power BI Desktop, executará uma atualização de dados e carregará o arquivo no seu workspace.
 
 > ***Observação**: se você não conseguir se conectar ao banco de dados, poderá usar o arquivo **12-Solution-Sales-Analysis.pbix**. Em vez de atualizar o banco de dados e atualizar o modelo semântico, carregue o arquivo de solução em **Meu workspace** e veja as alterações referenciadas nas tarefas a seguir.*
 
-## **Atualizar o banco de dados do laboratório**
+## Atualizar o banco de dados do laboratório
 
 Nesta tarefa, você executará um script do PowerShell para atualizar os dados do banco de dados **AdventureWorksDW2020**.
 
@@ -163,7 +163,7 @@ Nesta tarefa, você executará um script do PowerShell para atualizar os dados d
 
 *Agora o banco de dados **AdventureWorksDW2020** inclui pedidos de vendas de junho de 2020.*
 
-## **Atualizar o arquivo do Power BI Desktop**
+## Atualizar o arquivo do Power BI Desktop
 
 Nesta tarefa, você abrirá o arquivo **12-Starter-Sales Analysis** do Power BI Desktop, executará uma atualização de dados e fará o upload do arquivo para o seu espaço de trabalho **Análise de Vendas**.
 
@@ -183,7 +183,7 @@ Nesta tarefa, você abrirá o arquivo **12-Starter-Sales Analysis** do Power BI 
 
 *Agora, a data de vendas do modelo semântico no serviço do Power BI é junho de 2020.*
 
-### **Examinar o painel**
+## Examinar o painel
 
 Nesta tarefa, você examinará o painel para observar as vendas atualizadas.
 
@@ -198,3 +198,5 @@ Nesta tarefa, você examinará o painel para observar as vendas atualizadas.
     ![Imagem 33](Linked_image_Files/12-create-power-bi-dashboard_image50.png)
 
 ## Laboratório concluído
+
+1. Feche a janela do navegador Microsoft Edge.

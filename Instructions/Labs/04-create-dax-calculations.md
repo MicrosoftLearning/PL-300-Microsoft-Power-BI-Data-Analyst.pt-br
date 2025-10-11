@@ -28,7 +28,7 @@ Extraia o arquivo para a pasta **C:\Users\Student\Downloads\04-dax-calculations*
 
 Abra o arquivo **04-Starter-Sales Analysis.pbix**.
 
-> _**Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Criar a tabela calculada Vendedor
 
@@ -38,7 +38,7 @@ Uma tabela calculada é criada inserindo primeiro o nome da tabela, seguido pelo
 
 Insira uma fórmula DAX válida na _barra de fórmulas_. A barra de fórmulas inclui recursos como preenchimento automático, Intellisense e codificação de cores, que permitem que você insira a fórmula de forma rápida e precisa.
 
-1. No Power BI Desktop, na exibição de Relatório, na faixa de opções **Modelagem** no grupo **Cálculos**, selecione **Nova Tabela**.
+1. No Power BI Desktop, no **modo de exibição Relatório**, na faixa de opções **Modelagem**, de dentro do grupo **Cálculos** selecione **Nova Tabela**.
 
     ![Figura 1](Linked_image_Files/04-create-dax-calculations_image9.png)
 
@@ -58,7 +58,7 @@ Insira uma fórmula DAX válida na _barra de fórmulas_. A barra de fórmulas in
     >
     > _Ao contrário das tabelas provenientes do Power Query, as tabelas calculadas não podem ser usadas para carregar dados de fontes de dados externas. Elas só podem transformar dados com base no que já foi carregado no modelo de dados._
 
-1. Alterne para o modo de exibição Modelo e observe que a tabela `Salesperson` está disponível.
+1. Alterne para o **modo de exibição Modelo** e observe que a tabela `Salesperson` está disponível.
 
 1. Crie uma relação a partir da coluna `Salesperson | EmployeeKey` para a coluna `Sales | EmployeeKey`.
 
@@ -86,7 +86,7 @@ Insira uma fórmula DAX válida na _barra de fórmulas_. A barra de fórmulas in
 
 Nesta tarefa, você criará a tabela `Date`.
 
-1. Alternar para a exibição de Tabela. Na guia de faixa de opções **Página Inicial**, no grupo **Cálculos**, selecione **Nova Tabela**.
+1. Alternar para a **modo de exibição Tabela**. Na guia de faixa de opções **Página Inicial**, no grupo **Cálculos**, selecione **Nova Tabela**.
 
     ![Imagem 4](Linked_image_Files/04-create-dax-calculations_image15.png)
 
@@ -141,7 +141,7 @@ Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agru
 
     ![Imagem 9](Linked_image_Files/04-create-dax-calculations_image21.png)
 
-1. Para validar os cálculos, alterne para a exibição Relatório.
+1. Para validar os cálculos, alterne para o **modo de exibição Relatório**.
 
 1. Para criar uma nova página de relatório, selecione o ícone de adição ao lado da **Página 1**.
 
@@ -169,7 +169,7 @@ Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agru
 
     > _Por padrão, os valores de texto são classificados em ordem alfabética, os números são classificados do menor para o maior, e as datas são classificadas da mais antiga para a mais recente._
 
-1. Para personalizar a ordem de classificação do campo `Month`, alterne para a exibição Tabela.
+1. Para personalizar a ordem de classificação do campo `Month`, alterne para o **modo de exibição Tabela**.
 
 1. Adicione a coluna `MonthKey` à tabela `Date`.
 
@@ -180,11 +180,11 @@ Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agru
 
     > _Essa fórmula calcula um valor numérico para cada combinação de ano/mês._
 
-1. Na exibição Tabela, verifique se a nova coluna contém valores numéricos (por exemplo, 201707 para julho de 2017 e assim por diante).
+1. No **modo de exibição Tabela**, verifique se a nova coluna contém valores numéricos (por exemplo, 201707 para julho de 2017 e assim por diante).
 
     ![Figura 15](Linked_image_Files/04-create-dax-calculations_image28.png)
 
-1. Alterne novamente para a exibição de Relatório.
+1. Alterne novamente para o **modo de exibição Relatório**.
 
 1. No painel **Dados** e selecione o campo `Month`.
 
@@ -200,7 +200,7 @@ Nesta tarefa, você adicionará mais colunas para habilitar a filtragem e o agru
 
 Nesta tarefa, você concluirá o design da tabela `Date` ocultando uma coluna e criando uma hierarquia. Em seguida, você criará relacionamentos para as tabelas `Sales` e `Targets`.
 
-1. Alterne para a exibição de Modelo.
+1. Alterne para a exibição de **Modelo**.
 
 1. Na tabela `Date`, oculte a coluna `MonthKey` (defina **Está Oculto** como _Sim_).
 
@@ -230,7 +230,7 @@ Nesta tarefa, você concluirá o design da tabela `Date` ocultando uma coluna e 
 
 Nesta tarefa, você marcará a tabela `Date` como uma tabela de data.
 
-1. Alterne para a exibição de Relatório.
+1. Alterne para a exibição de **Relatório**.
 
 1. No painel **Dados**, selecione a tabela `Date` (não o campo `Date`).
 
@@ -256,7 +256,7 @@ Nesta tarefa, você marcará a tabela `Date` como uma tabela de data.
 
 Nesta tarefa, você criará medidas simples. Medidas simples agregam valores em uma única coluna ou contam linhas de uma tabela.
 
-1. Na exibição Relatório, na **Página 2** no painel **Dados**, arraste o campo `Sales | Unit Price` no visual de matriz.
+1. No **modo de exibição Relatório**, na **Página 2** no painel **Dados**, arraste o campo `Sales | Unit Price` no visual de matriz.
 
     ![Figura 23](Linked_image_Files/04-create-dax-calculations_image35.png)
 
@@ -299,7 +299,7 @@ Nesta tarefa, você criará medidas simples. Medidas simples agregam valores em 
     >
     > _Nesse caso, o número de pedidos é calculado contando os valores distintos da coluna `SalesOrderNumber`, enquanto o número de linhas do pedido é simplesmente o número de linhas da tabela (cada linha é uma linha de um pedido)._
 
-1. Alterne para a exibição Modelo e selecione as quatro medidas de preço: `Avg Price`, `Max Price`, `Median Price` e `Min Price`.
+1. Alterne para o **modo de exibição Modelo** e selecione as quatro medidas de preço: `Avg Price`, `Max Price`, `Median Price` e `Min Price`.
 
 1. Para a seleção de várias medidas, configure os seguintes requisitos:
 
@@ -319,7 +319,7 @@ Nesta tarefa, você criará medidas simples. Medidas simples agregam valores em 
 
     ![Figura 27](Linked_image_Files/04-create-dax-calculations_image41.png)
 
-1. Na exibição de Relatório, na caixa **Valores** do visual de matriz, para **Média do Preço Unitário**, selecione **X** para removê-lo.
+1. No **modo de exibição Relatório**, na caixa **Valores** do visual de matriz, para **Média do Preço Unitário**, selecione **X** para removê-lo.
 
     ![Imagem 28](Linked_image_Files/04-create-dax-calculations_image41a.png)
 
@@ -341,7 +341,7 @@ Nesta tarefa, você criará medidas simples. Medidas simples agregam valores em 
 
 Nesta tarefa, você criará mais medidas que usam fórmulas mais complexas.
 
-1. Na exibição de Relatório, selecione **Página 1** e examine o visual da tabela de vendedores (à direita), observando o total da coluna **Soma de Destino**.
+1. No **modo de exibição Relatório**, selecione **Página 1** e examine o visual da tabela de vendedores (à direita), observando o total da coluna **Soma de Destino**.
 
     ![Imagem 30](Linked_image_Files/04-create-dax-calculations_image45.png)
 
@@ -349,7 +349,7 @@ Nesta tarefa, você criará mais medidas que usam fórmulas mais complexas.
 
 1. Renomeie a coluna `Targets | Target` como _TargetAmount_.
 
-    > _Dica: há várias maneiras de renomear a coluna no modo de exibição Relatório: no painel **Dados** , você pode clicar com o botão direito do mouse na coluna e selecionar **Renomear** ou clicar duas vezes na coluna ou pressionar **F2**._
+    > _Dica: Há várias maneiras de renomear a coluna no **modo de exibição Relatório**: No painel **Dados**, você pode clicar com o botão direito do mouse na coluna e, em seguida, selecionar **Renomear**, clicar duas vezes na coluna ou pressionar **F2**._
 
 1. Crie a seguinte medida na tabela `Targets`:
 
@@ -403,3 +403,12 @@ Nesta tarefa, você criará mais medidas que usam fórmulas mais complexas.
 1. Salve o arquivo do Power BI Desktop.
 
 ## Laboratório concluído
+
+Você pode optar por salvar seu relatório do Power BI, embora isso não seja necessário para este laboratório. No próximo exercício, você trabalhará com um arquivo inicial pré-criado.
+
+1. Navegue até o menu **"Arquivo"** no canto superior esquerdo e selecione **"Salvar como"**. 
+1. Selecione **Procurar neste dispositivo**.
+1. Selecione a pasta na qual você deseja salvar o arquivo e dê a ele um nome descritivo. 
+1. Selecione o botão **Salvar** para salvar o relatório como um arquivo .pbix. 
+1. Se for exibida uma caixa de diálogo solicitando a aplicação das alterações de consulta pendentes, selecione **Aplicar**.
+1. Feche o Power BI Desktop.

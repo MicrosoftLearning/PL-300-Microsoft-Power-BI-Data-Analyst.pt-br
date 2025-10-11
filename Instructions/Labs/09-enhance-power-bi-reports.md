@@ -28,7 +28,7 @@ Extraia o arquivo para a pasta **C:\Users\Student\Downloads\09-enhanced-report**
 
 Abra o arquivo **09-Starter-Sales Analysis.pbix**.
 
-> _**Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Configurar uma página de detalhamento
 
@@ -249,7 +249,7 @@ Neste exercício, você vai aprimorar a página _Meu Desempenho_ com botões, pe
 
 Neste exercício, você publicará o relatório no serviço do Power BI e explorará o comportamento do relatório publicado.
 
-> _**Observação**: você precisará de pelo menos uma licença do **Power BI gratuita** para publicar o relatório. Abra o navegador Microsoft Edge e entre em `https://app.powerbi.com`. Quando solicitado a resolver um quebra-cabeça ou iniciar uma avaliação gratuita do Fabric, você poderá ignorar isso e fechar o navegador.
+> _**Observação**: você precisará de pelo menos uma licença do **Power BI gratuita** para publicar o relatório. Abra o navegador Microsoft Edge e navegue até _ `https://app.powerbi.com`_.  Entre com as credenciais do locatário do Microsoft 365 fornecido pelo ALH (hoster de laboratório autorizado). Quando solicitado a resolver um quebra-cabeça ou iniciar uma avaliação gratuita do Fabric, você poderá ignorar isso e fechar o navegador._
 
 > _**Observação**: você pode examinar o restante do exercício, mesmo que não tenha acesso ao serviço do Power BI para executar as tarefas diretamente._
 
@@ -294,3 +294,6 @@ Neste exercício, você publicará o relatório no serviço do Power BI e explor
 1. Selecione cada um dos botões e observe que um visual diferente é exibido.
 
 ## Laboratório concluído
+
+1. Feche o navegador Microsoft Edge.
+1. Feche o Power BI Desktop.

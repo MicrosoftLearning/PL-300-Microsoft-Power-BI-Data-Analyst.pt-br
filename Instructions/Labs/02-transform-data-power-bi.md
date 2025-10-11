@@ -27,7 +27,7 @@ Extraia a pasta para a pasta **C:\Users\Student\Downloads\02-transform-data**.
 
 Abra o arquivo **02-Starter-Sales Analysis.pbix**.
 
-> ***Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**.*
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Configurar a consulta Vendedor
 
@@ -51,11 +51,11 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
 1. Para localizar uma coluna específica, na guia de faixa de opções **Página Inicial**, no grupo **Gerenciar Colunas**, escolha a seta para baixo **Escolher Colunas** e selecione **Ir para Coluna**.
 
-    > *Ir para Coluna é um recurso útil com muitas colunas. Caso contrário, você pode rolar horizontalmente encontrar colunas.*
+    > _**Ir para a Coluna** é um recurso útil quando há muitas colunas. Caso contrário, você poderá rolar horizontalmente para encontrar as colunas._
 
     ![Gerenciar colunas > Escolher colunas > Ir para coluna](Linked_image_Files/02-transform-data-power-bi_image13.png)
 
-1. Na janela **Ir para Coluna**, para ordenar a lista pelo nome da coluna, selecione o botão de classificação **AZ**, depois selecione **Nome** e **SalesPersonFlag**. Clique em **OK.**
+1. Na janela **Ir para Coluna**, para ordenar a lista pelo nome da coluna, selecione o botão de classificação **AZ** e escolha **Nome**. 
 
     ![Ir para opções de classificação de coluna](Linked_image_Files/02-transform-data-power-bi_image14.png)
 
@@ -90,7 +90,7 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
 1. Clique com o botão direito do mouse em um dos cabeçalhos da coluna selecionados e, no menu de contexto, escolha **Mesclar Colunas**.
 
-    > *Muitas transformações comuns podem ser aplicadas clicando com o botão direito do mouse no cabeçalho da coluna e escolhendo-as no menu de contexto. No entanto, observe que há mais transformações disponíveis nesta faixa de opções.*
+    > *Muitas transformações comuns podem ser aplicadas clicando com o botão direito do mouse no cabeçalho da coluna e escolhendo-as no menu de contexto. Observe que transformações adicionais estão disponíveis na faixa de opções.*
 
 1. Na janela **Mesclar Colunas**, na lista suspensa **Separador**, selecione **Espaço**.
 
@@ -98,13 +98,13 @@ Nesta tarefa, você vai usar o Editor do Power Query para configurar a consulta 
 
 1. Para renomear a coluna **EmployeeNationalIDAlternateKey**, clique duas vezes no cabeçalho da coluna **EmployeeNationalIDAlternateKey** e substitua o texto por **EmployeeID** e pressione **Enter**.
 
-1. Use as etapas anteriores para renomear a coluna **EmailAddress** como **UPN**.
+1. Renomeie a coluna **EmailAddress** como **UPN**.
 
     > *UPN é um acrônimo de Nome Principal do Usuário.*
 
-**No canto inferior esquerdo, na barra de status, confirme se a consulta tem cinco colunas e 18 linhas.**
+**Na barra de status no canto inferior esquerdo do Editor do Power Query, verifique se a consulta tem 5 colunas e 18 linhas.**
 
-## **Configurar a consulta SalespersonRegion**
+## Configurar a consulta SalespersonRegion
 
 Nesta tarefa, você vai configurar a consulta **SalespersonRegion**.
 
@@ -186,9 +186,9 @@ Nesta tarefa, você vai configurar a consulta **Revendedor**.
     - StateProvinceName
     - EnglishCountryRegionName
 
-1. No cabeçalho da coluna **Tipo de Negócio**, selecione a seta para baixo e, em seguida, examine os valores de coluna distintos e observe os valores **Warehouse** e **Ware House**.
+1. No cabeçalho da coluna **BusinessType**, selecione a seta para baixo, revise os valores distintos da coluna e observe os valores **Warehouse** e **Ware House**.
 
-1. Clique com o botão direito do mouse no cabeçalho da coluna **Business Type** e selecione **Substituir Valores**.
+1. Clique com o botão direito no cabeçalho da coluna **BusinessType** e selecione **Substituir Valores**.
 
 1. Na janela **Substituir Valores**, configure os seguintes valores:
 
@@ -432,7 +432,7 @@ Nesta tarefa, você atualizará a consulta **ColorFormats** para desabilitar a c
 
     ![Imagem 323](Linked_image_Files/02-transform-data-power-bi_image81.png)
 
-### Revisão do produto final
+## Revisão do produto final
 
 1. No Editor do Power Query, confirme se você tem **oito consultas**, nomeadas corretamente da seguinte maneira:
 
@@ -454,3 +454,12 @@ Nesta tarefa, você atualizará a consulta **ColorFormats** para desabilitar a c
     ![Imagem 3](Linked_image_Files/02-transform-data-power-bi_image84.png)
 
 ## Laboratório concluído
+
+Você pode optar por salvar seu relatório do Power BI, embora isso não seja necessário para este laboratório. No próximo exercício, você trabalhará com um arquivo inicial pré-criado.
+
+1. Navegue até o menu **"Arquivo"** no canto superior esquerdo e selecione **"Salvar como"**. 
+1. Selecione **Procurar neste dispositivo**.
+1. Selecione a pasta na qual você deseja salvar o arquivo e dê a ele um nome descritivo. 
+1. Selecione o botão **Salvar** para salvar o relatório como um arquivo .pbix. 
+1. Se for exibida uma caixa de diálogo solicitando a aplicação das alterações de consulta pendentes, selecione **Aplicar**.
+1. Feche o Power BI Desktop.

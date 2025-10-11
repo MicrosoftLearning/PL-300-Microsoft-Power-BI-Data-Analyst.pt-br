@@ -30,11 +30,11 @@ Extraia o arquivo para a pasta **C:\Users\Student\Downloads\08-design-report**.
 
 Abra o arquivo **08-Starter-Sales Analysis.pbix**.
 
-> _**Observação**: você pode ignorar a entrada clicando em **Cancelar**. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
+> _**Observação**: Você pode ver uma caixa de diálogo de entrada enquanto o arquivo é carregado. Selecione **Cancelar** para ignorar a caixa de diálogo de entrada. Feche todas as janelas informativas. Caso precise aplicar as alterações, clique em **Aplicar depois**._
 
 ## Página de design 1
 
-Neste exercício, você criará a primeira página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
+Nesta tarefa, você criará a primeira página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
 ![Captura de tela da página 1, composta por um logotipo, duas segmentações de dados e três elementos visuais.](Linked_image_Files/06-finished-report-page.png)
 
@@ -62,7 +62,9 @@ Neste exercício, você criará a primeira página de relatório. Quando você t
 
     > _Os laboratórios usam uma notação abreviada para referenciar um campo. Ele terá a seguinte aparência: `Date | Year`. Neste exemplo, `Date` é o nome da tabela e `Year` é o nome do campo._
 
-1. Para converter a segmentação de uma lista em uma lista suspensa, no painel **Visualizações**, selecione **Formatar seu visual**. Expanda **Configurações da segmentação** e defina a lista suspensa **Estilo** para **Menu suspenso**.
+    ![Figura 17](Linked_image_Files/08-design-power-bi-reports_image16.png)
+
+1. Para converter a segmentação de uma lista em uma lista suspensa, no painel **Visualizações**, selecione **Formatar visual**. Expanda **Configurações da segmentação** e defina a lista suspensa **Estilo** para **Menu suspenso**.
 
     ![Imagem 4](Linked_image_Files/08-design-power-bi-reports_slicer_style.png)
 
@@ -166,7 +168,7 @@ Neste exercício, você criará a primeira página de relatório. Quando você t
 
 ## Página de design 2
 
-Neste exercício, você criará a segunda página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
+Nesta tarefa, você criará a segunda página de relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
 ![Captura de tela da página 2, composta por uma segmentação de dados e matriz.](Linked_image_Files/08-design-power-bi-reports_image37.png)
 
@@ -224,7 +226,7 @@ Neste exercício, você criará a segunda página de relatório. Quando você ti
 
 ## Página de design 3
 
-Neste exercício, você criará a terceira, e última, página do relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
+Nesta tarefa, você criará a terceira e última página do relatório. Quando você tiver concluído o design, a página terá a seguinte aparência:
 
 ![Captura de tela da página 3, composta por uma segmentação de dados e três elementos visuais.](Linked_image_Files/08-design-power-bi-reports_image47.png)
 
@@ -323,9 +325,9 @@ Nesta tarefa, você sincronizará as segmentações de dados _Ano_ e _Região_.
 
 ## Publicar e explorar o relatório
 
-Neste exercício, você vai publicar o relatório no serviço do Power BI. Em seguida, você explorará o comportamento do relatório publicado.
+Nesta tarefa, você vai publicar o relatório no serviço do Power BI. Em seguida, você explorará o comportamento do relatório publicado.
 
-> _**Observação**: você precisará de pelo menos uma licença do **Power BI gratuita** para publicar o relatório. Abra o navegador Microsoft Edge e entre em `https://app.powerbi.com`. Quando solicitado a resolver um quebra-cabeça ou iniciar uma avaliação gratuita do Fabric, você poderá ignorar isso e fechar o navegador.
+> _**Observação**: você precisará de pelo menos uma licença do **Power BI gratuita** para publicar o relatório. Abra o navegador Microsoft Edge e navegue até _ `https://app.powerbi.com`_.  Entre com as credenciais do locatário do Microsoft 365 fornecido pelo ALH (hoster de laboratório autorizado). Quando solicitado a resolver um quebra-cabeça ou iniciar uma avaliação gratuita do Fabric, você poderá ignorar isso e fechar o navegador._
 
 > _**Observação**: você pode examinar o restante do exercício, mesmo que não tenha acesso ao serviço do Power BI para executar as tarefas diretamente._
 
@@ -345,7 +347,7 @@ Neste exercício, você vai publicar o relatório no serviço do Power BI. Em se
 
 1. Quando a publicação for bem-sucedida, selecione **Entendi**.
 
-1. Abra o navegador Microsoft Edge e entre em `https://app.powerbi.com`.
+1. Abra o navegador Microsoft Edge e navegue até `https://app.powerbi.com`.
 
 1. Na janela do navegador, no serviço do Power BI, no painel **Navegação** (localizado à esquerda, possivelmente recolhido), expanda **Meu Workspace**.
 
@@ -426,3 +428,6 @@ Neste exercício, você vai publicar o relatório no serviço do Power BI. Em se
     ![Figura 48](Linked_image_Files/08-design-power-bi-reports_image71.png)
 
 ## Laboratório concluído
+
+1. Feche o navegador Microsoft Edge.
+1. Feche o Power BI Desktop.
