@@ -14,27 +14,27 @@ demo:
 
 ## Abrir o painel compartilhado
 
-1. Alterne para a janela de serviço do Power BI do **instrutor**.
+1. Alterne para a janela de serviço do Power BI do**instrutor**.
 
-1. Abra o dashboard **Sales Monitoring**.
+1. Abra o dashboard**Sales Monitoring**.
 
 1. No menu, selecione Compartilhar
 
 1. Compartilhe o painel com a conta do destinatário.
 
-1. Alterne para a janela de serviço do Power BI do **destinatário**.
+1. Alterne para a janela de serviço do Power BI do**destinatário**.
 
-1. Abra **Compartilhado Comigo** e abra o dashboard Sales Monitoring.
+1. Abra**Compartilhado Comigo** e abra o dashboard Sales Monitoring.
 
 1. Saliente que o dashboard é somente leitura.
 
 ## Criar um aplicativo
 
-1. Alterne para a janela de serviço do Power BI do **instrutor**.
+1. Alterne para a janela de serviço do Power BI do**instrutor**.
 
 1. No painel de navegação, selecione o nome workspace.
 
-1. Selecione **Criar aplicativo** no canto superior direito.
+1. Selecione**Criar aplicativo** no canto superior direito.
 
 1. Na seção Configuração, insira o texto de descrição e, opcionalmente, escolha uma cor de tema.
 
@@ -46,7 +46,7 @@ demo:
 
 ## Baixe e abra o aplicativo
 
-1. Alterne para a janela de serviço do Power BI do **destinatário**.
+1. Alterne para a janela de serviço do Power BI do**destinatário**.
 
 1. Abra Aplicativos e, em seguida, obtenha o aplicativo que você acabou de publicar.
 
